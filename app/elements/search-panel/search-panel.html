@@ -1,0 +1,42 @@
+<!--
+@license
+Copyright (c) 2015 John Schweikert. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+-->
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="search-panel">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <map-data id="mapdata" map-locations="{{_mapLocations}}"></map-data>
+    
+    <div>
+      <paper-input label="Search Term" value="{{_searchTerm}}"></paper-input>
+      <paper-icon-button class="clear-button" icon="clear" on-click="_handleClear"></paper-icon-button>
+    </div>
+
+  </template>
+  <script>
+  (function() {
+    'use strict';
+
+    Polymer({
+      is: 'search-panel',
+
+      properties: {
+/*        foo: {
+          type: String,
+          value: 'search-panel',
+          notify: true
+        }*/
+      }
+    });
+  })();
+  </script>
+</dom-module>
