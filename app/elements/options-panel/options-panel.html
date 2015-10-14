@@ -1,0 +1,76 @@
+<!--
+@license
+Copyright (c) 2015 John Schweikert. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+-->
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="options-panel">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <firebase-document location="https://racingmap.firebaseio.com/options" data="{{appOptions}}"></firebase-document>
+    <div>
+      <h2>Final Destination</h2>
+      <div class="line">
+        <paper-input label="Final Destination" value="{{appOptions.finalDestination}}"></paper-input>
+      </div>
+      
+      
+      <h2>Search Options</h2>
+      <div class="line">
+        <paper-toggle-button checked={{appOptions.searchCities}}></paper-toggle-button>
+        <span>Cities and Municipalites</span>
+      </div>
+      <div class="line">
+        <paper-toggle-button checked={{appOptions.searchFeatures}}></paper-toggle-button>
+        <span>Geographic Features</span>
+      </div>
+      <div class="line">
+        <paper-toggle-button checked={{appOptions.searchPlaces}}></paper-toggle-button>
+        <span>Places of Interest</span>
+      </div>
+    </div>
+    <div>
+      <h2>Route Options</h2>
+      <div class="line">
+        <paper-toggle-button checked={{appOptions.avoidHighways}}></paper-toggle-button>
+        <span>Avoid Highways</span>
+      </div>
+      <div class="line">
+        <paper-toggle-button checked={{appOptions.optimizeWaypoints}}></paper-toggle-button>
+        <span>Optimize Waypoints</span>
+      </div>
+    </div>
+
+  </template>
+  <script>
+  (function() {
+    'use strict';
+
+    Polymer({
+      is: 'options-panel',
+
+      properties: {
+        appOptions: {
+          type: Object,
+          notify: true,
+          value: {
+            'finalDestination': '105 Osborne St, St Marys, GA 31558',
+            'searchCities': true,
+            'searchFeatures':false,
+            'searchPlaces': false,
+            'avoidHighways': true,
+            'optimizeWaypoints': true
+          }
+        }
+      }
+    });
+  })();
+  </script>
+</dom-module>
