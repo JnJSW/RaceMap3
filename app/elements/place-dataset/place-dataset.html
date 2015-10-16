@@ -7,8 +7,9 @@ This code may only be used under the BSD style license found at http://polymer.g
 
 <dom-module id="place-dataset">
   <template>
-    <firebase-collection location="https://racingmap.firebaseio.com/places_new/places" order-by-child="searchName" start-at="[[searchString]]" end-at="[[_getSearchEnd(searchString)]]" limit-to-first="50" data="{{searchResults}}"></firebase-collection>
-    <firebase-document location="https://racingmap.firebaseio.com/places_new/" data="{{_placesDb}}"></firebase-document>
+    <firebase-collection location="https://dtt.firebaseio.com/places_new/places" order-by-key start-at="[[_getSearchStart(searchString)]]" end-at="[[_getSearchEnd(searchString)]]" limit-to-first="50" data="{{searchResults}}"></firebase-collection>
+    <!--<firebase-collection location="https://dtt.firebaseio.com/places_new/places" order-by-child="anagram" equals="[[_getAnagramString(searchString)]]" data="{{searchResults}}"></firebase-collection>-->
+    <firebase-document location="https://dtt.firebaseio.com/places_new/" data="{{_placesDb}}"></firebase-document>
   </template>
 
   <script>
@@ -25,14 +26,13 @@ This code may only be used under the BSD style license found at http://polymer.g
         searchResults: {
           type: Array,
           notify: true,
-//          computed: '_filterPlaces(searchString,_placesDb)'
         },
         _placesDb: {
           type: Object
         },
         _CUR_DB_VERSION: {
           type: Number,
-          value: 4,
+          value: 7,
           readOnly: true
         },
         _FEATURE_MAP: {
@@ -69,8 +69,8 @@ This code may only be used under the BSD style license found at http://polymer.g
         return str ? str.replace(/[^\w\s]/gi, '').toUpperCase().trim() : '';
       },
   
-      _buildAnagramString: function (str){
-        return this.NormalizeSearchString(str).split('').sort().join('').trim();
+      _getAnagramString: function (str){
+        return this._normalizeSearchString(str).split('').sort().join('').trim();
       },
 
       _isFbUpToDate: function() {
@@ -125,9 +125,10 @@ This code may only be used under the BSD style license found at http://polymer.g
               'lat': line[4] ? line[4] : '',
               'lng': line[5] ? line[5] : '',
               'featType': this._FEATURE_MAP[line[6]] ? this._FEATURE_MAP[line[6]] : 0,
-              'searchName': this._normalizeSearchString(line[2])
+              'anagram': this._getAnagramString(line[2] ? line[2] : '__NOANAGRAM')
             };
-            tmpPlaces[index++]=place;
+            var searchString = line[2] ? this._normalizeSearchString(line[2]) : '__NOKEY';
+            tmpPlaces[searchString]=place;
           }.bind(this),
           complete: function() {
             console.log('# places: ' + Object.keys(tmpPlaces).length);
@@ -141,10 +142,14 @@ This code may only be used under the BSD style license found at http://polymer.g
         });
       },
       
+      _getSearchStart: function() {
+        return this._normalizeSearchString(this.searchString);
+      },
       
-      _getSearchEnd:function () {
-        return this.searchString + '\uf8ff';
+      _getSearchEnd: function() {
+        return this._normalizeSearchString(this.searchString) + '\uf8ff';
       }
+      
 
     });
   })();
