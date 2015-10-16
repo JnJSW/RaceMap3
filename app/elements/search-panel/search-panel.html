@@ -14,12 +14,22 @@ This code may only be used under the BSD style license found at http://polymer.g
       }
     </style>
 
-    <map-data id="mapdata" map-locations="{{_mapLocations}}"></map-data>
     
     <div>
       <paper-input label="Search Term" value="{{_searchTerm}}"></paper-input>
       <paper-icon-button class="clear-button" icon="clear" on-click="_handleClear"></paper-icon-button>
     </div>
+    
+    <place-dataset search-string="[[_searchTerm]]" search-results="{{_searchResults}}"></place-dataset>
+
+    <div class="layout vertical flex">
+      <!--<iron-list items="[[_searchResults]]">-->
+        <template is="dom-repeat" items="[[_searchResults]]">
+          <place-card my-location="[[myLocation]]" place="[[item]]" marker-url="[[_markerUrl(index)]]"></place-card>
+        </template>
+      <!--</iron-list>-->
+    </div>
+    
 
   </template>
   <script>
@@ -30,12 +40,20 @@ This code may only be used under the BSD style license found at http://polymer.g
       is: 'search-panel',
 
       properties: {
+        myLocation: {
+          type: Object
+        }
 /*        foo: {
           type: String,
           value: 'search-panel',
           notify: true
         }*/
-      }
+      },
+      _markerUrl: function(index) {
+        return 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + (index+1) + '|00FF00|000000';
+      },
+
+      
     });
   })();
   </script>

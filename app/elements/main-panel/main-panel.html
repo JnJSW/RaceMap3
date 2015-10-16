@@ -14,8 +14,10 @@ This code may only be used under the BSD style license found at http://polymer.g
       }
     </style>
 
+    <my-location my-location="{{myLocation}}"></my-location>
+
     <!-- Search Panel -->
-    <search-panel></search-panel>
+    <search-panel my-location="[[myLocation]]"></search-panel>
 
   </template>
   <script>

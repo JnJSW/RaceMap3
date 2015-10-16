@@ -1,0 +1,152 @@
+<!--
+@license
+Copyright (c) 2015 John Schweikert. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+-->
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="place-dataset">
+  <template>
+    <firebase-collection location="https://racingmap.firebaseio.com/places_new/places" order-by-child="searchName" start-at="[[searchString]]" end-at="[[_getSearchEnd(searchString)]]" limit-to-first="50" data="{{searchResults}}"></firebase-collection>
+    <firebase-document location="https://racingmap.firebaseio.com/places_new/" data="{{_placesDb}}"></firebase-document>
+  </template>
+
+  <script>
+  (function() {
+    'use strict';
+
+    Polymer({
+      is: 'place-dataset',
+
+      properties: {
+        searchString: {
+          type: String
+        },
+        searchResults: {
+          type: Array,
+          notify: true,
+//          computed: '_filterPlaces(searchString,_placesDb)'
+        },
+        _placesDb: {
+          type: Object
+        },
+        _CUR_DB_VERSION: {
+          type: Number,
+          value: 4,
+          readOnly: true
+        },
+        _FEATURE_MAP: {
+          type: Object,
+          readOnly: true,
+          value: function(){
+            //Cities = 1
+            //Features = 2
+            //Places = 4
+            return {
+              'A': 1, //country, state, region
+              'H': 2, //stream, lake
+              'L': 4, //Park, area
+              'P': 1, // city, village
+              'R': 4, //road, railroad
+              'S': 4, //spot, building, farm
+              'T': 2, //mountain
+              'V': 2, //forest, heath
+            };
+          }
+        }
+      },
+
+      observers: ['_isFbUpToDate(_placesDb, _CUR_DB_VERSION)'],
+      
+      _filterPlaces: function() {
+        if (!this._placesDb || !this._placesDb.places) {
+          return {};
+        }
+        return this._placesDb.places;
+      },
+
+      _normalizeSearchString: function (str) {
+        return str ? str.replace(/[^\w\s]/gi, '').toUpperCase().trim() : '';
+      },
+  
+      _buildAnagramString: function (str){
+        return this.NormalizeSearchString(str).split('').sort().join('').trim();
+      },
+
+      _isFbUpToDate: function() {
+        if (!this._placesDb || !this._placesDb.version || !(this._placesDb.version == this._CUR_DB_VERSION)){
+          console.log('Firebase is out of date');
+          this._loadPlacesFromDb();
+        }
+        else {
+          console.log('Firebase is up to date');
+        }
+      },
+
+      _loadPlacesFromDb: function() {
+        console.log('Loading Location Data');
+      
+        var counties = {};
+  
+        Papa.parse('resources/admin2Codes.txt',
+        {
+          header: false,
+          dynamicTyping: true,
+          download: true,
+          step: function (results) {
+            var line = results.data[0];
+            counties[line[0].trim()] = line[1];
+          }.bind(this),
+          complete: function () {
+            console.log('# counties: ' + Object.keys(counties).length);
+            this._loadPlaces(counties);
+          }.bind(this)
+        });
+      },
+      
+      _loadPlaces: function (counties) {
+
+        var tmpPlaces = {};
+        var index = 0;
+
+        Papa.parse('resources/Georgia.txt',
+        {
+          header: false,
+          dynamicTyping: true,
+          download: true,
+          step: function (results) {
+            var line = results.data[0];
+            var countyId = 'US' + '.' + line[10] + '.' + String('000'+line[11]).slice(-3);
+
+            var place = {
+              'name': line[2] ? line[2] : '',
+              'state': line[10] ? line[10] : '',
+              'county': counties[countyId] ? counties[countyId] : '',
+              'lat': line[4] ? line[4] : '',
+              'lng': line[5] ? line[5] : '',
+              'featType': this._FEATURE_MAP[line[6]] ? this._FEATURE_MAP[line[6]] : 0,
+              'searchName': this._normalizeSearchString(line[2])
+            };
+            tmpPlaces[index++]=place;
+          }.bind(this),
+          complete: function() {
+            console.log('# places: ' + Object.keys(tmpPlaces).length);
+            this._placesDb = {
+              'places': tmpPlaces,
+              'version': this._CUR_DB_VERSION
+            };
+            console.log('location parsing completed');
+          }.bind(this)
+        
+        });
+      },
+      
+      
+      _getSearchEnd:function () {
+        return this.searchString + '\uf8ff';
+      }
+
+    });
+  })();
+  </script>
+</dom-module>
