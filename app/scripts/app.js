@@ -7,10 +7,11 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
+/*
 (function(document) {
   'use strict';
 
-/*  // Grab a reference to our auto-binding template
+  // Grab a reference to our auto-binding template
   // and give it some initial binding values
   // Learn more about auto-binding templates at http://goo.gl/Dx1u2g
   var app = document.querySelector('#app');
@@ -70,5 +71,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   app.scrollPageToTop = function() {
     document.getElementById('mainContainer').scrollTop = 0;
   };
-*/
+  
 })(document);
+*/

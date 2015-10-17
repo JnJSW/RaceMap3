@@ -8,7 +8,7 @@ This code may only be used under the BSD style license found at http://polymer.g
 <dom-module id="place-dataset">
   <template>
     <firebase-collection location="https://dtt.firebaseio.com/places_new/places" order-by-key start-at="[[_getSearchStart(searchString)]]" end-at="[[_getSearchEnd(searchString)]]" limit-to-first="50" data="{{searchResults}}"></firebase-collection>
-    <!--<firebase-collection location="https://dtt.firebaseio.com/places_new/places" order-by-child="anagram" equals="[[_getAnagramString(searchString)]]" data="{{searchResults}}"></firebase-collection>-->
+    <!--<firebase-collection location="https://dtt.firebaseio.com/places_new/places" order-by-child="anagram" equals="[[_getAnagramSearch(searchString)]]" data="{{searchResults}}"></firebase-collection>-->
     <firebase-document location="https://dtt.firebaseio.com/places_new/" data="{{_placesDb}}"></firebase-document>
   </template>
 
@@ -74,7 +74,7 @@ This code may only be used under the BSD style license found at http://polymer.g
       },
 
       _isFbUpToDate: function() {
-        if (!this._placesDb || !this._placesDb.version || !(this._placesDb.version == this._CUR_DB_VERSION)){
+        if (!this._placesDb || !this._placesDb.version || (this._placesDb.version !== this._CUR_DB_VERSION)){
           console.log('Firebase is out of date');
           this._loadPlacesFromDb();
         }
@@ -107,7 +107,6 @@ This code may only be used under the BSD style license found at http://polymer.g
       _loadPlaces: function (counties) {
 
         var tmpPlaces = {};
-        var index = 0;
 
         Papa.parse('resources/Georgia.txt',
         {
@@ -143,13 +142,27 @@ This code may only be used under the BSD style license found at http://polymer.g
       },
       
       _getSearchStart: function() {
+        if (this.searchString.length <3) {
+          return '\uf8ff';
+        }
         return this._normalizeSearchString(this.searchString);
       },
       
       _getSearchEnd: function() {
+        if (this.searchString.length <3) {
+          return '\uf8ff';
+        }
         return this._normalizeSearchString(this.searchString) + '\uf8ff';
-      }
+      },
       
+      _getAnagramSearch: function() {
+        if (this.searchString.length <3) {
+          return '\uf8ff';
+        }
+        return this._getAnagramString();
+      }
+
+
 
     });
   })();

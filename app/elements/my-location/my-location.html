@@ -60,7 +60,7 @@ This code may only be used under the BSD style license found at http://polymer.g
           speed: position.coords.speed,
         });
 
-        if (typeof priorLatLng != 'undefined') {
+        if (typeof priorLatLng !== 'undefined') {
           var milesFromPrior = google.maps.geometry.spherical.computeDistanceBetween(priorLatLng, this.myLocation) * 0.000621371;
           this._miles = this._miles + milesFromPrior;
         }
