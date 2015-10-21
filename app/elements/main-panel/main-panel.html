@@ -17,7 +17,7 @@ This code may only be used under the BSD style license found at http://polymer.g
     <my-location my-location="{{myLocation}}"></my-location>
 
     <!-- Search Panel -->
-    <search-panel my-location="[[myLocation]]"></search-panel>
+    <search-panel my-location="[[myLocation]]" app-options="[[appOptions]]"></search-panel>
 
   </template>
   <script>
@@ -27,13 +27,11 @@ This code may only be used under the BSD style license found at http://polymer.g
     Polymer({
       is: 'main-panel',
 
-/*      properties: {
-        foo: {
-          type: String,
-          value: 'main-panel',
-          notify: true
+      properties: {
+        appOptions: {
+          type: Object
         }
-      }*/
+      }
     });
   })();
   </script>

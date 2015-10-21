@@ -14,13 +14,12 @@ This code may only be used under the BSD style license found at http://polymer.g
       }
     </style>
 
-    
     <div>
       <paper-input label="Search Term" value="{{_searchTerm}}"></paper-input>
       <paper-icon-button class="clear-button" icon="clear" on-click="_handleClear"></paper-icon-button>
     </div>
     
-    <place-dataset search-string="[[_searchTerm]]" search-results="{{_searchResults}}"></place-dataset>
+    <place-dataset search-string="[[_searchTerm]]" search-results="{{_searchResults}}" app-options="[[appOptions]]"></place-dataset>
 
     <div class="layout vertical flex">
       <!--<iron-list items="[[_searchResults]]">-->
@@ -41,6 +40,9 @@ This code may only be used under the BSD style license found at http://polymer.g
 
       properties: {
         myLocation: {
+          type: Object
+        },
+        appOptions: {
           type: Object
         }
 /*        foo: {

@@ -6,12 +6,6 @@ This code may only be used under the BSD style license found at http://polymer.g
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
 <dom-module id="place-dataset">
-  <template>
-    <firebase-collection location="https://dtt.firebaseio.com/places_new/places" order-by-key start-at="[[_getSearchStart(searchString)]]" end-at="[[_getSearchEnd(searchString)]]" limit-to-first="50" data="{{searchResults}}"></firebase-collection>
-    <!--<firebase-collection location="https://dtt.firebaseio.com/places_new/places" order-by-child="anagram" equals="[[_getAnagramSearch(searchString)]]" data="{{searchResults}}"></firebase-collection>-->
-    <firebase-document location="https://dtt.firebaseio.com/places_new/" data="{{_placesDb}}"></firebase-document>
-  </template>
-
   <script>
   (function() {
     'use strict';
@@ -21,19 +15,23 @@ This code may only be used under the BSD style license found at http://polymer.g
 
       properties: {
         searchString: {
-          type: String
+          type: String,
         },
         searchResults: {
           type: Array,
           notify: true,
+          readOnly: true,
+          computed: '_findLocations(searchString, _placesToSearch)'
         },
-        _placesDb: {
+        appOptions: {
+          type: Array
+        },
+        _places: {
           type: Object
         },
-        _CUR_DB_VERSION: {
-          type: Number,
-          value: 7,
-          readOnly: true
+        _placesToSearch: {
+          type: Object,
+          computed: '_buildPlacesToSearch(_places, appOptions.searchCities, appOptions.searchPlaces, appOptions.searchFeatures)'
         },
         _FEATURE_MAP: {
           type: Object,
@@ -52,38 +50,11 @@ This code may only be used under the BSD style license found at http://polymer.g
               'T': 2, //mountain
               'V': 2, //forest, heath
             };
-          }
+          },
         }
       },
 
-      observers: ['_isFbUpToDate(_placesDb, _CUR_DB_VERSION)'],
-      
-      _filterPlaces: function() {
-        if (!this._placesDb || !this._placesDb.places) {
-          return {};
-        }
-        return this._placesDb.places;
-      },
-
-      _normalizeSearchString: function (str) {
-        return str ? str.replace(/[^\w\s]/gi, '').toUpperCase().trim() : '';
-      },
-  
-      _getAnagramString: function (str){
-        return this._normalizeSearchString(str).split('').sort().join('').trim();
-      },
-
-      _isFbUpToDate: function() {
-        if (!this._placesDb || !this._placesDb.version || (this._placesDb.version !== this._CUR_DB_VERSION)){
-          console.log('Firebase is out of date');
-          this._loadPlacesFromDb();
-        }
-        else {
-          console.log('Firebase is up to date');
-        }
-      },
-
-      _loadPlacesFromDb: function() {
+      ready: function() {
         console.log('Loading Location Data');
       
         var counties = {};
@@ -106,7 +77,7 @@ This code may only be used under the BSD style license found at http://polymer.g
       
       _loadPlaces: function (counties) {
 
-        var tmpPlaces = {};
+        var tmpPlaces = []
 
         Papa.parse('resources/Georgia.txt',
         {
@@ -118,49 +89,72 @@ This code may only be used under the BSD style license found at http://polymer.g
             var countyId = 'US' + '.' + line[10] + '.' + String('000'+line[11]).slice(-3);
 
             var place = {
-              'name': line[2] ? line[2] : '',
+              'name': line[2] ? line[2] : '__NONAME',
               'state': line[10] ? line[10] : '',
               'county': counties[countyId] ? counties[countyId] : '',
               'lat': line[4] ? line[4] : '',
               'lng': line[5] ? line[5] : '',
               'featType': this._FEATURE_MAP[line[6]] ? this._FEATURE_MAP[line[6]] : 0,
-              'anagram': this._getAnagramString(line[2] ? line[2] : '__NOANAGRAM')
+              'aSearch': line[2] ? this._getAnagramString(line[2]) : '__NOKEY',
+              'nSearch': line[2] ? this._normalizeSearchString(line[2]) : '__NOKEY'
             };
-            var searchString = line[2] ? this._normalizeSearchString(line[2]) : '__NOKEY';
-            tmpPlaces[searchString]=place;
+            tmpPlaces.push(place);
+
           }.bind(this),
           complete: function() {
-            console.log('# places: ' + Object.keys(tmpPlaces).length);
-            this._placesDb = {
-              'places': tmpPlaces,
-              'version': this._CUR_DB_VERSION
-            };
+            //this._fbRef.child('placesdb').set(places);
             console.log('location parsing completed');
+            this._places = tmpPlaces;
           }.bind(this)
         
         });
       },
-      
-      _getSearchStart: function() {
-        if (this.searchString.length <3) {
-          return '\uf8ff';
-        }
-        return this._normalizeSearchString(this.searchString);
+
+      _buildPlacesToSearch: function (){
+
+        var placeTypeMask =
+          (this.appOptions.searchCities ? 1 : 0) +
+          (this.appOptions.searchPlaces ? 4 : 0) +
+          (this.appOptions.searchFeatures ? 2 : 0);
+        
+        var results = this._places.filter(
+          function (place) {
+            /*jshint bitwise: false*/
+            return (place.featType & placeTypeMask) !== 0;
+          },
+          this
+        );
+        return results;
       },
       
-      _getSearchEnd: function() {
-        if (this.searchString.length <3) {
-          return '\uf8ff';
-        }
-        return this._normalizeSearchString(this.searchString) + '\uf8ff';
+      _findLocations: function() {
+        if (!this._places) {return;} //exit if the maplocations have not been defined
+        
+        if (this.searchString.length < 3) {return;}
+        
+        var normalizedSearch = this._normalizeSearchString(this.searchString);
+        var anagramSearch = this._getAnagramString(this.searchString);
+  
+        console.log(anagramSearch);
+        console.log(normalizedSearch);
+  
+        var results = this._placesToSearch.filter(
+          function (place) {
+            return ((place.aSearch === anagramSearch) || (place.nSearch.indexOf(normalizedSearch) !== -1));
+          },
+          this
+        );
+        
+        return results;
       },
-      
-      _getAnagramSearch: function() {
-        if (this.searchString.length <3) {
-          return '\uf8ff';
-        }
-        return this._getAnagramString();
-      }
+
+      _normalizeSearchString: function (str) {
+        return str ? str.replace(/[^\w\s]/gi, '').toUpperCase().trim() : '';
+      },
+  
+      _getAnagramString: function (str){
+        return this._normalizeSearchString(str).split('').sort().join('').trim();
+      },
 
 
 
