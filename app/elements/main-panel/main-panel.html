@@ -84,7 +84,7 @@ This code may only be used under the BSD style license found at http://polymer.g
         
       },
 
-      _onMarkerClick: function(e, detail) {
+      _onMarkerClick: function(e) {
         this._markerClicked = true;
         this._dismissOnOutsideClick = true;
 //        mapDirections.map = null; // remove displayed directions when marker is clicked.
@@ -94,7 +94,7 @@ This code may only be used under the BSD style license found at http://polymer.g
         this.$.placeCard.open();
       },
       
-      _addWaypoint: function(e, detail) {
+      _addWaypoint: function() {
         var place = this.$.placeCard.place;
         var tmp = this._waypoints.slice(0);
         tmp.push( {  //directions doesn't observe slices
