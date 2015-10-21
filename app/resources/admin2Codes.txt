@@ -480,165 +480,172 @@ AM.04.616436	Martuni	Martuni	616436
 AM.11.616485	Leninskiy Rayon	Leninskiy Rayon	616485
 AM.11.616624	Imeni Dvadtsati Shesti Komissarov Rayon	Imeni Dvadtsati Shesti Komissarov Rayon	616624
 AM.01.7874001	Achtarak	Achtarak	7874001
-AO.18.145530	Município Saurimo	Municipio Saurimo	145530
-AO.17.145723	Município Lucapa	Municipio Lucapa	145723
-AO.17.145775	Município Chitato	Municipio Chitato	145775
-AO.17.145897	Município Cambulo	Municipio Cambulo	145897
-AO.14.875819	Município Rivungo	Municipio Rivungo	875819
-AO.18.875968	Município Muconda	Municipio Muconda	875968
-AO.14.875997	Município Moxico	Municipio Moxico	875997
-AO.04.876017	Município Mavinga	Municipio Mavinga	876017
-AO.14.876125	Município Lumege	Municipio Lumege	876125
-AO.14.876129	Município Lumbala N’guimbo	Municipio Lumbala N'guimbo	876129
-AO.14.876176	Município Luau	Municipio Luau	876176
-AO.14.876198	Município Luacano	Municipio Luacano	876198
-AO.14.876232	Município Léua	Municipio Leua	876232
-AO.04.876291	Município Dirico	Municipio Dirico	876291
-AO.18.876307	Município Dala	Municipio Dala	876307
-AO.14.876631	Município Camanongue	Municipio Camanongue	876631
-AO.14.876723	Município Alto Zambeze	Municipio Alto Zambeze	876723
-AO.17.2236396	Município Xá-Muteba	Municipio Xa-Muteba	2236396
-AO.20.2236499	Município Viana	Municipio Viana	2236499
+AO.18.145530	Saurimo	Saurimo	145530
+AO.17.145723	Lucapa	Lucapa	145723
+AO.17.145775	Chitato	Chitato	145775
+AO.17.145897	Cambulo	Cambulo	145897
+AO.04.875819	Rivungo	Rivungo	875819
+AO.18.875968	Muconda	Muconda	875968
+AO.14.875997	Luena	Luena	875997
+AO.04.876017	Mavinga	Mavinga	876017
+AO.14.876125	Cameia	Cameia	876125
+AO.14.876129	Bundas	Bundas	876129
+AO.14.876176	Luau	Luau	876176
+AO.14.876198	Luacano	Luacano	876198
+AO.14.876232	Léua	Leua	876232
+AO.04.876291	Dirico	Dirico	876291
+AO.18.876307	Dala	Dala	876307
+AO.14.876631	Camanongue	Camanongue	876631
+AO.14.876723	Alto Zambeze	Alto Zambeze	876723
+AO.17.2236396	Xá-Muteba	Xa-Muteba	2236396
+AO.20.2236499	Viana	Viana	2236499
 AO.15.2236567	Uige Municipality	Uige Municipality	2236567
-AO.16.2236714	Município Tomboco	Municipio Tomboco	2236714
-AO.16.2236966	Município Soyo	Municipio Soyo	2236966
-AO.15.2236985	Município Songo	Municipio Songo	2236985
-AO.15.2237127	Município Sanza Pombo	Municipio Sanza Pombo	2237127
-AO.15.2237144	Município Santa Cruz	Municipio Santa Cruz	2237144
+AO.16.2236714	Tomboco	Tomboco	2236714
+AO.16.2236966	Soyo	Soyo	2236966
+AO.15.2236985	Songo	Songo	2236985
+AO.15.2237127	Sanza Pombo	Sanza Pombo	2237127
+AO.15.2237144	Santa Cruz	Santa Cruz	2237144
 AO.15.2237499	Quitexe Municipality	Quitexe Municipality	2237499
-AO.15.2238174	Município Quimbele	Municipio Quimbele	2238174
-AO.05.2238485	Município Quiculungo	Municipio Quiculungo	2238485
-AO.19.2238564	Município Quicama	Municipio Quicama	2238564
-AO.12.2238814	Município Quela	Municipio Quela	2238814
-AO.15.2238826	Município Puri	Municipio Puri	2238826
+AO.15.2238174	Quimbele	Quimbele	2238174
+AO.05.2238485	Quiculungo	Quiculungo	2238485
+AO.20.2238564	Quissama	Quissama	2238564
+AO.12.2238814	Quela	Quela	2238814
+AO.15.2238826	Puri	Puri	2238826
 AO.19.2238950	Município Pango Aluquém	Municipio Pango Aluquem	2238950
-AO.16.2239000	Município N’zeto	Municipio N'zeto	2239000
-AO.16.2239019	Município Nóqui	Municipio Noqui	2239019
+AO.16.2239000	Nzeto	Nzeto	2239000
+AO.16.2239019	Nóqui	Noqui	2239019
 AO.15.2239067	Negage Municipality	Negage Municipality	2239067
 AO.19.2239093	Nambuangongo Municipality	Nambuangongo Municipality	2239093
-AO.12.2239335	Município Mucari	Municipio Mucari	2239335
-AO.15.2239352	Município Mucaba	Municipio Mucaba	2239352
-AO.16.2239519	Município M’banza Congo	Municipio M'banza Congo	2239519
-AO.12.2239696	Município Massango	Municipio Massango	2239696
-AO.12.2239711	Município Marimba	Municipio Marimba	2239711
-AO.15.2239731	Muniípio Maquela do Zombo	Muniipio Maquela do Zombo	2239731
+AO.12.2239335	Caculama	Caculama	2239335
+AO.15.2239352	Mucaba	Mucaba	2239352
+AO.16.2239519	Mbanza Congo	Mbanza Congo	2239519
+AO.12.2239696	Massango	Massango	2239696
+AO.12.2239711	Marimba	Marimba	2239711
+AO.15.2239731	Maquela do Zombo	Maquela do Zombo	2239731
 AO.12.2239859	Malanje Municipality	Malanje Municipality	2239859
-AO.05.2240384	Município Lucala	Municipio Lucala	2240384
-AO.17.2240415	Município Lubalo	Municipio Lubalo	2240415
+AO.05.2240384	Lucala	Lucala	2240384
+AO.17.2240415	Lubalo	Lubalo	2240415
 AO.20.2240445	Luanda Municipality	Luanda Municipality	2240445
-AO.03.2240660	Município Lândana	Municipio Landana	2240660
-AO.12.2240685	Município Kunda-dia-Baze	Municipio Kunda-dia-Baze	2240685
-AO.12.2240688	Município Kiwaba N’zogi	Municipio Kiwaba N'zogi	2240688
-AO.19.2240756	Município Icolo e Bengo	Municipio Icolo e Bengo	2240756
-AO.05.2240905	Município Gonguembo	Municipio Gonguembo	2240905
-AO.05.2240974	Município Golungo Alto	Municipio Golungo Alto	2240974
-AO.19.2241454	Município Dembos	Municipio Dembos	2241454
+AO.03.2240660	Cacongo	Cacongo	2240660
+AO.12.2240685	Cunda-Dia-Baze	Cunda-Dia-Baze	2240685
+AO.12.2240688	Kiwaba Nzoji	Kiwaba Nzoji	2240688
+AO.20.2240756	Icolo e Bengo	Icolo e Bengo	2240756
+AO.05.2240905	Ngonguembo	Ngonguembo	2240905
+AO.05.2240974	Golungo Alto	Golungo Alto	2240974
+AO.19.2241454	Dembos	Dembos	2241454
 AO.19.2241484	Dande Municipality	Dande Municipality	2241484
-AO.15.2241498	Município Damba	Municipio Damba	2241498
-AO.16.2241620	Município Cuimba	Municipio Cuimba	2241620
-AO.17.2241628	Município Cuilo	Municipio Cuilo	2241628
-AO.17.2241665	Município Cuango	Municipio Cuango	2241665
+AO.15.2241498	Damba	Damba	2241498
+AO.16.2241620	Cuimba	Cuimba	2241620
+AO.17.2241628	Cuilo	Cuilo	2241628
+AO.17.2241665	Cuango	Cuango	2241665
 AO.05.2241967	Cazengo Municipality	Cazengo Municipality	2241967
-AO.17.2242051	Município Caungula	Municipio Caungula	2242051
-AO.17.2242427	Município Capenda-Camulemba	Municipio Capenda-Camulemba	2242427
-AO.12.2242475	Município Caombo	Municipio Caombo	2242475
-AO.05.2242801	Município Cambambe	Municipio Cambambe	2242801
-AO.12.2242997	Município Calandula	Municipio Calandula	2242997
-AO.12.2243120	Município Cacuso	Municipio Cacuso	2243120
+AO.17.2242051	Caungula	Caungula	2242051
+AO.17.2242427	Capenda Camulemba	Capenda Camulemba	2242427
+AO.12.2242475	Cahombo	Cahombo	2242475
+AO.05.2242801	Cambambe	Cambambe	2242801
+AO.12.2242997	Calandula	Calandula	2242997
+AO.12.2243120	Cacuso	Cacuso	2243120
 AO.20.2243171	Cacuaco Municipality	Cacuaco Municipality	2243171
-AO.03.2243267	Município Cabinda	Municipio Cabinda	2243267
-AO.15.2243355	Município Bungo	Municipio Bungo	2243355
-AO.19.2243420	Município Bula Atumba	Municipio Bula Atumba	2243420
-AO.15.2243441	Município Buengas	Municipio Buengas	2243441
-AO.03.2243457	Município Buco Zau	Municipio Buco Zau	2243457
-AO.05.2243535	Município Bolongongo	Municipio Bolongongo	2243535
+AO.03.2243267	Cabinda	Cabinda	2243267
+AO.15.2243355	Bungo	Bungo	2243355
+AO.19.2243420	Bula Atumba	Bula Atumba	2243420
+AO.15.2243441	Buengas	Buengas	2243441
+AO.03.2243457	Buco Zau	Buco Zau	2243457
+AO.05.2243535	Bolongongo	Bolongongo	2243535
 AO.15.2243631	Município Bembe	Municipio Bembe	2243631
-AO.15.2243632	Concelho do Bembe	Concelho do Bembe	2243632
-AO.03.2243645	Município Belize	Municipio Belize	2243645
-AO.05.2243811	Município Banga	Municipio Banga	2243811
+AO.15.2243632	Bembe	Bembe	2243632
+AO.03.2243645	Belize	Belize	2243645
+AO.05.2243811	Banga	Banga	2243811
 AO.15.2243908	Ambuila Municipality	Ambuila Municipality	2243908
-AO.19.2243911	Município Ambriz	Municipio Ambriz	2243911
-AO.05.2243916	Município Ambaca	Municipio Ambaca	2243916
-AO.15.2243921	Município Alto Cauale	Municipio Alto Cauale	2243921
-AO.06.3345496	Município Waku Kungo	Municipio Waku Kungo	3345496
-AO.13.3345516	Município Virei	Municipio Virei	3345516
-AO.08.3345667	Município Ukuma	Municipio Ukuma	3345667
-AO.13.3345788	Município Tombua	Municipio Tombua	3345788
-AO.08.3345909	Município Tchindjenje	Municipio Tchindjenje	3345909
-AO.08.3345923	Município Tchikala-Tcholohanga	Municipio Tchikala-Tcholohanga	3345923
-AO.06.3346014	Município Sumbe	Municipio Sumbe	3346014
-AO.06.3346113	Município Seles	Municipio Seles	3346113
-AO.12.3346489	Município Quirima	Municipio Quirima	3346489
-AO.09.3346496	Município Quipungo	Municipio Quipungo	3346496
-AO.09.3346556	Município Quilengues	Municipio Quilengues	3346556
-AO.06.3346558	Município Quilenda	Municipio Quilenda	3346558
-AO.06.3346597	Município Quibala	Municipio Quibala	3346597
-AO.06.3346659	Município Porto Amboim	Municipio Porto Amboim	3346659
-AO.07.3346850	Município Ombadja	Municipio Ombadja	3346850
-AO.02.3346941	Município N’harea	Municipio N'harea	3346941
-AO.04.3347005	Município Nankova	Municipio Nankova	3347005
-AO.13.3347017	Município Namibe	Municipio Namibe	3347017
-AO.07.3347028	Município Namacunde	Municipio Namacunde	3347028
-AO.06.3347070	Município Mussende	Municipio Mussende	3347070
-AO.08.3347110	Município Mungo	Municipio Mungo	3347110
-AO.04.3347352	Município Menongue	Municipio Menongue	3347352
-AO.09.3347423	Município Matala	Municipio Matala	3347423
-AO.12.3347614	Município Luquembo	Municipio Luquembo	3347614
-AO.14.3347741	Município Luchazes	Municipio Luchazes	3347741
-AO.09.3347760	Município Lubango	Municipio Lubango	3347760
-AO.08.3347852	Município Longonjo	Municipio Longonjo	3347852
-AO.08.3347879	Município Londuimbali	Municipio Londuimbali	3347879
-AO.01.3347937	Município Lobito	Municipio Lobito	3347937
-AO.06.3347989	Município Libolo	Municipio Libolo	3347989
-AO.09.3348075	Município Kuvango	Municipio Kuvango	3348075
-AO.02.3348077	Município Kuito	Municipio Kuito	3348077
-AO.08.3348093	Município Katchiungo	Municipio Katchiungo	3348093
-AO.09.3348165	Município Jamba	Municipio Jamba	3348165
-AO.09.3348286	Município Humpata	Municipio Humpata	3348286
-AO.08.3348311	Município Huambo	Municipio Huambo	3348311
-AO.01.3348578	Município Ganda	Municipio Ganda	3348578
-AO.08.3348773	Município Ekunha	Municipio Ekunha	3348773
-AO.06.3348792	Município Ebo	Municipio Ebo	3348792
-AO.07.3348986	Município Cuvelai	Municipio Cuvelai	3348986
-AO.07.3349045	Município Curoca	Municipio Curoca	3349045
-AO.02.3349078	Município Cunhinga	Municipio Cunhinga	3349078
-AO.04.3349148	Município Cuito Cuanavale	Municipio Cuito Cuanavale	3349148
-AO.02.3349179	Município Cuemba	Municipio Cuemba	3349179
-AO.04.3349195	Município Cuchi	Municipio Cuchi	3349195
-AO.01.3349225	Município Cubal	Municipio Cubal	3349225
-AO.07.3349237	Município Cuanhama	Municipio Cuanhama	3349237
-AO.04.3349243	Município Cuangar	Municipio Cuangar	3349243
-AO.06.3349321	Município Conda	Municipio Conda	3349321
-AO.01.3349404	Município Chongoroi	Municipio Chongoroi	3349404
-AO.02.3349514	Município Chitembo	Municipio Chitembo	3349514
-AO.09.3349647	Município Chipindo	Municipio Chipindo	3349647
-AO.02.3349722	Município Chinguar	Municipio Chinguar	3349722
-AO.09.3349949	Município Chicomba	Municipio Chicomba	3349949
-AO.09.3349996	Município Chibia	Municipio Chibia	3349996
-AO.09.3350009	Município Chiange	Municipio Chiange	3350009
-AO.02.3350370	Município Catabola	Municipio Catabola	3350370
-AO.06.3350385	Município Cassongue	Municipio Cassongue	3350385
-AO.12.3350771	Município Cangandala	Municipio Cangandala	3350771
-AO.12.3350916	Município Cambundi-Catembo	Municipio Cambundi-Catembo	3350916
+AO.19.2243911	Ambriz	Ambriz	2243911
+AO.05.2243916	Ambaca	Ambaca	2243916
+AO.15.2243921	Cangola	Cangola	2243921
+AO.06.3345496	Cela	Cela	3345496
+AO.13.3345516	Virei	Virei	3345516
+AO.08.3345667	Ucuma	Ucuma	3345667
+AO.13.3345788	Tômbwa	Tombwa	3345788
+AO.08.3345909	Chinjenje	Chinjenje	3345909
+AO.08.3345923	Chicala Cholohanga	Chicala Cholohanga	3345923
+AO.06.3346014	Sumbe	Sumbe	3346014
+AO.06.3346113	Seles	Seles	3346113
+AO.12.3346489	Quirima	Quirima	3346489
+AO.09.3346496	Quipungo	Quipungo	3346496
+AO.09.3346556	Quilengues	Quilengues	3346556
+AO.06.3346558	Quilenda	Quilenda	3346558
+AO.06.3346597	Quibala	Quibala	3346597
+AO.06.3346659	Porto Amboim	Porto Amboim	3346659
+AO.07.3346850	Ombadja	Ombadja	3346850
+AO.02.3346941	Nharea	Nharea	3346941
+AO.04.3347005	Nancova	Nancova	3347005
+AO.13.3347017	Namibe	Namibe	3347017
+AO.07.3347028	Namacunde	Namacunde	3347028
+AO.06.3347070	Mussende	Mussende	3347070
+AO.08.3347110	Mungo	Mungo	3347110
+AO.04.3347352	Menongue	Menongue	3347352
+AO.09.3347423	Matala	Matala	3347423
+AO.12.3347614	Luquembo	Luquembo	3347614
+AO.14.3347741	Luchazes	Luchazes	3347741
+AO.09.3347760	Lubango	Lubango	3347760
+AO.08.3347852	Longonjo	Longonjo	3347852
+AO.08.3347879	Londuimbali	Londuimbali	3347879
+AO.01.3347937	Lobito	Lobito	3347937
+AO.06.3347989	Libolo	Libolo	3347989
+AO.09.3348075	Cuvango	Cuvango	3348075
+AO.02.3348077	Cuito	Cuito	3348077
+AO.08.3348093	Cachiungo	Cachiungo	3348093
+AO.09.3348165	Jamba	Jamba	3348165
+AO.09.3348286	Humpata	Humpata	3348286
+AO.08.3348311	Huambo	Huambo	3348311
+AO.01.3348578	Ganda	Ganda	3348578
+AO.08.3348773	Ecunha	Ecunha	3348773
+AO.06.3348792	Ebo	Ebo	3348792
+AO.07.3348986	Cuvelai	Cuvelai	3348986
+AO.07.3349045	Curoca	Curoca	3349045
+AO.02.3349078	Cunhinga	Cunhinga	3349078
+AO.04.3349148	Cuito Cuanavale	Cuito Cuanavale	3349148
+AO.02.3349179	Cuemba	Cuemba	3349179
+AO.04.3349195	Cuchi	Cuchi	3349195
+AO.01.3349225	Cubal	Cubal	3349225
+AO.07.3349237	Cuanhama	Cuanhama	3349237
+AO.04.3349243	Cuangar	Cuangar	3349243
+AO.06.3349321	Conda	Conda	3349321
+AO.01.3349404	Chongoroi	Chongoroi	3349404
+AO.02.3349514	Chitembo	Chitembo	3349514
+AO.09.3349647	Chipindo	Chipindo	3349647
+AO.02.3349722	Chinguar	Chinguar	3349722
+AO.09.3349949	Chicomba	Chicomba	3349949
+AO.09.3349996	Chibia	Chibia	3349996
+AO.09.3350009	Gambos	Gambos	3350009
+AO.02.3350370	Catabola	Catabola	3350370
+AO.06.3350385	Cassongue	Cassongue	3350385
+AO.12.3350771	Cangandala	Cangandala	3350771
+AO.12.3350916	Cambundi-Catembo	Cambundi-Catembo	3350916
 AO.02.3351012	Município Camacupa	Municipio Camacupa	3351012
-AO.02.3351013	Concelho de Camacupa	Concelho de Camacupa	3351013
-AO.13.3351015	Município Camacuio	Municipio Camacuio	3351015
-AO.09.3351021	Município Caluquembe	Municipio Caluquembe	3351021
-AO.04.3351214	Mnuicípio Calai	Mnuicipio Calai	3351214
-AO.01.3351267	Município Caimbambo	Municipio Caimbambo	3351267
-AO.07.3351306	Município Cahama	Municipio Cahama	3351306
-AO.09.3351379	Município Caconda	Municipio Caconda	3351379
-AO.18.3351386	Município Cacolo	Municipio Cacolo	3351386
-AO.08.3351497	Município Caála	Municipio Caala	3351497
-AO.01.3351597	Município Bocoio	Municipio Bocoio	3351597
-AO.13.3351646	Município Bibala	Municipio Bibala	3351646
-AO.01.3351661	Município Benguela	Municipio Benguela	3351661
+AO.02.3351013	Camacupa	Camacupa	3351013
+AO.13.3351015	Camucuio	Camucuio	3351015
+AO.09.3351021	Caluquembe	Caluquembe	3351021
+AO.04.3351214	Calai	Calai	3351214
+AO.01.3351267	Caimbambo	Caimbambo	3351267
+AO.07.3351306	Cahama	Cahama	3351306
+AO.09.3351379	Caconda	Caconda	3351379
+AO.18.3351386	Cacolo	Cacolo	3351386
+AO.08.3351497	Caála	Caala	3351497
+AO.01.3351597	Bocoio	Bocoio	3351597
+AO.13.3351646	Bibala	Bibala	3351646
+AO.01.3351661	Benguela	Benguela	3351661
 AO.01.3351758	Município Balombo	Municipio Balombo	3351758
-AO.08.3351782	Município Bailundo	Municipio Bailundo	3351782
-AO.01.3351785	Município Baía Farta	Municipio Baia Farta	3351785
-AO.02.3351882	Município Andulo	Municipio Andulo	3351882
-AO.06.3351905	Município Amboim	Municipio Amboim	3351905
+AO.08.3351782	Bailundo	Bailundo	3351782
+AO.01.3351785	Baía Farta	Baia Farta	3351785
+AO.02.3351882	Andulo	Andulo	3351882
+AO.06.3351905	Amboim	Amboim	3351905
 AO.02.9212598	Barkeol	Barkeol	9212598
+AO.20.10401828	Município Cazenga	Municipio Cazenga	10401828
+AO.12.10402309	Kiwaba Nzoji	Kiwaba Nzoji	10402309
+AO.01.10440258	Catumbela	Catumbela	10440258
+AO.20.10440865	Belas	Belas	10440865
+AO.09.10449850	Cacula	Cacula	10449850
+AO.05.10450082	Samba Cajú	Samba Caju	10450082
+AO.20.10629820	Município Sambizanga	Municipio Sambizanga	10629820
 AR.01.06882	Partido de Zárate	Partido de Zarate	3427212
 AR.08.30113	Departamento de Villaguay	Departamento de Villaguay	3427426
 AR.01.06861	Partido de Vicente López	Partido de Vicente Lopez	3427504
@@ -1354,7 +1361,7 @@ AU.04.36710	Sunshine Coast	Sunshine Coast	7839394
 AU.04.36810	Tablelands	Tablelands	7839395
 AU.04.36910	Toowoomba	Toowoomba	7839396
 AU.04.36950	Torres	Torres	7839397
-AU.04.36960	Torres Strait Island	Torres Strait Island	7839398
+AU.04.36960	Torres Strait Island Region	Torres Strait Island Region	7839398
 AU.04.37010	Townsville	Townsville	7839399
 AU.04.37300	Weipa	Weipa	7839400
 AU.04.37310	Western Downs	Western Downs	7839401
@@ -1862,7 +1869,7 @@ BA.02.3294540	Opština Ljubinje	Opstina Ljubinje	3294540
 BA.02.3294558	Opština Gacko	Opstina Gacko	3294558
 BA.02.3294561	Opština Nevesinje	Opstina Nevesinje	3294561
 BA.02.3294564	Opština Kalinovik	Opstina Kalinovik	3294564
-BA.02.3294565	Opština Srbinje	Opstina Srbinje	3294565
+BA.02.3294565	Foča	Foca	3294565
 BA.02.3294566	Opština Čajniče	Opstina Cajnice	3294566
 BA.02.3294770	Opština Rudo	Opstina Rudo	3294770
 BA.02.3294772	Opština Višegrad	Opstina Visegrad	3294772
@@ -2377,7 +2384,7 @@ BI.19.9072892	Commune of Rutana	Commune of Rutana	9072892
 BI.11.9072894	Commune of Cankuzo	Commune of Cankuzo	9072894
 BI.10.9157454	Commune of Matana	Commune of Matana	9157454
 BI.10.9158023	Commune of Rumonge	Commune of Rumonge	9158023
-BI.22.9171802	Ndava	Ndava	9171802
+BI.23.9171802	Ndava	Ndava	9171802
 BI.25.9171803	Bugarama	Bugarama	9171803
 BI.10.9171804	Bururi	Bururi	9171804
 BI.25.9171805	Kanyosha1	Kanyosha1	9171805
@@ -2441,7 +2448,6 @@ BI.18.9171884	Gasorwe	Gasorwe	9171884
 BI.16.9171886	Gitobe	Gitobe	9171886
 BI.24.9171888	Kanyosha	Kanyosha	9171888
 BI.24.9171890	Kinindo	Kinindo	9171890
-BI.22.9178528	Commune of Ndava	Commune of Ndava	9178528
 BI.22.9179822	Muramvya	Muramvya	9179822
 BI.10.9881326	Commune of Burambi	Commune of Burambi	9881326
 BJ.16.7668892	Commune of Adjohoun	Commune of Adjohoun	7668892
@@ -2466,63 +2472,61 @@ BJ.16.7668939	Porto-novo	Porto-novo	7668939
 BJ.16.7668940	Aguégués	Aguegues	7668940
 BJ.16.7668941	Seme-kpodji	Seme-kpodji	7668941
 BJ.13.7669263	Ouake	Ouake	7669263
-BJ.13.7669264	Djougou Rural	Djougou Rural	7669264
 BJ.10.7669265	Commune of Tchaourou	Commune of Tchaourou	7669265
 BJ.10.7669268	Commune of Parakou	Commune of Parakou	7669268
 BJ.10.7669269	Ndali	Ndali	7669269
 BJ.10.7669270	Bembereke	Bembereke	7669270
 BJ.08.7669273	Natitingou	Natitingou	7669273
-BJ.08.7669275	Kopargo	Kopargo	7669275
+BJ.13.7669275	Copargo	Copargo	7669275
 BJ.10.7669349	Kalalè	Kalale	7669349
 BJ.10.7669352	Pèrèrè	Perere	7669352
 BJ.10.7669355	Nikki	Nikki	7669355
 BJ.10.7669357	Sinendé	Sinende	7669357
-BJ.13.7670568	Djougou Urban	Djougou Urban	7670568
-BJ.16.7670840	Commune of Ketou	Commune of Ketou	7670840
-BJ.16.7670841	Commune of Pobe	Commune of Pobe	7670841
-BJ.09.7874113	Cotonou	Cotonou	7874113
+BJ.17.7670840	Commune of Ketou	Commune of Ketou	7670840
+BJ.17.7670841	Commune of Pobe	Commune of Pobe	7670841
+BJ.14.7874113	Cotonou	Cotonou	7874113
 BJ.09.7874152	Commune of Abomey-Calavi	Commune of Abomey-Calavi	7874152
 BJ.09.7874154	Commune of So-Ava	Commune of So-Ava	7874154
-BJ.10.7874155	Karimama	Karimama	7874155
+BJ.07.7874155	Karimama	Karimama	7874155
 BJ.08.7874156	Tanguieta	Tanguieta	7874156
 BJ.08.7874157	Toukountouna	Toukountouna	7874157
 BJ.08.7874158	Materi	Materi	7874158
-BJ.18.7874167	Commune of Glazoue	Commune of Glazoue	7874167
-BJ.10.7874170	Malanville	Malanville	7874170
-BJ.10.7911056	Kandi	Kandi	7911056
-BJ.18.8260647	Commune of Bante	Commune of Bante	8260647
-BJ.18.8260648	Commune of Dassa-Zoume	Commune of Dassa-Zoume	8260648
-BJ.18.8260649	Commune of Ouesse	Commune of Ouesse	8260649
-BJ.18.8260650	Commune of Savalou	Commune of Savalou	8260650
-BJ.18.8260651	Commune of Save	Commune of Save	8260651
+BJ.11.7874167	Commune of Glazoue	Commune of Glazoue	7874167
+BJ.07.7874170	Malanville	Malanville	7874170
+BJ.07.7911056	Kandi	Kandi	7911056
+BJ.11.8260647	Commune of Bante	Commune of Bante	8260647
+BJ.11.8260648	Commune of Dassa-Zoume	Commune of Dassa-Zoume	8260648
+BJ.11.8260649	Commune of Ouesse	Commune of Ouesse	8260649
+BJ.11.8260650	Commune of Savalou	Commune of Savalou	8260650
+BJ.11.8260651	Commune of Save	Commune of Save	8260651
 BJ.18.8260652	Commune of Abomey	Commune of Abomey	8260652
 BJ.18.8260653	Commune of Agbangnizoun	Commune of Agbangnizoun	8260653
 BJ.18.8260654	Commune of Djidja	Commune of Djidja	8260654
 BJ.09.8260655	Commune of Allada	Commune of Allada	8260655
 BJ.09.8260656	Commune of Toffo	Commune of Toffo	8260656
 BJ.09.8260657	Commune of Ze	Commune of Ze	8260657
-BJ.08.8260658	Commune of Djougou	Commune of Djougou	8260658
-BJ.16.8334580	Commune of Sakete	Commune of Sakete	8334580
+BJ.13.8260658	Commune of Djougou	Commune of Djougou	8260658
+BJ.17.8334580	Commune of Sakete	Commune of Sakete	8334580
 BJ.15.8335018	Commune of Houeyogbe	Commune of Houeyogbe	8335018
 BJ.15.8335019	Commune of Bopa	Commune of Bopa	8335019
-BJ.16.8335162	Adjaouere	Adjaouere	8335162
+BJ.17.8335162	Adjaouere	Adjaouere	8335162
 BJ.16.8693304	Adjara	Adjara	8693304
 BJ.16.9063965	Akpro-Misserete	Akpro-Misserete	9063965
 BJ.16.9063966	Avrankou	Avrankou	9063966
-BJ.16.9063970	Ifangni	Ifangni	9063970
+BJ.17.9063970	Ifangni	Ifangni	9063970
 BJ.15.9166075	Grand-Popo	Grand-Popo	9166075
 BJ.15.9166076	Comé	Come	9166076
 BJ.08.10344466	Cobly	Cobly	10344466
 BJ.08.10344467	Boukoumbé	Boukoumbe	10344467
-BJ.10.10344468	Ségbana	Segbana	10344468
-BJ.10.10344469	Gogounou	Gogounou	10344469
-BJ.08.10344470	Bassila	Bassila	10344470
-BJ.08.10344471	Copargo	Copargo	10344471
-BJ.15.10344472	Aplahoué	Aplahoue	10344472
-BJ.15.10344473	Djakotomey	Djakotomey	10344473
-BJ.15.10344474	Klouékanmè	Klouekanme	10344474
-BJ.15.10344475	Lalo	Lalo	10344475
-BJ.15.10344476	Toviklin	Toviklin	10344476
+BJ.07.10344468	Ségbana	Segbana	10344468
+BJ.07.10344469	Gogounou	Gogounou	10344469
+BJ.13.10344470	Bassila	Bassila	10344470
+BJ.12.10344472	Aplahoué	Aplahoue	10344472
+BJ.12.10344473	Djakotomey	Djakotomey	10344473
+BJ.12.10344474	Klouékanmè	Klouekanme	10344474
+BJ.12.10344475	Lalo	Lalo	10344475
+BJ.12.10344476	Toviklin	Toviklin	10344476
+BN.04.10630196	Kiudang	Kiudang	10630196
 BO.08.0705	Provincia Chiquitos	Provincia Chiquitos	3444670
 BO.08.0712	Provincia Ángel Sandoval	Provincia Angel Sandoval	3444765
 BO.01.0103	Provincia Zudáñez	Provincia Zudanez	3900772
@@ -4280,7 +4284,7 @@ BR.30.2601201	Arcoverde	Arcoverde	6320459
 BR.30.2601300	Barra de Guabiraba	Barra De Guabiraba	6320460
 BR.30.2601409	Barreiros	Barreiros	6320461
 BR.30.2601508	Belém de Maria	Belem De Maria	6320462
-BR.30.2601607	Belém de São Francisco	Belem De Sao Francisco	6320463
+BR.30.2601607	Belém do São Francisco	Belem do Sao Francisco	6320463
 BR.30.2601706	Belo Jardim	Belo Jardim	6320464
 BR.30.2601805	Betânia	Betania	6320465
 BR.30.2601904	Bezerros	Bezerros	6320466
@@ -5895,7 +5899,7 @@ BR.21.3305604	Silva Jardim	Silva Jardim	6322075
 BR.21.3305703	Sumidouro	Sumidouro	6322076
 BR.21.3305752	Tanguá	Tangua	6322077
 BR.21.3305802	Teresópolis	Teresopolis	6322078
-BR.21.3305901	Trajano de Morais	Trajano De Morais	6322079
+BR.21.3305901	Trajano de Moraes	Trajano de Moraes	6322079
 BR.21.3306008	Três Rios	Tres Rios	6322080
 BR.21.3306107	Valença	Valenca	6322081
 BR.21.3306156	Varre-Sai	Varre-Sai	6322082
@@ -8497,7 +8501,7 @@ CA.02.5933	Thompson-Nicola Regional District	Thompson-Nicola Regional District	6
 CA.08.6166139	Thunder Bay District	Thunder Bay District	6166139
 CA.08.6166724	Timiskaming District	Timiskaming District	6166724
 CA.08.6172001	United Counties of Leeds and Grenville	United Counties of Leeds and Grenville	6172001
-CA.08.6172002	United Counties of Prescott and Russell	United Counties of Prescott and Russell	6172002
+CA.08.6172002	Comtés unis de Prescott et Russell	Comtes unis de Prescott et Russell	6172002
 CA.08.6172003	United Counties of Stormont, Dundas and Glengarry	United Counties of Stormont, Dundas and Glengarry	6172003
 CA.07.1218	Victoria County	Victoria County	6174034
 CA.08.6176824	Regional Municipality of Waterloo	Regional Municipality of Waterloo	6176824
@@ -8594,6 +8598,7 @@ CD.05.9179907	Manono	Manono	9179907
 CD.02.9212657	Akula	Akula	9212657
 CD.02.10376945	Tshuapa District	Tshuapa District	10376945
 CD.06.10400552	Funa	Funa	10400552
+CD.02.10402604	Nord-Ubangi District	Nord-Ubangi District	10402604
 CF.04.2387494	Sous-Préfecture de Carnot	Sous-Prefecture de Carnot	2387494
 CF.09.2390511	Baboua Sub-Prefecture	Baboua Sub-Prefecture	2390511
 CF.08.7731888	Ouango	Ouango	7731888
@@ -8712,7 +8717,7 @@ CH.SG.1725	Wahlkreis Sarganserland	Wahlkreis Sarganserland	2658792
 CH.VS.2309	Raron District	Raron District	2659097
 CH.ZH.107	Bezirk Meilen	Bezirk Meilen	2659702
 CH.VS.2307	Martigny District	Martigny District	2659752
-CH.FR.1002	Glane District	Glane District	2660598
+CH.FR.1002	Glâne District	Glane District	2660598
 CH.ZH.102	Bezirk Andelfingen	Bezirk Andelfingen	2661751
 CH.SO.1101	Bezirk Gäu	Bezirk Gaeu	6458742
 CH.AI.1600	Appenzell Inner Rhodes	Appenzell Inner Rhodes	6458743
@@ -8762,7 +8767,7 @@ CH.AG.1902	Bezirk Baden	Bezirk Baden	6458813
 CH.SH.1401	Bezirk Oberklettgau	Bezirk Oberklettgau	6458815
 CH.OW.600	Obwalden	Obwalden	6458816
 CH.ZH.101	Bezirk Affoltern	Bezirk Affoltern	6458818
-CH.FR.1005	See District	See District	6458820
+CH.FR.1005	Lake District	Lake District	6458820
 CH.VS.2301	Brig District	Brig District	6458821
 CH.BL.1304	Bezirk Sissach	Bezirk Sissach	6458823
 CH.NE.2401	Boudry District	Boudry District	6458825
@@ -8918,6 +8923,8 @@ CI.82.2595340	Département de Grand-Bassam	Departement de Grand-Bassam	2595340
 CI.82.2595341	Département de Jacqueville	Departement de Jacqueville	2595341
 CI.81.2595342	Département de Tiébissou	Departement de Tiebissou	2595342
 CI.78.2595343	Département de Toulépleu	Departement de Toulepleu	2595343
+CI.82.10628821	Treichville	Treichville	10628821
+CI.82.10628822	Koumassi	Koumassi	10628822
 CL.01.51	Provincia de Valparaíso	Provincia de Valparaiso	3868623
 CL.17.141	Provincia de Valdivia	Provincia de Valdivia	3868703
 CL.10.124	Provincia de Última Esperanza	Provincia de Ultima Esperanza	3868829
@@ -9016,7 +9023,6 @@ CM.10.7670946	Djerem	Djerem	7670946
 CM.10.7670947	Faro-et-Deo	Faro-et-Deo	7670947
 CM.10.7670948	Vina	Vina	7670948
 CM.11.7730793	Mbam-et-Kim	Mbam-et-Kim	7730793
-CM.11.7731689	Nyong-et-So'o	Nyong-et-So'o	7731689
 CM.11.7731690	Méfou-et-Afamba	Mefou-et-Afamba	7731690
 CM.12.7932539	Departement du Mayo-Kani	Departement du Mayo-Kani	7932539
 CM.10.8299279	Mbere Department	Mbere Department	8299279
@@ -9048,11 +9054,11 @@ CN.14.1280456	Ngari Diqu	Ngari Diqu	1280456
 CN.14.1280515	Nagqu Diqu	Nagqu Diqu	1280515
 CN.14.1280735	Lhasa Shi	Lhasa Shi	1280735
 CN.13.1280828	Kizilsu Kirgiz Zizhizhou	Kizilsu Kirgiz Zizhizhou	1280828
-CN.13.1280848	Kashi Diqu	Kashi Diqu	1280848
+CN.13.1280848	Kaxgar Diqu	Kaxgar Diqu	1280848
 CN.15.1280931	Jiuquan Shi	Jiuquan Shi	1280931
 CN.15.1280956	Jiayuguan Shi	Jiayuguan Shi	1280956
 CN.13.1281018	Hotan Diqu	Hotan Diqu	1281018
-CN.06.1281075	Haixi Mongolzu Zangzu Zizhizhou	Haixi Mongolzu Zangzu Zizhizhou	1281075
+CN.06.1281075	Haixi Mengguzu Zangzu Zizhizhou	Haixi Mengguzu Zangzu Zizhizhou	1281075
 CN.06.1281178	Golog Zangzu Zizhizhou	Golog Zangzu Zizhizhou	1281178
 CN.29.1281365	Dêqên Tibetan Autonomous Prefecture	Deqen Tibetan Autonomous Prefecture	1281365
 CN.29.1281381	Dehong Daizu Jingpozu Zizhizhou	Dehong Daizu Jingpozu Zizhizhou	1281381
@@ -9106,7 +9112,7 @@ CN.30.1787530	Yangjiang Shi	Yangjiang Shi	1787530
 CN.04.1787743	Yancheng Shi	Yancheng Shi	1787743
 CN.26.1787763	Yan’an Shi	Yan'an Shi	1787763
 CN.32.1787815	Ya’an Shi	Ya'an Shi	1787815
-CN.04.1787823	Xuzhou Shi	Xuzhou Shi	1787823
+CN.04.1787823	Xuzhou	Xuzhou	1787823
 CN.09.1788045	Xuchang Shi	Xuchang Shi	1788045
 CN.01.1788080	Xuancheng Shi	Xuancheng Shi	1788080
 CN.29.1788323	Xishuangbanna Daizu Zizhizhou	Xishuangbanna Daizu Zizhizhou	1788323
@@ -9325,7 +9331,7 @@ CN.08.2033412	Yichun Shi	Yichun Shi	2033412
 CN.05.2033525	Yanbian Chaoxianzu Zizhizhou	Yanbian Chaoxianzu Zizhizhou	2033525
 CN.24.2033526	Yanbei Diqu	Yanbei Diqu	2033526
 CN.20.2033827	Xilin Gol Meng	Xilin Gol Meng	2033827
-CN.20.2034303	Ulanqab Shi	Ulanqab Shi	2034303
+CN.20.2034303	Wulanchabu Shi	Wulanchabu Shi	2034303
 CN.05.2034413	Tonghua Shi	Tonghua Shi	2034413
 CN.19.2034437	Tieling Shi	Tieling Shi	2034437
 CN.08.2034654	Suihua Shi	Suihua Shi	2034654
@@ -11643,147 +11649,227 @@ DO.18.3512798	Altamira	Altamira	3512798
 DZ.45.8293555	Bukombe District	Bukombe District	8293555
 DZ.53.8693062	In Guezzam	In Guezzam	8693062
 DZ.34.10303657	Charouine	Charouine	10303657
-EC.08.3649913	Cantón Zaruma	Canton Zaruma	3649913
-EC.20.3649958	Cantón Zamora	Canton Zamora	3649958
-EC.20.3650052	Cantón Yantzaza	Canton Yantzaza	3650052
-EC.10.3650124	Cantón Yaguachi	Canton Yaguachi	3650124
-EC.20.3650141	Cantón Yacuambi	Canton Yacuambi	3650141
-EC.13.3650185	Cantón Vinces	Canton Vinces	3650185
-EC.13.3650264	Cantón Ventanas	Canton Ventanas	3650264
-EC.14.3650277	Cantón Veinticuatro de Mayo	Canton Veinticuatro de Mayo	3650277
-EC.24.3650339	Cantón Urellana	Canton Urellana	3650339
-EC.13.3650340	Cantón Urdaneta	Canton Urdaneta	3650340
-EC.10.3650347	Cantón Urbina Jado	Canton Urbina Jado	3650347
-EC.05.3650471	Cantón Tulcán	Canton Tulcan	3650471
-EC.23.3650720	Cantón Tena	Canton Tena	3650720
-EC.22.3650954	Cantón Sucumbíos	Canton Sucumbios	3650954
-EC.15.3650955	Cantón Sucúa	Canton Sucua	3650955
-EC.14.3650958	Cantón Sucre	Canton Sucre	3650958
-EC.12.3650979	Cantón Sozoranga	Canton Sozoranga	3650979
-EC.02.3651065	Cantón Sigsig	Canton Sigsig	3651065
-EC.12.3651244	Cantón Saraguro	Canton Saraguro	3651244
-EC.26.3651296	Cantón Santo Domingo de los Colorados	Canton Santo Domingo de los Colorados	3651296
-EC.15.3651317	Cantón Santiago	Canton Santiago	3651317
-EC.08.3651355	Cantón Santa Rosa	Canton Santa Rosa	3651355
-EC.02.3651417	Cantón Santa Isabel	Canton Santa Isabel	3651417
-EC.25.3651436	Cantón Santa Elena	Canton Santa Elena	3651436
-EC.01.3651446	Cantón Santa Cruz	Canton Santa Cruz	3651446
-EC.14.3651484	Cantón Santa Ana	Canton Santa Ana	3651484
-EC.03.3651621	Cantón San Miguel	Canton San Miguel	3651621
-EC.09.3651686	Cantón San Lorenzo	Canton San Lorenzo	3651686
-EC.01.3651947	Cantón San Cristóbal	Canton San Cristobal	3651947
-EC.10.3652064	Cantón Samborondón	Canton Samborondon	3652064
-EC.25.3652097	Cantón Salinas	Canton Salinas	3652097
-EC.07.3652108	Cantón Salcedo	Canton Salcedo	3652108
-EC.18.3652228	Cantón Rumiñahui	Canton Ruminahui	3652228
-EC.14.3652312	Cantón Rocafuerte	Canton Rocafuerte	3652312
-EC.06.3652349	Cantón Riobamba	Canton Riobamba	3652349
-EC.18.3652461	Cantón Quito	Canton Quito	3652461
-EC.09.3652499	Cantón Quinindé	Canton Quininde	3652499
-EC.23.3652561	Cantón Quijos	Canton Quijos	3652561
-EC.13.3652566	Cantón Quevedo	Canton Quevedo	3652566
-EC.19.3652572	Cantón Quero	Canton Quero	3652572
-EC.12.3652587	Cantón Puyango	Canton Puyango	3652587
-EC.22.3652592	Cantón Putumayo	Canton Putumayo	3652592
-EC.07.3652683	Cantón Pujilí	Canton Pujili	3652683
-EC.13.3652785	Cantón Puebloviejo	Canton Puebloviejo	3652785
-EC.14.3652940	Cantón Portoviejo	Canton Portoviejo	3652940
-EC.08.3652942	Cantón Portovelo	Canton Portovelo	3652942
-EC.08.3653129	Cantón Piñas	Canton Pinas	3653129
-EC.11.3653145	Cantón Pimampiro	Canton Pimampiro	3653145
-EC.19.3653158	Cantón Píllaro	Canton Pillaro	3653158
-EC.19.3653286	Cantón Pelileo	Canton Pelileo	3653286
-EC.18.3653294	Cantón Pedro Moncayo	Canton Pedro Moncayo	3653294
-EC.02.3653330	Cantón Paute	Canton Paute	3653330
-EC.19.3653370	Cantón Patate	Canton Patate	3653370
-EC.17.3653394	Cantón Pastaza	Canton Pastaza	3653394
-EC.08.3653402	Cantón Pasaje	Canton Pasaje	3653402
-EC.07.3653474	Cantón Pangua	Canton Pangua	3653474
-EC.12.3653515	Cantón Paltas	Canton Paltas	3653515
-EC.15.3653522	Cantón Palora	Canton Palora	3653522
-EC.14.3653608	Cantón Paján	Canton Pajan	3653608
-EC.11.3653692	Cantón Otavalo	Canton Otavalo	3653692
-EC.10.3653872	Cantón Naranjito	Canton Naranjito	3653872
-EC.10.3653880	Cantón Naranjal	Canton Naranjal	3653880
-EC.09.3653966	Cantón Muisne	Canton Muisne	3653966
-EC.15.3654006	Cantón Morona	Canton Morona	3654006
-EC.05.3654038	Cantón Montúfar	Canton Montufar	3654038
-EC.14.3654054	Cantón Montecristi	Canton Montecristi	3654054
-EC.05.3654172	Cantón Mira	Canton Mira	3654172
-EC.10.3654213	Cantón Milagro	Canton Milagro	3654213
-EC.17.3654246	Cantón Mera	Canton Mera	3654246
-EC.18.3654259	Cantón Mejía	Canton Mejia	3654259
-EC.14.3654408	Cantón Manta	Canton Manta	3654408
-EC.08.3654532	Cantón Machala	Canton Machala	3654532
-EC.12.3654544	Cantón Macará	Canton Macara	3654544
-EC.12.3654666	Cantón Loja	Canton Loja	3654666
-EC.15.3654737	Cantón Limón Indanza	Canton Limon Indanza	3654737
-EC.07.3654869	Cantón Latacunga	Canton Latacunga	3654869
-EC.22.3655184	Cantón Lago Agrio	Canton Lago Agrio	3655184
-EC.14.3655383	Cantón Junín	Canton Junin	3655383
-EC.14.3655445	Cantón Jipijapa	Canton Jipijapa	3655445
-EC.01.3655572	Cantón Isabela	Canton Isabela	3655572
-EC.11.3655672	Ibarra	Ibarra	3655672
-EC.08.3655719	Cantón Huaquillas	Canton Huaquillas	3655719
-EC.10.3657508	Cantón Guayaquil	Canton Guayaquil	3657508
-EC.03.3657570	Cantón Guaranda	Canton Guaranda	3657570
-EC.06.3657593	Cantón Guano	Canton Guano	3657593
-EC.06.3657620	Cantón Guamote	Canton Guamote	3657620
-EC.15.3657660	Cantón Gualaquiza	Canton Gualaquiza	3657660
-EC.02.3657669	Cantón Gualaceo	Canton Gualaceo	3657669
-EC.08.3657721	Cantón Guabo	Canton Guabo	3657721
-EC.12.3657777	Cantón Gonzanamá	Canton Gonzanama	3657777
-EC.02.3657793	Cantón Girón	Canton Giron	3657793
-EC.12.3657967	Cantón Espindola	Canton Espindola	3657967
-EC.05.3657981	Cantón Espejo	Canton Espejo	3657981
-EC.09.3657987	Cantón Esmeraldas	Canton Esmeraldas	3657987
-EC.09.3658191	Cantón Eloy Alfaro	Canton Eloy Alfaro	3658191
-EC.10.3658266	Cantón El Empalme	Canton El Empalme	3658266
-EC.14.3658324	Cantón El Carmen	Canton El Carmen	3658324
-EC.10.3658498	Cantón Daule	Canton Daule	3658498
-EC.02.3658665	Cantón Cuenca	Canton Cuenca	3658665
-EC.11.3658780	Cantón Cotacachi	Canton Cotacachi	3658780
-EC.06.3658919	Cantón Colta	Canton Colta	3658919
-EC.06.3659071	Cantón Chunchi	Canton Chunchi	3659071
-EC.14.3659138	Cantón Chone	Canton Chone	3659138
-EC.20.3659209	Cantón Chinchipe	Canton Chinchipe	3659209
-EC.03.3659242	Cantón Chimbo	Canton Chimbo	3659242
-EC.03.3659255	Cantón Chillanes	Canton Chillanes	3659255
-EC.12.3659543	Cantón Celica	Canton Celica	3659543
-EC.18.3659576	Cantón Cayambe	Canton Cayambe	3659576
-EC.12.3659598	Cantón Catamayo	Canton Catamayo	3659598
-EC.04.3659851	Cantón Cañar	Canton Canar	3659851
-EC.12.3659882	Cantón Calvas	Canton Calvas	3659882
-EC.14.3660131	Cantón Bolívar	Canton Bolivar	3660131
-EC.04.3660210	Cantón Biblián	Canton Biblian	3660210
-EC.19.3660343	Cantón Baños	Canton Banos	3660343
-EC.10.3660360	Cantón Balzar	Canton Balzar	3660360
-EC.13.3660417	Cantón Babahoyo	Canton Babahoyo	3660417
-EC.13.3660421	Cantón Baba	Canton Baba	3660421
-EC.04.3660433	Cantón Azogues	Canton Azogues	3660433
-EC.08.3660558	Cantón Arenillas	Canton Arenillas	3660558
-EC.23.3660572	Cantón Archidona	Canton Archidona	3660572
-EC.11.3660592	Cantón Antonio Ante	Canton Antonio Ante	3660592
-EC.19.3660688	Cantón Ambato	Canton Ambato	3660688
-EC.06.3660797	Cantón Alausí	Canton Alausi	3660797
-EC.24.3660839	Cantón Aguarico	Canton Aguarico	3660839
-EC.02.7626219	Cantón San Fernando	Canton San Fernando	7626219
-EC.02.7648116	Cantón Nabón	Canton Nabon	7648116
-EC.13.8471961	Cantón Valencia	Canton Valencia	8471961
-EC.13.8471975	Cantón Buena Fe	Canton Buena Fe	8471975
-EC.23.8472358	Cantón Chaco	Canton Chaco	8472358
-EC.07.8522615	Cantón Sigchos	Canton Sigchos	8522615
-EC.06.9155063	Cumanda	Cumanda	9155063
-EC.05.9155065	Canton Bolivar	Canton Bolivar	9155065
-EC.10.9155068	Canton Colimes	Canton Colimes	9155068
-EC.03.9155070	Canton Caluma	Canton Caluma	9155070
-EC.04.9155071	Canton Cumanda	Canton Cumanda	9155071
-EC.03.9155072	Canton Echeandia	Canton Echeandia	9155072
-EC.04.9155281	Canton El Tambo	Canton El Tambo	9155281
-EC.03.9155660	Canton Las Naves	Canton Las Naves	9155660
-EC.18.9155917	Canton Pedro Vicente Maldonado	Canton Pedro Vicente Maldonado	9155917
-EC.14.9156089	Canton Pedernales	Canton Pedernales	9156089
-EC.11.9165820	San Miguel de Urcuqui Canton	San Miguel de Urcuqui Canton	9165820
+EC.08.0713	Cantón Zaruma	Canton Zaruma	3649913
+EC.20.1901	Cantón Zamora	Canton Zamora	3649958
+EC.20.1905	Cantón Yantzaza	Canton Yantzaza	3650052
+EC.10.0920	Cantón Yaguachi	Canton Yaguachi	3650124
+EC.20.1904	Cantón Yacuambi	Canton Yacuambi	3650141
+EC.13.1208	Cantón Vinces	Canton Vinces	3650185
+EC.13.1207	Cantón Ventanas	Canton Ventanas	3650264
+EC.14.1316	Cantón Veinticuatro de Mayo	Canton Veinticuatro de Mayo	3650277
+EC.24.2201	Francisco de Orellana Canton	Francisco de Orellana Canton	3650339
+EC.13.1206	Cantón Urdaneta	Canton Urdaneta	3650340
+EC.10.0919	Cantón Urbina Jado	Canton Urbina Jado	3650347
+EC.05.0401	Cantón Tulcán	Canton Tulcan	3650471
+EC.23.1501	Cantón Tena	Canton Tena	3650720
+EC.22.2105	Cantón Sucumbíos	Canton Sucumbios	3650954
+EC.15.1406	Cantón Sucúa	Canton Sucua	3650955
+EC.14.1314	Cantón Sucre	Canton Sucre	3650958
+EC.12.1112	Cantón Sozoranga	Canton Sozoranga	3650979
+EC.02.0109	Cantón Sigsig	Canton Sigsig	3651065
+EC.12.1111	Cantón Saraguro	Canton Saraguro	3651244
+EC.26.2301	Cantón Santo Domingo de los Colorados	Canton Santo Domingo de los Colorados	3651296
+EC.15.1405	Cantón Santiago	Canton Santiago	3651317
+EC.08.0712	Cantón Santa Rosa	Canton Santa Rosa	3651355
+EC.02.0108	Cantón Santa Isabel	Canton Santa Isabel	3651417
+EC.25.2401	Cantón Santa Elena	Canton Santa Elena	3651436
+EC.01.2003	Cantón Santa Cruz	Canton Santa Cruz	3651446
+EC.14.1313	Cantón Santa Ana	Canton Santa Ana	3651484
+EC.03.0205	Cantón San Miguel	Canton San Miguel	3651621
+EC.09.0805	Cantón San Lorenzo	Canton San Lorenzo	3651686
+EC.01.2001	Cantón San Cristóbal	Canton San Cristobal	3651947
+EC.10.0916	Cantón Samborondón	Canton Samborondon	3652064
+EC.25.2403	Cantón Salinas	Canton Salinas	3652097
+EC.07.0505	Cantón Salcedo	Canton Salcedo	3652108
+EC.18.1705	Cantón Rumiñahui	Canton Ruminahui	3652228
+EC.14.1312	Cantón Rocafuerte	Canton Rocafuerte	3652312
+EC.06.0601	Cantón Riobamba	Canton Riobamba	3652349
+EC.18.1701	Cantón Quito	Canton Quito	3652461
+EC.09.0804	Cantón Quinindé	Canton Quininde	3652499
+EC.23.1507	Cantón Quijos	Canton Quijos	3652561
+EC.13.1205	Cantón Quevedo	Canton Quevedo	3652566
+EC.19.1806	Cantón Quero	Canton Quero	3652572
+EC.12.1110	Cantón Puyango	Canton Puyango	3652587
+EC.22.2103	Cantón Putumayo	Canton Putumayo	3652592
+EC.07.0504	Cantón Pujilí	Canton Pujili	3652683
+EC.13.1204	Cantón Puebloviejo	Canton Puebloviejo	3652785
+EC.14.1301	Cantón Portoviejo	Canton Portoviejo	3652940
+EC.08.0711	Cantón Portovelo	Canton Portovelo	3652942
+EC.08.0710	Cantón Piñas	Canton Pinas	3653129
+EC.11.1005	Cantón Pimampiro	Canton Pimampiro	3653145
+EC.19.1808	Cantón Píllaro	Canton Pillaro	3653158
+EC.19.1807	Cantón Pelileo	Canton Pelileo	3653286
+EC.18.1704	Cantón Pedro Moncayo	Canton Pedro Moncayo	3653294
+EC.02.0105	Cantón Paute	Canton Paute	3653330
+EC.19.1805	Cantón Patate	Canton Patate	3653370
+EC.17.1601	Cantón Pastaza	Canton Pastaza	3653394
+EC.08.0709	Cantón Pasaje	Canton Pasaje	3653402
+EC.07.0503	Cantón Pangua	Canton Pangua	3653474
+EC.12.1109	Cantón Paltas	Canton Paltas	3653515
+EC.15.1404	Cantón Palora	Canton Palora	3653522
+EC.14.1310	Cantón Paján	Canton Pajan	3653608
+EC.11.1004	Cantón Otavalo	Canton Otavalo	3653692
+EC.10.0912	Cantón Naranjito	Canton Naranjito	3653872
+EC.10.0911	Cantón Naranjal	Canton Naranjal	3653880
+EC.09.0803	Cantón Muisne	Canton Muisne	3653966
+EC.15.1401	Cantón Morona	Canton Morona	3654006
+EC.05.0405	Cantón Montúfar	Canton Montufar	3654038
+EC.14.1309	Cantón Montecristi	Canton Montecristi	3654054
+EC.05.0404	Cantón Mira	Canton Mira	3654172
+EC.10.0910	Cantón Milagro	Canton Milagro	3654213
+EC.17.1602	Cantón Mera	Canton Mera	3654246
+EC.18.1703	Cantón Mejía	Canton Mejia	3654259
+EC.14.1308	Cantón Manta	Canton Manta	3654408
+EC.08.0701	Cantón Machala	Canton Machala	3654532
+EC.12.1108	Cantón Macará	Canton Macara	3654544
+EC.12.1101	Cantón Loja	Canton Loja	3654666
+EC.15.1403	Cantón Limón Indanza	Canton Limon Indanza	3654737
+EC.07.0501	Cantón Latacunga	Canton Latacunga	3654869
+EC.22.2101	Cantón Lago Agrio	Canton Lago Agrio	3655184
+EC.14.1307	Cantón Junín	Canton Junin	3655383
+EC.14.1306	Cantón Jipijapa	Canton Jipijapa	3655445
+EC.01.2002	Cantón Isabela	Canton Isabela	3655572
+EC.11.1001	Ibarra	Ibarra	3655672
+EC.08.0707	Cantón Huaquillas	Canton Huaquillas	3655719
+EC.10.0901	Cantón Guayaquil	Canton Guayaquil	3657508
+EC.03.0201	Cantón Guaranda	Canton Guaranda	3657570
+EC.06.0607	Cantón Guano	Canton Guano	3657593
+EC.06.0606	Cantón Guamote	Canton Guamote	3657620
+EC.15.1402	Cantón Gualaquiza	Canton Gualaquiza	3657660
+EC.02.0103	Cantón Gualaceo	Canton Gualaceo	3657669
+EC.08.0706	Cantón Guabo	Canton Guabo	3657721
+EC.12.1107	Cantón Gonzanamá	Canton Gonzanama	3657777
+EC.02.0102	Cantón Girón	Canton Giron	3657793
+EC.12.1106	Cantón Espindola	Canton Espindola	3657967
+EC.05.0403	Cantón Espejo	Canton Espejo	3657981
+EC.09.0801	Cantón Esmeraldas	Canton Esmeraldas	3657987
+EC.09.0802	Cantón Eloy Alfaro	Canton Eloy Alfaro	3658191
+EC.10.0908	Cantón El Empalme	Canton El Empalme	3658266
+EC.14.1304	Cantón El Carmen	Canton El Carmen	3658324
+EC.10.0906	Cantón Daule	Canton Daule	3658498
+EC.02.0101	Cantón Cuenca	Canton Cuenca	3658665
+EC.11.1003	Cantón Cotacachi	Canton Cotacachi	3658780
+EC.06.0603	Cantón Colta	Canton Colta	3658919
+EC.06.0605	Cantón Chunchi	Canton Chunchi	3659071
+EC.14.1303	Cantón Chone	Canton Chone	3659138
+EC.20.1902	Cantón Chinchipe	Canton Chinchipe	3659209
+EC.03.0203	Cantón Chimbo	Canton Chimbo	3659242
+EC.03.0202	Cantón Chillanes	Canton Chillanes	3659255
+EC.12.1104	Cantón Celica	Canton Celica	3659543
+EC.18.1702	Cantón Cayambe	Canton Cayambe	3659576
+EC.12.1103	Cantón Catamayo	Canton Catamayo	3659598
+EC.04.0303	Cantón Cañar	Canton Canar	3659851
+EC.12.1102	Cantón Calvas	Canton Calvas	3659882
+EC.14.1302	Cantón Bolívar	Canton Bolivar	3660131
+EC.04.0302	Cantón Biblián	Canton Biblian	3660210
+EC.19.1802	Cantón Baños	Canton Banos	3660343
+EC.10.0904	Cantón Balzar	Canton Balzar	3660360
+EC.13.1201	Cantón Babahoyo	Canton Babahoyo	3660417
+EC.13.1202	Cantón Baba	Canton Baba	3660421
+EC.04.0301	Cantón Azogues	Canton Azogues	3660433
+EC.08.0702	Cantón Arenillas	Canton Arenillas	3660558
+EC.23.1503	Cantón Archidona	Canton Archidona	3660572
+EC.11.1002	Cantón Antonio Ante	Canton Antonio Ante	3660592
+EC.19.1801	Cantón Ambato	Canton Ambato	3660688
+EC.06.0602	Cantón Alausí	Canton Alausi	3660797
+EC.24.2202	Cantón Aguarico	Canton Aguarico	3660839
+EC.02.0107	Cantón San Fernando	Canton San Fernando	7626219
+EC.02.0104	Cantón Nabón	Canton Nabon	7648116
+EC.13.1211	Cantón Valencia	Canton Valencia	8471961
+EC.13.1210	Cantón Buena Fe	Canton Buena Fe	8471975
+EC.23.1504	Cantón Chaco	Canton Chaco	8472358
+EC.07.0507	Cantón Sigchos	Canton Sigchos	8522615
+EC.06.0610	Cumanda	Cumanda	9155063
+EC.05.0402	Canton Bolivar	Canton Bolivar	9155065
+EC.10.0905	Canton Colimes	Canton Colimes	9155068
+EC.03.0206	Canton Caluma	Canton Caluma	9155070
+EC.03.0204	Canton Echeandia	Canton Echeandia	9155072
+EC.04.0305	Canton El Tambo	Canton El Tambo	9155281
+EC.03.0207	Canton Las Naves	Canton Las Naves	9155660
+EC.18.1708	Canton Pedro Vicente Maldonado	Canton Pedro Vicente Maldonado	9155917
+EC.14.1317	Canton Pedernales	Canton Pedernales	9156089
+EC.11.1006	San Miguel de Urcuqui Canton	San Miguel de Urcuqui Canton	9165820
+EC.09.0807	Rio Verde	Rio Verde	10630521
+EC.24.2204	Loreto Canton	Loreto Canton	10743580
+EC.06.0608	Pallatanga	Pallatanga	10792443
+EC.06.0609	Penipe	Penipe	10792444
+EC.08.0703	Atahualpa	Atahualpa	10792445
+EC.08.0705	Chilla	Chilla	10792446
+EC.08.0708	Marcabelí	Marcabeli	10792447
+EC.10.0902	Alfredo Baquerizo Moreno (Juján)	Alfredo Baquerizo Moreno (Jujan)	10792448
+EC.10.0903	Balao	Balao	10792449
+EC.09.0806	Atacames	Atacames	10792450
+EC.10.0907	Durán	Duran	10792451
+EC.10.0909	El Triunfo	El Triunfo	10792452
+EC.10.0913	Palestina	Palestina	10792453
+EC.10.0914	Pedro Carbo	Pedro Carbo	10792454
+EC.10.0918	Santa Lucía	Santa Lucia	10792455
+EC.10.0923	Coronel Marcelino Maridueña	Coronel Marcelino Mariduena	10792456
+EC.12.1105	Chaguarpamba	Chaguarpamba	10792457
+EC.10.0924	Lomas De Sargentillo	Lomas De Sargentillo	10792458
+EC.10.0921	Playas	Playas	10792459
+EC.10.0922	Simón Bolívar	Simon Bolivar	10792460
+EC.10.0925	Nobol	Nobol	10792461
+EC.10.0927	General Antonio Elizalde	General Antonio Elizalde	10792462
+EC.10.0928	Isidro Ayora	Isidro Ayora	10792463
+EC.02.0111	Chordeleg	Chordeleg	10792464
+EC.02.0112	El Pan	El Pan	10792465
+EC.02.0113	Sevilla De Oro	Sevilla De Oro	10792466
+EC.02.0114	Guachapala	Guachapala	10792467
+EC.08.0714	Las Lajas	Las Lajas	10792468
+EC.13.1212	Mocache	Mocache	10792469
+EC.15.1407	Huamboya	Huamboya	10792470
+EC.14.1311	Pichincha	Pichincha	10792471
+EC.22.2106	Cascales	Cascales	10792472
+EC.22.2107	Cuyabeno	Cuyabeno	10792473
+EC.24.2203	La Joya De Los Sachas	La Joya De Los Sachas	10792474
+EC.14.1315	Tosagua	Tosagua	10792475
+EC.14.1318	Olmedo	Olmedo	10792476
+EC.14.1319	Puerto López	Puerto Lopez	10792477
+EC.14.1320	Jama	Jama	10792478
+EC.14.1321	Jaramijó	Jaramijo	10792479
+EC.15.1408	San Juan Bosco	San Juan Bosco	10792480
+EC.15.1409	Taisha	Taisha	10792481
+EC.15.1410	Logroño	Logrono	10792482
+EC.23.1509	Carlos Julio Arosemena Tola	Carlos Julio Arosemena Tola	10792483
+EC.17.1604	Arajuno	Arajuno	10792484
+EC.18.1707	San Miguel De Los Bancos	San Miguel De Los Bancos	10792485
+EC.18.1709	Puerto Quito	Puerto Quito	10792486
+EC.19.1803	Cevallos	Cevallos	10792487
+EC.19.1804	Mocha	Mocha	10792488
+EC.19.1809	Tisaleo	Tisaleo	10792489
+EC.20.1903	Nangaritza	Nangaritza	10792490
+EC.20.1906	El Pangui	El Pangui	10792491
+EC.20.1907	Centinela Del Cóndor	Centinela Del Condor	10792492
+EC.20.1908	Palanda	Palanda	10792493
+EC.22.2102	Gonzalo Pizarro	Gonzalo Pizarro	10792494
+EC.12.1113	Zapotillo	Zapotillo	10792495
+EC.12.1114	Pindal	Pindal	10792496
+EC.12.1115	Quilanga	Quilanga	10792497
+EC.12.1116	Olmedo	Olmedo	10792498
+EC.13.1203	Montalvo	Montalvo	10792499
+EC.13.1209	Palenque	Palenque	10792500
+EC.14.1305	Flavio Alfaro	Flavio Alfaro	10792501
+EC.02.0106	Pucara	Pucara	10792502
+EC.04.0304	La Troncal	La Troncal	10792503
+EC.04.0306	Déleg	Deleg	10792504
+EC.04.0307	Suscal	Suscal	10792505
+EC.05.0406	San Pedro De Huaca	San Pedro De Huaca	10792506
+EC.07.0502	La Maná	La Mana	10792507
+EC.07.0506	Saquisilí	Saquisili	10792508
+EC.06.0604	Chambo	Chambo	10792509
+EC.08.0704	Balsas	Balsas	10792510
+EC.02.0110	Oña	Ona	10792511
+EC.22.2104	Shushufindi	Shushufindi	10792512
+EC.02.0115	Camilo Ponce Enríquez	Camilo Ponce Enriquez	10792543
+EC.13.1213	Quinsaloma	Quinsaloma	10792544
+EC.14.1322	San Vicente	San Vicente	10792545
+EC.15.1412	Tiwintza	Tiwintza	10792546
+EC.17.1603	Santa Clara	Santa Clara	10792547
+EC.20.1909	Paquisha	Paquisha	10792548
+EC.25.2402	La Libertad	La Libertad	10792549
+EC.15.1411	Pablo Sexto	Pablo Sexto	10792550
+EC.26.2302	La Concordia	La Concordia	10792565
 EE.03.0322	Kohtla-Järve linn	Kohtla-Jaerve linn	862989
 EE.03.0511	Narva linn	Narva linn	862990
 EE.11.0625	Pärnu linn	Paernu linn	862993
@@ -12045,7 +12131,7 @@ EG.16.355633	Markaz Idfū	Markaz Idfu	355633
 EG.04.355647	Markaz Ibshawāy	Markaz Ibshaway	355647
 EG.14.355938	Markaz Hihyā	Markaz Hihya	355938
 EG.03.355999	Markaz Ḩawsh ‘Īsá	Markaz Hawsh `Isa	355999
-EG.21.356805	Markaz Fuwah	Markaz Fuwah	356805
+EG.21.356805	Markaz Fuwwah	Markaz Fuwwah	356805
 EG.20.356943	Markaz Fāriskūr	Markaz Fariskur	356943
 EG.14.358094	Markaz Diyarb Najm	Markaz Diyarb Najm	358094
 EG.21.358107	Markaz Disūq	Markaz Disuq	358107
@@ -12138,6 +12224,8 @@ EG.14.10371147	Markaz at Tall al Kabīr	Markaz at Tall al Kabir	10371147
 EG.07.10371148	Markaz al Ismā‘īlīyah	Markaz al Isma`iliyah	10371148
 EG.07.10371149	Markaz al Qanţarah Sharq	Markaz al Qantarah Sharq	10371149
 EG.07.10371150	Markaz Fāyid	Markaz Fayid	10371150
+EG.03.10430542	Markaz Idkū	Markaz Idku	10430542
+EG.03.10645705	Markaz ar Raḩmānīyah	Markaz ar Rahmaniyah	10645705
 ER.02.328827	Serayē Āwraja	Seraye Awraja	328827
 ER.06.329423	Sahil Āwraja	Sahil Awraja	329423
 ER.04.335174	Hamasēn Āwraja	Hamasen Awraja	335174
@@ -12183,6 +12271,9 @@ ER.04.10177512	Mensura Subregion	Mensura Subregion	10177512
 ER.04.10177513	Shambuko Subregion	Shambuko Subregion	10177513
 ER.02.10177514	Areza Subregion	Areza Subregion	10177514
 ER.03.10375723	Central Denkalya Subregion	Central Denkalya Subregion	10375723
+ER.01.10627798	Geleb Subregion	Geleb Subregion	10627798
+ER.06.10628668	Ghelaelo	Ghelaelo	10628668
+ER.06.10628671	Foro Sub-Region	Foro Sub-Region	10628671
 ES.60.V	Província de València	Provincia de Valencia	2509951
 ES.54.TO	Province of Toledo	Province of Toledo	2510407
 ES.51.SE	Provincia de Sevilla	Provincia de Sevilla	2510910
@@ -12198,7 +12289,7 @@ ES.54.CR	Provincia de Ciudad Real	Provincia de Ciudad Real	2519401
 ES.51.CA	Provincia de Cádiz	Provincia de Cadiz	2520597
 ES.57.CC	Provincia de Cáceres	Provincia de Caceres	2520610
 ES.57.BA	Provincia de Badajoz	Provincia de Badajoz	2521419
-ES.51.AL	Provincia de Almería	Provincia de Almeria	2521883
+ES.51.AL	Almería	Almeria	2521883
 ES.60.A	Provincia de Alicante	Provincia de Alicante	2521976
 ES.54.AB	Provincia de Albacete	Provincia de Albacete	2522257
 ES.52.Z	Provincia de Zaragoza	Provincia de Zaragoza	3104323
@@ -16171,7 +16262,7 @@ JO.18.8621601	Liwā’ ar Ramthā	Liwa' ar Ramtha	8621601
 JO.18.8621602	Liwā’ Qaşabat Irbid	Liwa' Qasabat Irbid	8621602
 JO.18.8621603	Liwā’ al Kūrah	Liwa' al Kurah	8621603
 JO.18.8621604	Liwā’ al Aghwār ash Shamālīyah	Liwa' al Aghwar ash Shamaliyah	8621604
-JO.18.8621605	Liwā’ Banī ‘Ubayid	Liwa' Bani `Ubayid	8621605
+JO.18.8621605	Liwā’ Banī ‘Ubayd	Liwa' Bani `Ubayd	8621605
 JO.18.8621606	Liwā’ al Mazār ash Shamālī	Liwa' al Mazar ash Shamali	8621606
 JO.18.8621607	Liwā’ aţ Ţayyibah	Liwa' at Tayyibah	8621607
 JO.18.8621630	Liwā’ al Wasaţīyah	Liwa' al Wasatiyah	8621630
@@ -16188,12 +16279,12 @@ JO.02.8621687	Liwā’ ‘Ayn al Bāshā	Liwa' `Ayn al Basha	8621687
 JO.02.8621688	Liwā’ Māhiş wa al Fuḩayş	Liwa' Mahis wa al Fuhays	8621688
 JO.17.8621689	Liwā’ Qaşabat az Zarqā’	Liwa' Qasabat az Zarqa'	8621689
 JO.17.8621690	Liwā’ ar Ruşayfah	Liwa' ar Rusayfah	8621690
-JO.17.8621691	Liwā’ al Hāshimīyyah	Liwa' al Hashimiyyah	8621691
+JO.17.8621691	Liwā’ al Hāshimīyah	Liwa' al Hashimiyah	8621691
 JO.23.8621692	Liwā’ Qaşabat Mādabā	Liwa' Qasabat Madaba	8621692
 JO.23.8621693	Liwā’ Dhībān	Liwa' Dhiban	8621693
 JO.09.8621694	Liwā’ Faqqū‘	Liwa' Faqqu`	8621694
 JO.09.8621695	Liwā’ al Qaşr	Liwa' al Qasr	8621695
-JO.09.8621696	Liwā’ ‘Āyy	Liwa' `Ayy	8621696
+JO.09.8621696	Liwā’ ‘Ayy	Liwa' `Ayy	8621696
 JO.09.8621697	Liwā’ Qaşabat al Karak	Liwa' Qasabat al Karak	8621697
 JO.09.8621719	Liwā’ al Qaţrānah	Liwa' al Qatranah	8621719
 JO.09.8621720	Liwā’ al Mazār al Janūbī	Liwa' al Mazar al Janubi	8621720
@@ -16218,7 +16309,7 @@ JO.16.8621765	Liwā’ al Jīzah	Liwa' al Jizah	8621765
 JO.16.9915282	Liwā’ al Quwaysimah	Liwa' al Quwaysimah	9915282
 JP.13.1847945	Tatsuno-shi	Tatsuno-shi	1847945
 JP.17.1847982	Zentsūji Shi	Zentsuji Shi	1847982
-JP.19.1847999	Zama-shi	Zama-shi	1847999
+JP.19.1847999	Zama Shi	Zama Shi	1847999
 JP.07.1848086	Yukuhashi Shi	Yukuhashi Shi	1848086
 JP.14.1848088	Yūki-shi	Yuki-shi	1848088
 JP.14.1848093	Yūki-gun	Yuki-gun	1848093
@@ -16328,7 +16419,7 @@ JP.40.1851306	Tachikawa-shi	Tachikawa-shi	1851306
 JP.15.1851337	Suzu Shi	Suzu Shi	1851337
 JP.26.1851362	Suwa Shi	Suwa Shi	1851362
 JP.26.1851367	Suwa-gun	Suwa-gun	1851367
-JP.37.1851376	Susono-shi	Susono-shi	1851376
+JP.37.1851376	Susono Shi	Susono Shi	1851376
 JP.20.1851387	Susaki-shi	Susaki-shi	1851387
 JP.37.1851401	Suntō-gun	Sunto-gun	1851401
 JP.40.1851451	Sumida-ku	Sumida-ku	1851451
@@ -16382,7 +16473,6 @@ JP.41.1853173	Sakaiminato Shi	Sakaiminato Shi	1853173
 JP.17.1853186	Sakaide Shi	Sakaide Shi	1853186
 JP.25.1853223	Saito-shi	Saito-shi	1853223
 JP.30.1853234	Saiki-shi	Saiki-shi	1853234
-JP.05.1853240	Saijō-shi	Saijo-shi	1853240
 JP.41.1853248	Saihaku-gun	Saihaku-gun	1853248
 JP.33.1853274	Saga Shi	Saga Shi	1853274
 JP.19.1853293	Sagamihara-shi	Sagamihara-shi	1853293
@@ -16400,7 +16490,7 @@ JP.11.1853661	Ōtake-shi	Otake-shi	1853661
 JP.40.1853724	Ōshima Shichō	Oshima Shicho	1853724
 JP.18.1853737	Ōshima-gun	Oshima-gun	1853737
 JP.45.1853738	Ōshima-gun	Oshima-gun	1853738
-JP.32.1853897	Ōsaka-shi	Osaka-shi	1853897
+JP.32.1853897	Osaka Prefecture	Osaka Prefecture	1853897
 JP.10.1853946	Ōra-gun	Ora-gun	1853946
 JP.11.1853990	Onomichi-shi	Onomichi-shi	1853990
 JP.07.1854000	Ōnojō Shi	Onojo Shi	1854000
@@ -16478,7 +16568,7 @@ JP.01.1856053	Nagoya-shi	Nagoya-shi	1856053
 JP.47.1856061	Nago Shi	Nago Shi	1856061
 JP.45.1856090	Nagato Shi	Nagato Shi	1856090
 JP.27.1856152	Nagasaki-shi	Nagasaki-shi	1856152
-JP.04.1856183	Nagareyama	Nagareyama	1856183
+JP.04.1856183	Nagareyama-shi	Nagareyama-shi	1856183
 JP.29.1856195	Nagaoka Shi	Nagaoka Shi	1856195
 JP.22.1856196	Nagaokakyō Shi	Nagaokakyo Shi	1856196
 JP.20.1856197	Nagaoka Gun	Nagaoka Gun	1856197
@@ -16495,7 +16585,7 @@ JP.35.1856568	Moriyama-shi	Moriyama-shi	1856568
 JP.09.1856666	Mizunami-shi	Mizunami-shi	1856666
 JP.11.1856691	Miyoshi Shi	Miyoshi Shi	1856691
 JP.39.1856695	Miyoshi-gun	Miyoshi-gun	1856695
-JP.25.1856706	Miyazaki Shi	Miyazaki Shi	1856706
+JP.25.1856706	Miyazaki Prefecture	Miyazaki Prefecture	1856706
 JP.25.1856774	Miyakonojō Shi	Miyakonojo Shi	1856774
 JP.33.1856784	Miyaki-gun	Miyaki-gun	1856784
 JP.40.1856786	Miyake Shichō	Miyake Shicho	1856786
@@ -16504,7 +16594,7 @@ JP.19.1856851	Miura-gun	Miura-gun	1856851
 JP.29.1856876	Mitsuke Shi	Mitsuke Shi	1856876
 JP.14.1856880	Mitsukaidō-shi	Mitsukaido-shi	1856880
 JP.17.1856906	Mitoyo Shi	Mitoyo Shi	1856906
-JP.37.1856971	Mishima-shi	Mishima-shi	1856971
+JP.37.1856971	Mishima Shi	Mishima Shi	1856971
 JP.32.1856974	Mishima-gun	Mishima-gun	1856974
 JP.32.1857043	Minoo Shi	Minoo Shi	1857043
 JP.09.1857051	Minokamo-shi	Minokamo-shi	1857051
@@ -16522,7 +16612,6 @@ JP.31.1857232	Mimasaka-shi	Mimasaka-shi	1857232
 JP.11.1857327	Mihara Shi	Mihara Shi	1857327
 JP.23.1857355	Mie-gun	Mie-gun	1857355
 JP.40.1857420	Meguro-ku	Meguro-ku	1857420
-JP.05.1857456	Matsuyama-shi	Matsuyama-shi	1857456
 JP.27.1857466	Matsuura Shi	Matsuura Shi	1857466
 JP.26.1857516	Matsumoto Shi	Matsumoto Shi	1857516
 JP.36.1857549	Matsue Shi	Matsue Shi	1857549
@@ -16663,10 +16752,9 @@ JP.13.1861308	Itami Shi	Itami Shi	1861308
 JP.40.1861322	Itabashi-ku	Itabashi-ku	1861322
 JP.47.1861412	Ishigaki-shi	Ishigaki-shi	1861412
 JP.10.1861435	Isesaki Shi	Isesaki Shi	1861435
-JP.19.1861448	Isehara-shi	Isehara-shi	1861448
+JP.19.1861448	Isehara Shi	Isehara Shi	1861448
 JP.34.1861470	Iruma-gun	Iruma-gun	1861470
 JP.01.1861527	Inuyama-shi	Inuyama-shi	1861527
-JP.13.1861588	Innami-gun	Innami-gun	1861588
 JP.01.1861601	Inazawa-shi	Inazawa-shi	1861601
 JP.26.1861606	Ina-shi	Ina-shi	1861606
 JP.40.1861634	Inagi-shi	Inagi-shi	1861634
@@ -16690,7 +16778,7 @@ JP.45.1862301	Hofu Shi	Hofu Shi	1862301
 JP.21.1862350	Hitoyoshi Shi	Hitoyoshi Shi	1862350
 JP.30.1862367	Hita Shi	Hita Shi	1862367
 JP.11.1862412	Hiroshima-shi	Hiroshima-shi	1862412
-JP.19.1862461	Hiratsuka-shi	Hiratsuka-shi	1862461
+JP.19.1862461	Hiratsuka Shi	Hiratsuka Shi	1862461
 JP.32.1862508	Hiraoka-shi	Hiraoka-shi	1862508
 JP.32.1862538	Hirakata Shi	Hirakata Shi	1862538
 JP.40.1862576	Hino-shi	Hino-shi	1862576
@@ -16736,7 +16824,7 @@ JP.40.1863453	Hachijō-shichō	Hachijo-shicho	1863453
 JP.32.1863476	Habikino-shi	Habikino-shi	1863476
 JP.34.1863481	Gyōda Shi	Gyoda Shi	1863481
 JP.36.1863519	Gōtsu Shi	Gotsu Shi	1863519
-JP.37.1863526	Gotenba-shi	Gotenba-shi	1863526
+JP.37.1863526	Gotenba Shi	Gotenba Shi	1863526
 JP.28.1863538	Gose Shi	Gose Shi	1863538
 JP.29.1863539	Gosen Shi	Gosen Shi	1863539
 JP.28.1863590	Gojō-shi	Gojo-shi	1863590
@@ -16750,14 +16838,14 @@ JP.40.1863780	Fussa-shi	Fussa-shi	1863780
 JP.04.1863903	Funabashi-shi	Funabashi-shi	1863903
 JP.11.1863914	Fukuyama Shi	Fukuyama Shi	1863914
 JP.37.1863944	Fukuroi-shi	Fukuroi-shi	1863944
-JP.07.1863955	Fukuoka Shi	Fukuoka Shi	1863955
+JP.07.1863955	Fukuoka Prefecture	Fukuoka Prefecture	1863955
 JP.06.1863982	Fukui-shi	Fukui-shi	1863982
 JP.22.1864008	Fukuchiyama-shi	Fukuchiyama-shi	1864008
 JP.34.1864030	Fukaya-shi	Fukaya-shi	1864030
-JP.46.1864076	Fujiyoshida-shi	Fujiyoshida-shi	1864076
-JP.37.1864089	Fuji-shi	Fuji-shi	1864089
-JP.19.1864091	Fujisawa-shi	Fujisawa-shi	1864091
-JP.37.1864104	Fujinomiya-shi	Fujinomiya-shi	1864104
+JP.46.1864076	Fuji-yoshida Shi	Fuji-yoshida Shi	1864076
+JP.37.1864089	Fuji Shi	Fuji Shi	1864089
+JP.19.1864091	Fujisawa Shi	Fujisawa Shi	1864091
+JP.37.1864104	Fujinomiya Shi	Fujinomiya Shi	1864104
 JP.32.1864125	Fujiidera-shi	Fujiidera-shi	1864125
 JP.37.1864131	Fujieda Shi	Fujieda Shi	1864131
 JP.40.1864148	Fuchū-shi	Fuchu-shi	1864148
@@ -16780,16 +16868,16 @@ JP.07.1864574	Chikushi-gun	Chikushi-gun	1864574
 JP.07.1864588	Chikujō-gun	Chikujo-gun	1864588
 JP.07.1864591	Chikugo Shi	Chikugo Shi	1864591
 JP.26.1864613	Chiisakata-gun	Chiisakata-gun	1864613
-JP.19.1864622	Chigasaki-shi	Chigasaki-shi	1864622
+JP.19.1864622	Chigasaki Shi	Chigasaki Shi	1864622
 JP.34.1864636	Chichibu-gun	Chichibu-gun	1864636
 JP.07.1864660	Buzen-shi	Buzen-shi	1864660
 JP.30.1864667	Bungo-takada Shi	Bungo-takada Shi	1864667
 JP.31.1864698	Bizen Shi	Bizen Shi	1864698
-JP.19.1864864	Ayase-shi	Ayase-shi	1864864
+JP.19.1864864	Ayase Shi	Ayase Shi	1864864
 JP.22.1864872	Ayabe-shi	Ayabe-shi	1864872
 JP.04.1864901	Awa-gun	Awa-gun	1864901
 JP.39.1864902	Awa-shi	Awa-shi	1864902
-JP.19.1864928	Atsugi-shi	Atsugi-shi	1864928
+JP.19.1864928	Atsugi Shi	Atsugi Shi	1864928
 JP.37.1864943	Atami-shi	Atami-shi	1864943
 JP.21.1864973	Aso-shi	Aso-shi	1864973
 JP.21.1864975	Aso-gun	Aso-gun	1864975
@@ -16801,14 +16889,11 @@ JP.31.1865049	Asakuchi-gun	Asakuchi-gun	1865049
 JP.13.1865050	Asako-gun	Asako-gun	1865050
 JP.34.1865056	Asaka-shi	Asaka-shi	1865056
 JP.44.1865070	Asahi-mura	Asahi-mura	1865070
-JP.00.1865072	Asahi-mura	Asahi-mura	1865072
-JP.00.1865073	Asahi-mura	Asahi-mura	1865073
 JP.43.1865121	Arida Shi	Arida Shi	1865121
 JP.43.1865123	Arida-gun	Arida-gun	1865123
 JP.21.1865168	Arao-shi	Arao-shi	1865168
 JP.40.1865187	Arakawa-ku	Arakawa-ku	1865187
 JP.29.1865200	Myoko-shi	Myoko-shi	1865200
-JP.06.1865222	Arachi-mura	Arachi-mura	1865222
 JP.01.1865293	Anjō-shi	Anjo-shi	1865293
 JP.39.1865306	Anan Shi	Anan Shi	1865306
 JP.09.1865323	Ampachi-gun	Ampachi-gun	1865323
@@ -16823,7 +16908,6 @@ JP.20.1865426	Aki Shi	Aki Shi	1865426
 JP.11.1865442	Aki-gun	Aki-gun	1865442
 JP.20.1865443	Aki Gun	Aki Gun	1865443
 JP.13.1865470	Akashi Shi	Akashi Shi	1865470
-JP.01.1865521	Akasaka-chō	Akasaka-cho	1865521
 JP.08.1865633	Aizu-wakamatsu Shi	Aizu-wakamatsu Shi	1865633
 JP.18.1865649	Aira Gun	Aira Gun	1865649
 JP.18.1865650	Aira Shi	Aira Shi	1865650
@@ -17006,7 +17090,6 @@ JP.03.2130654	Aomori Shi	Aomori Shi	2130654
 JP.12.2130704	Akabira-shi	Akabira-shi	2130704
 JP.12.2130724	Abuta-gun	Abuta-gun	2130724
 JP.12.2130736	Abashiri-shi	Abashiri-shi	2130736
-JP.05.6691614	Seiyo-shi	Seiyo-shi	6691614
 JP.00.6691615	Kitauwa-gun	Kitauwa-gun	6691615
 JP.05.6691620	Tōon-shi	Toon-shi	6691620
 JP.05.6691622	Kamiukena-gun	Kamiukena-gun	6691622
@@ -17329,8 +17412,8 @@ JP.29.7468180	Uonuma Shi	Uonuma Shi	7468180
 JP.29.7468181	Minamiuonuma Shi	Minamiuonuma Shi	7468181
 JP.29.7468182	Tainai Shi	Tainai Shi	7468182
 JP.19.7470888	Zushi Shi	Zushi Shi	7470888
-JP.19.7470889	Ebina-shi	Ebina-shi	7470889
-JP.19.7470890	Minamiashigara-shi	Minamiashigara-shi	7470890
+JP.19.7470889	Ebina Shi	Ebina Shi	7470889
+JP.19.7470890	Minamiashigara Shi	Minamiashigara Shi	7470890
 JP.40.7475133	Bunkyō-ku	Bunkyo-ku	7475133
 JP.40.7475134	Taitō-ku	Taito-ku	7475134
 JP.40.7475135	Toshima-ku	Toshima-ku	7475135
@@ -17376,6 +17459,7 @@ JP.14.9072668	Kitasoma-gun	Kitasoma-gun	9072668
 JP.01.9405857	Ama-Shi	Ama-Shi	9405857
 JP.34.9881554	Hidaka-shi	Hidaka-shi	9881554
 JP.39.10172903	Naruto-shi	Naruto-shi	10172903
+JP.26.10629642	Azumino-Shi	Azumino-Shi	10629642
 KE.22.179328	Thika District	Thika District	179328
 KE.30.189739	Lamu District	Lamu District	189739
 KE.26.7602531	Nyando District	Nyando District	7602531
@@ -17638,6 +17722,7 @@ KH.19.9253816	Prey Kabbas	Prey Kabbas	9253816
 KH.19.9253818	Tram Kak	Tram Kak	9253818
 KH.19.9253819	Treang	Treang	9253819
 KH.18.9253820	Kampong Rou	Kampong Rou	9253820
+KH.14.10627327	Me Sang	Me Sang	10627327
 KI.01.AG	Abaiang	Abaiang	7521581
 KI.01.AM	Abemama	Abemama	7521582
 KI.01.AK	Aranuka	Aranuka	7521583
@@ -18173,7 +18258,7 @@ KZ.09.828324	Aqtaū Qalasy	Aqtau Qalasy	828324
 KZ.09.828325	Zhangaözen Qalasy	Zhangaozen Qalasy	828325
 KZ.04.828331	Aqtöbe Qalasy	Aqtobe Qalasy	828331
 KZ.15.1516437	Zyryanovsk Aūdany	Zyryanovsk Audany	1516437
-KZ.11.1516632	Zhelezīnka Aūdany	Zhelezinka Audany	1516632
+KZ.11.1516632	Zhelezīn Aūdany	Zhelezin Audany	1516632
 KZ.15.1516713	Zharma Aūdany	Zharma Audany	1516713
 KZ.15.1516846	Zhangasemey Aūdany	Zhangasemey Audany	1516846
 KZ.03.1516873	Zhangadala Aūdany	Zhangadala Audany	1516873
@@ -18290,7 +18375,7 @@ KZ.13.1523115	Qarasū Aūdany	Qarasu Audany	1523115
 KZ.04.1523423	Äyteke Bī Aūdany	Ayteke Bi Audany	1523423
 KZ.01.1523500	Qapal Aūdany	Qapal Audany	1523500
 KZ.13.1523544	Qamysty Aūdany	Qamysty Audany	1523544
-KZ.11.1523663	Kachīry Aūdany	Kachiry Audany	1523663
+KZ.11.1523663	Qashyr Aūdany	Qashyr Audany	1523663
 KZ.11.1523767	Ertis Aūdany	Ertis Audany	1523767
 KZ.04.1523782	Yrghyz Aūdany	Yrghyz Audany	1523782
 KZ.01.1524128	Ile Aūdany	Ile Audany	1524128
@@ -18387,7 +18472,7 @@ KZ.15.1537287	Zyryanovsk Qalasy	Zyryanovsk Qalasy	1537287
 KZ.15.1537288	Lenīnogorsk Qalasy	Leninogorsk Qalasy	1537288
 KZ.15.1537289	Serebryansk Qalasy	Serebryansk Qalasy	1537289
 KZ.11.1537290	Pavlodar Qalasy	Pavlodar Qalasy	1537290
-KZ.11.1537291	Aqsū Qalasy	Aqsu Qalasy	1537291
+KZ.11.1537291	Gorod Aksu	Gorod Aksu	1537291
 KZ.11.1537292	Ekibastuz Qalasy	Ekibastuz Qalasy	1537292
 KZ.15.1537309	Abyraly Aūdany	Abyraly Audany	1537309
 KZ.10.8739752	Kazygurt District	Kazygurt District	8739752
@@ -18900,7 +18985,7 @@ LU.02.11	Canton d'Echternach	Canton d'Echternach	2960629
 LU.01.07	Canton de Diekirch	Canton de Diekirch	2960656
 LU.01.06	Canton de Clervaux	Canton de Clervaux	2960683
 LU.03.02	Canton de Capellen	Canton de Capellen	2960696
-LY.56.2208403	Mutuşarrifīyat Ghadāmis	Mutusarrifiyat Ghadamis	2208403
+LY.74.2208403	Mutuşarrifīyat Ghadāmis	Mutusarrifiyat Ghadamis	2208403
 MA.55.581	Tiznit	Tiznit	2527087
 MA.57.571	Tetouan	Tetouan	2528907
 MA.58.561	Taza	Taza	2529313
@@ -19595,7 +19680,6 @@ MR.02.9226673	Tamchekett	Tamchekett	9226673
 MR.02.9226996	Djigueni	Djigueni	9226996
 MR.03.9229053	Barkeol	Barkeol	9229053
 MR.03.9253087	Aftout	Aftout	9253087
-MV.53.8051562	Ari Atholhu Uthuruburi	Ari Atholhu Uthuruburi	8051562
 MW.N.04	Chitipa District	Chitipa District	235749
 MW.S.23	Zomba District	Zomba District	923292
 MW.C.22	Salima District	Salima District	924053
@@ -22149,16 +22233,16 @@ MZ.07.1027397	Circunscrição de Sanga	Circunscricao de Sanga	1027397
 MZ.01.1028315	Circunscrição da Quissanga	Circunscricao da Quissanga	1028315
 MZ.09.1028433	Concelho de Quelimane	Concelho de Quelimane	1028433
 MZ.01.1029247	Circunscrição de Palma	Circunscricao de Palma	1029247
-MZ.06.1033355	Concelho de Nampula	Concelho de Nampula	1033355
+MZ.06.1033355	Distrito de Rapale	Distrito de Rapale	1033355
 MZ.06.1035018	Circunscrição de Nacala-a-Velha	Circunscricao de Nacala-a-Velha	1035018
 MZ.08.1035304	Circunscrição da Mutarara	Circunscricao da Mutarara	1035304
 MZ.06.1035470	Circunscrição de Murrupula	Circunscricao de Murrupula	1035470
-MZ.10.1035732	Circunscrição de Mungári	Circunscricao de Mungari	1035732
+MZ.10.1035732	Guro	Guro	1035732
 MZ.10.1037018	Circunscrição de Mossurize	Circunscricao de Mossurize	1037018
 MZ.06.1037020	Circunscrição de Mossuril	Circunscricao de Mossuril	1037020
 MZ.09.1037109	Circunscrição de Mopeia	Circunscricao de Mopeia	1037109
 MZ.06.1037178	Concelho de Monapo	Concelho de Monapo	1037178
-MZ.06.1037222	Circunscrìção de Moma	Circunscricao de Moma	1037222
+MZ.06.1037222	Distrito de Moma	Distrito de Moma	1037222
 MZ.06.1037282	Circunscrìção de Mogovolas	Circunscricao de Mogovolas	1037282
 MZ.06.1037286	Circunscrìção do Mogincual	Circunscricao do Mogincual	1037286
 MZ.01.1037368	Mocimboa da Praia	Mocimboa da Praia	1037368
@@ -22170,7 +22254,7 @@ MZ.06.1039205	Meconta	Meconta	1039205
 MZ.04.1039852	Concelho de Matola	Concelho de Matola	1039852
 MZ.05.1040396	Circunscrição de Marromeu	Circunscricao de Marromeu	1040396
 MZ.08.1040587	Circunscrição de Marávia	Circunscricao de Maravia	1040587
-MZ.02.1040936	Distrito de Manjacaze	Distrito de Manjacaze	1040936
+MZ.02.1040936	Mandlakaze	Mandlakaze	1040936
 MZ.10.1040948	Concelho de Manica	Concelho de Manica	1040948
 MZ.07.1041189	Circunscrição de Mandimba	Circunscricao de Mandimba	1041189
 MZ.08.1041912	Circunscrição de Màgoé	Circunscricao de Magoe	1041912
@@ -22183,7 +22267,7 @@ MZ.05.1045789	Gorongosa District	Gorongosa District	1045789
 MZ.06.1046627	Circunscrição do Eráti	Circunscricao do Erati	1046627
 MZ.09.1049181	Concelho do Chinde	Concelho do Chinde	1049181
 MZ.10.1049260	Concelho do Chimoio	Concelho do Chimoio	1049260
-MZ.02.1049858	Concelho do Chibuto	Concelho do Chibuto	1049858
+MZ.02.1049858	Distrito de Chibuto	Distrito de Chibuto	1049858
 MZ.05.1051852	Concelho do Búzi	Concelho do Buzi	1051852
 MZ.05.1052372	Concelho da Beira	Concelho da Beira	1052372
 MZ.10.1052446	Barue District	Barue District	1052446
@@ -22292,6 +22376,26 @@ MZ.01.9252736	Nangade	Nangade	9252736
 MZ.03.9252738	Panda	Panda	9252738
 MZ.08.9252739	Zumbu	Zumbu	9252739
 MZ.02.9408663	Xai-Xai District	Xai-Xai District	9408663
+MZ.07.10651614	Cidade de Lichinga	Cidade de Lichinga	10651614
+MZ.02.10668849	Cidade de Xai-Xai	Cidade de Xai-Xai	10668849
+MZ.11.10683815	KaMubukwana	KaMubukwana	10683815
+MZ.11.10685827	KaMavota	KaMavota	10685827
+MZ.11.10685828	Nhlamankulo	Nhlamankulo	10685828
+MZ.11.10685829	KaMaxakeni	KaMaxakeni	10685829
+MZ.11.10685830	KaMpfumo	KaMpfumo	10685830
+MZ.11.10685831	KaTembe	KaTembe	10685831
+MZ.11.10685832	KaNyaka	KaNyaka	10685832
+MZ.10.10701340	Distrito de Vanduzi	Distrito de Vanduzi	10701340
+MZ.10.10701341	Distrito de Macate	Distrito de Macate	10701341
+MZ.09.10701342	Distrito de Mulevala	Distrito de Mulevala	10701342
+MZ.09.10701343	Distrito de Mocubela	Distrito de Mocubela	10701343
+MZ.09.10701344	Distrito de Derre	Distrito de Derre	10701344
+MZ.09.10702916	Distrito de Molumbo	Distrito de Molumbo	10702916
+MZ.09.10703116	Distrito de Luabo	Distrito de Luabo	10703116
+MZ.08.10703925	Distrito de Dôa	Distrito de Doa	10703925
+MZ.06.10703926	Distrito de Larde	Distrito de Larde	10703926
+MZ.06.10703927	Distrito de Liúpo	Distrito de Liupo	10703927
+MZ.08.10704473	Distrito de Marara	Distrito de Marara	10704473
 NA.32.7931901	Epupa Constituency	Epupa Constituency	7931901
 NA.32.7931902	Opuwo Constituency	Opuwo Constituency	7931902
 NA.32.7931903	Sesfontein Constituency	Sesfontein Constituency	7931903
@@ -30562,8 +30666,8 @@ SD.39.8051351	Al Fushqa	Al Fushqa	8051351
 SD.39.8051352	Seteet	Seteet	8051352
 SD.42.9072511	Baw	Baw	9072511
 SD.49.10344732	Kas District	Kas District	10344732
-SD.33.10400488	Nyala District	Nyala District	10400488
-SD.33.10400594	Kutum District	Kutum District	10400594
+SD.49.10400488	Nyala District	Nyala District	10400488
+SD.55.10400594	Kutum District	Kutum District	10400594
 SE.23.2480	Umeå Kommun	Umea Kommun	602149
 SE.23.2482	Skellefteå Kommun	Skelleftea Kommun	602912
 SE.23.2409	Robertsfors Kommun	Robertsfors Kommun	603302
@@ -30975,9 +31079,9 @@ SN.05.2244993	Tambacounda Department	Tambacounda Department	2244993
 SN.11.2245705	Sédhiou	Sedhiou	2245705
 SN.14.2246656	Podor	Podor	2246656
 SN.12.2246902	Oussouye	Oussouye	2246902
-SN.09.2247158	Nioro du Rip	Nioro du Rip	2247158
+SN.10.2247158	Nioro du Rip	Nioro du Rip	2247158
 SN.07.2248478	Mbour	Mbour	2248478
-SN.03.2248699	Mbaké	Mbake	2248699
+SN.03.2248699	Mbacké	Mbacke	2248699
 SN.13.2249224	Louga Department	Louga Department	2249224
 SN.03.2249283	Linguere Department	Linguere Department	2249283
 SN.05.2250648	Kédougou Department	Kedougou Department	2250648
@@ -31000,6 +31104,20 @@ SN.01.7733009	Rufisque Department	Rufisque Department	7733009
 SN.14.9166367	Kanel Department	Kanel Department	9166367
 SN.01.9180011	Guédiawaye Department	Guediawaye Department	9180011
 SN.10.10376918	Birkilane Department	Birkilane Department	10376918
+SN.18.10402310	Goudomp Department	Goudomp Department	10402310
+SN.01.10775338	Département de Guédiawaye	Departement de Guediawaye	10775338
+SN.15.10778597	Département de Ranérou Ferlo	Departement de Ranerou Ferlo	10778597
+SN.10.10778869	Département de Guinguinéo	Departement de Guinguineo	10778869
+SN.16.10778870	Birkelane	Birkelane	10778870
+SN.16.10778871	Malem Hoddar	Malem Hoddar	10778871
+SN.16.10778872	Koungheul	Koungheul	10778872
+SN.05.10778873	Koumpentoum	Koumpentoum	10778873
+SN.05.10778874	Goudiry	Goudiry	10778874
+SN.17.10778875	Département de Salémata	Departement de Salemata	10778875
+SN.17.10779431	Département de Kédougou	Departement de Kedougou	10779431
+SN.17.10779432	Saraya	Saraya	10779432
+SN.11.10779433	Département de Médina Yoro Foulah	Departement de Medina Yoro Foulah	10779433
+SN.18.10779434	Bounkiling	Bounkiling	10779434
 SO.09.65061	Degmada Badhaadhe	Degmada Badhaadhe	65061
 SO.06.8261487	El Wak District	El Wak District	8261487
 SO.10.9179613	Xarardheere	Xarardheere	9179613
@@ -31108,25 +31226,22 @@ SS.02.9409219	Ikotos	Ikotos	9409219
 SS.05.9409700	Aweil East	Aweil East	9409700
 SS.06.9409706	Rubkona	Rubkona	9409706
 SS.05.10344514	Aweil West County	Aweil West County	10344514
-SS.05.10344515	Aweil East County	Aweil East County	10344515
 SS.01.10345088	Terekeka County	Terekeka County	10345088
 SS.02.10345217	Torit County	Torit County	10345217
-SS.02.10345218	Ikotos County	Ikotos County	10345218
 SS.01.10345968	Yei County	Yei County	10345968
 SS.02.10346346	Lafon County	Lafon County	10346346
-SS.02.10346790	Budi County	Budi County	10346790
 SS.07.10375722	Maban County	Maban County	10375722
 SS.07.10376722	Melut County	Melut County	10376722
-SS.26.10400458	Pochalla County	Pochalla County	10400458
-SS.32.10400481	Twic County	Twic County	10400481
-SS.26.10400482	Malakal County	Malakal County	10400482
-SS.26.10400485	Guit County	Guit County	10400485
-SS.28.10400489	Lainya County	Lainya County	10400489
-SS.28.10400490	Morobo County	Morobo County	10400490
-SS.28.10400491	Kajo Keji County	Kajo Keji County	10400491
-SS.32.10400584	Wau County	Wau County	10400584
-SS.26.10400839	Renk County	Renk County	10400839
-SS.32.10401686	Jur River County	Jur River County	10401686
+SS.03.10400458	Pochalla County	Pochalla County	10400458
+SS.08.10400481	Twic County	Twic County	10400481
+SS.07.10400482	Malakal County	Malakal County	10400482
+SS.06.10400485	Guit County	Guit County	10400485
+SS.01.10400489	Lainya County	Lainya County	10400489
+SS.01.10400490	Morobo County	Morobo County	10400490
+SS.01.10400491	Kajo Keji County	Kajo Keji County	10400491
+SS.09.10400584	Wau County	Wau County	10400584
+SS.07.10400839	Renk County	Renk County	10400839
+SS.09.10401686	Jur River County	Jur River County	10401686
 ST.02.8299560	Lemba District	Lemba District	8299560
 ST.02.8299561	Lobata District	Lobata District	8299561
 SV.06.3582804	Distrito de Zacatecoluca	Distrito de Zacatecoluca	3582804
@@ -32264,7 +32379,6 @@ TJ.02.1221320	Khovalingskiy Rayon	Khovalingskiy Rayon	1221320
 TJ.01.1221558	Darvozskiy Rayon	Darvozskiy Rayon	1221558
 TJ.02.1221646	Gozimalikskiy Rayon	Gozimalikskiy Rayon	1221646
 TJ.00.1221707	Gissarskiy Rayon	Gissarskiy Rayon	1221707
-TJ.00.1221772	Fayzabadskiy Rayon	Fayzabadskiy Rayon	1221772
 TJ.7280679.1221873	Dushanbe	Dushanbe	1221873
 TJ.03.1222220	Ayninskiy Rayon	Ayninskiy Rayon	1222220
 TJ.03.1514816	Nohiyai Zafarobod	Nohiyai Zafarobod	1514816
@@ -32318,10 +32432,9 @@ TJ.02.8221286	Nohiyai Khuroson	Nohiyai Khuroson	8221286
 TJ.02.8221287	Nohiyai Hamadoní	Nohiyai Hamadoni	8221287
 TJ.02.8221288	Nohiyai Jilikŭl	Nohiyai Jilikul	8221288
 TJ.02.8221292	Nohiyai Shahritus	Nohiyai Shahritus	8221292
-TJ.00.8238355	Nohiyai Hisor	Nohiyai Hisor	8238355
+TJ.RR.8238355	Nohiyai Hisor	Nohiyai Hisor	8238355
 TJ.RR.8238358	Nohiyai Jirghatol	Nohiyai Jirghatol	8238358
 TJ.00.8238387	Nohiyai Rūdakí	Nohiyai Rudaki	8238387
-TJ.00.8238388	Nohiyai Roghun	Nohiyai Roghun	8238388
 TJ.RR.8714387	Faizobod District	Faizobod District	8714387
 TL.CO.1944042	Fatululik	Fatululik	1944042
 TL.DI.7910183	Vera Cruz	Vera Cruz	7910183
@@ -32393,39 +32506,39 @@ TL.CO.8630092	Fohorem	Fohorem	8630092
 TM.01.162182	Aşgabat Şäheri	Asgabat Saheri	162182
 TM.05.1218305	Tagtabazar Etrap	Tagtabazar Etrap	1218305
 TM.05.1218742	Guşgy Etrap	Gusgy Etrap	1218742
-TN.37.2464039	Mu‘tamadīyat Zaghwān	Mu`tamadiyat Zaghwan	2464039
-TN.36.2464465	Mu‘tamadīyat Tūnis	Mu`tamadiyat Tunis	2464465
-TN.35.2464646	Mu‘tamadīyat Tawzar	Mu`tamadiyat Tawzar	2464646
-TN.34.2464700	Mu‘tamadīyat Taţāwīn	Mu`tamadiyat Tatawin	2464700
-TN.02.2464794	Mu‘tamadīyat Tālah	Mu'tamadiyat Talah	2464794
-TN.16.2464914	Mu‘tamadīyat Sūsah	Mu`tamadiyat Susah	2464914
-TN.33.2464977	Mu‘tamadīyat Subayţilah	Mu'tamadiyat Subaytilah	2464977
+TN.37.2464039	Délégation de Zaghouan	Delegation de Zaghouan	2464039
+TN.36.2464465	Délégation de Tunis	Delegation de Tunis	2464465
+TN.35.2464646	Délégation de Tozeur	Delegation de Tozeur	2464646
+TN.34.2464700	Delegation de Tataouine	Delegation de Tataouine	2464700
+TN.02.2464794	Délégation de Thala	Delegation de Thala	2464794
+TN.16.2464914	Délégation de Sousse	Delegation de Sousse	2464914
+TN.33.2464977	Délégation de Sbeïtla	Delegation de Sbeitla	2464977
 TN.22.2465029	Délégation de Siliana	Delegation de Siliana	2465029
-TN.33.2465836	Wilāyat Sīdī Bū Zayd	Wilayat Sidi Bu Zayd	2465836
-TN.15.2466895	Mu‘tamadīyat Shurbān	Mu`tamadiyat Shurban	2466895
-TN.15.2467180	Mu‘tamadīyat as Sawāsī	Mu`tamadiyat as Sawasi	2467180
-TN.32.2467453	Mu‘tamadīyat Şafāqis	Mu`tamadiyat Safaqis	2467453
-TN.31.2468016	Mu‘tamadīyat Qibilī	Mu`tamadiyat Qibili	2468016
+TN.33.2465836	Délégation de Sidi Bou Zid	Delegation de Sidi Bou Zid	2465836
+TN.15.2466895	Délégation de Chorbane	Delegation de Chorbane	2466895
+TN.15.2467180	Délégation de Souassi	Delegation de Souassi	2467180
+TN.32.2467453	Délégation de Sfax	Delegation de Sfax	2467453
+TN.31.2468016	Délégation de Kebili	Delegation de Kebili	2468016
 TN.30.2468352	Gafsa Municipality	Gafsa Municipality	2468352
-TN.29.2468367	Mu‘tamadīyat Qābis	Mu`tamadiyat Qabis	2468367
-TN.19.2468577	Mu‘tamadīyat Nābul	Mu`tamadiyat Nabul	2468577
-TN.28.2469474	Mu‘tamadīyat Madanī	Mu`tamadiyat Madani	2469474
-TN.06.2470086	Mu‘tamadīyat Jundūbah	Mu`tamadiyat Jundubah	2470086
-TN.28.2470172	Mu‘tamadīyat Jarjīs	Mu'tamadiyat Jarjis	2470172
-TN.36.2470587	Mu‘tamadīyat Ḩammām al Anf	Mu`tamadiyat Hammam al Anf	2470587
-TN.18.2472701	Mu‘tamadīyat Banzart	Mu`tamadiyat Banzart	2472701
-TN.17.2472772	Mu‘tamadīyat Bājah	Mu`tamadiyat Bajah	2472772
+TN.29.2468367	Délégation de Gabès	Delegation de Gabes	2468367
+TN.19.2468577	Délégation de Nabeul	Delegation de Nabeul	2468577
+TN.28.2469474	Délégation de Médenine	Delegation de Medenine	2469474
+TN.06.2470086	Délégation de Jendouba	Delegation de Jendouba	2470086
+TN.28.2470172	Délégation de Zarzis	Delegation de Zarzis	2470172
+TN.36.2470587	Délégation de la Banlieue Sud	Delegation de la Banlieue Sud	2470587
+TN.18.2472701	Délégation de Bizerte	Delegation de Bizerte	2472701
+TN.17.2472772	Délégation de Bédja	Delegation de Bedja	2472772
 TN.03.2473418	Délégation de Oueslatia	Delegation de Oueslatia	2473418
-TN.03.2473450	Mu‘tamadīyat al Qayrawān	Mu`tamadiyat al Qayrawan	2473450
-TN.02.2473459	Mu‘tamadīyat al Qaşrayn	Mu`tamadiyat al Qasrayn	2473459
-TN.16.2473494	Mu‘tamadīyat al Munastīr	Mu`tamadiyat al Munastir	2473494
-TN.29.2473532	Mu‘tamadīyat al Maţwīyah	Mu`tamadiyat al Matwiyah	2473532
+TN.03.2473450	Délégation de Kairouan	Delegation de Kairouan	2473450
+TN.02.2473459	Délégation de Kasserine	Delegation de Kasserine	2473459
+TN.16.2473494	Délégation de Monastir	Delegation de Monastir	2473494
+TN.29.2473532	Délégation de Métouia	Delegation de Metouia	2473532
 TN.32.2473571	Mu‘tamadīyat al Maḩras	Mu`tamadiyat al Mahras	2473571
-TN.16.2473573	Mu‘tamadīyat al Mahdīyah	Mu`tamadiyat al Mahdiyah	2473573
-TN.14.2473636	Mu‘tamadīyat al Kāf	Mu`tamadiyat al Kaf	2473636
-TN.15.2473655	Mu‘tamadīyat al Jamm	Mu`tamadiyat al Jamm	2473655
-TN.17.2473663	Mu‘tamadīyat al Jabal al Abyaḑ	Mu`tamadiyat al Jabal al Abyad	2473663
-TN.19.2473745	Mu‘tamadīyat al Ḩammāmāt	Mu`tamadiyat al Hammamat	2473745
+TN.16.2473573	Délégation de Mahdia	Delegation de Mahdia	2473573
+TN.14.2473636	Délégation du Kef	Delegation du Kef	2473636
+TN.15.2473655	Délégation d’El Djem	Delegation d'El Djem	2473655
+TN.17.2473663	Délégation de Djebel Abiod	Delegation de Djebel Abiod	2473663
+TN.19.2473745	Délégation de Hammamet	Delegation de Hammamet	2473745
 TN.06.7870271	Balta Bou Aouane	Balta Bou Aouane	7870271
 TN.06.7870272	Bou Salem	Bou Salem	7870272
 TN.06.7870273	Jendouba Nord	Jendouba Nord	7870273
@@ -32870,9 +32983,9 @@ TR.28.8631622	Görele İlçesi	Goerele Ilcesi	8631622
 TR.28.8631623	Eynesil İlçesi	Eynesil Ilcesi	8631623
 TR.28.8631624	Espiye İlçesi	Espiye Ilcesi	8631624
 TR.28.8631625	Yağlıdere İlçesi	Yaglidere Ilcesi	8631625
-TR.28.8631626	Şebinkarahisar İlçesi	Sebinkarahisar Ilcesi	8631626
+TR.28.8631626	Şebin Karahisar İlçesi	Sebin Karahisar Ilcesi	8631626
 TR.28.8631628	Bulancak İlçesi	Bulancak Ilcesi	8631628
-TR.28.8631629	Piraziz İlçesi	Piraziz Ilcesi	8631629
+TR.52.8631629	Piraziz İlçesi	Piraziz Ilcesi	8631629
 TR.28.8631630	Alucra İlçesi	Alucra Ilcesi	8631630
 TR.28.8631631	Çamoluk İlçesi	Camoluk Ilcesi	8631631
 TR.52.8631632	Kabadüz İlçesi	Kabaduez Ilcesi	8631632
@@ -33486,7 +33599,7 @@ TW.04.ILA	Yilan	Yilan	1674197
 TW.04.HUA	Hualien	Hualien	1674502
 TW.04.HSQ	Hsinchu	Hsinchu	1675103
 TW.04.HSZ	Hsinchu	Hsinchu	1675107
-TW.01.1676511	Kinmen	Kinmen	1676511
+TW.01.1676511	Kinmen County	Kinmen County	1676511
 TW.04.CYI	Chiayi	Chiayi	1678834
 TW.04.CYQ	Chiayi	Chiayi	1678835
 TW.04.CHA	Changhua	Changhua	1679134
@@ -37371,12 +37484,12 @@ UZ.12.1346536	Termiz Shahri	Termiz Shahri	1346536
 UZ.12.1346537	Denov Shahri	Denov Shahri	1346537
 UZ.15.1512277	Zarbdor Tumani	Zarbdor Tumani	1512277
 UZ.06.1512289	Mingbuloq Tumani	Mingbuloq Tumani	1512289
-UZ.03.1512318	Yozyowon Tumani	Yozyowon Tumani	1512318
+UZ.03.1512318	Yozyovon Tumani	Yozyovon Tumani	1512318
 UZ.06.1512349	Yangiqo‘rg‘on Tumani	Yangiqo`rg`on Tumani	1512349
 UZ.05.1512360	Yangibozor Tumani	Yangibozor Tumani	1512360
 UZ.05.1512367	Yangiariq Tumani	Yangiariq Tumani	1512367
 UZ.16.1512404	Sayhunobod Tumani	Sayhunobod Tumani	1512404
-UZ.03.1512439	Ŭzbekiston Tumani	Uzbekiston Tumani	1512439
+UZ.03.1512439	O‘zbekiston Tumani	O`zbekiston Tumani	1512439
 UZ.06.1512448	Uychi Tumani	Uychi Tumani	1512448
 UZ.05.1512467	Urganch Tumani	Urganch Tumani	1512467
 UZ.06.1512500	Uchqŭrghon Tumani	Uchqurghon Tumani	1512500
@@ -37413,9 +37526,9 @@ UZ.15.1513202	Mirzachŭl Tumani	Mirzachul Tumani	1513202
 UZ.01.1513240	Marhamat Tumani	Marhamat Tumani	1513240
 UZ.13.1513269	Mirobod Tumani	Mirobod Tumani	1513269
 UZ.01.1513270	Asaka Tumani	Asaka Tumani	1513270
-UZ.03.1513272	Uchkŭprik Tumani	Uchkuprik Tumani	1513272
+UZ.03.1513272	Uchko‘prik Tumani	Uchko`prik Tumani	1513272
 UZ.13.1513328	Mirzo Ulug‘bek Tumani	Mirzo Ulug`bek Tumani	1513328
-UZ.03.1513329	Quwa Tumani	Quwa Tumani	1513329
+UZ.03.1513329	Quva Tumani	Quva Tumani	1513329
 UZ.01.1513363	Qŭrghontepa Tumani	Qurghontepa Tumani	1513363
 UZ.10.1513472	Qo‘shrabot Tumani	Qo`shrabot Tumani	1513472
 UZ.05.1513477	Qŭshkŭpir Tumani	Qushkupir Tumani	1513477
@@ -37441,8 +37554,8 @@ UZ.05.1513961	Gurlan Tumani	Gurlan Tumani	1513961
 UZ.16.1513967	Guliston Tumani	Guliston Tumani	1513967
 UZ.02.1513982	Ghijduwon Tumani	Ghijduwon Tumani	1513982
 UZ.14.1514010	Quyi Chirchiq Tumani	Quyi Chirchiq Tumani	1514010
-UZ.03.1514016	Danghara Tumani	Danghara Tumani	1514016
-UZ.03.1514017	Farghona Tumani	Farghona Tumani	1514017
+UZ.03.1514016	Dang‘ara Tumani	Dang`ara Tumani	1514016
+UZ.03.1514017	Farg‘ona Tumani	Farg`ona Tumani	1514017
 UZ.15.1514024	Forish Tumani	Forish Tumani	1514024
 UZ.09.1514037	Ellikqala Tumani	Ellikqala Tumani	1514037
 UZ.15.1514068	Jizzax Tumani	Jizzax Tumani	1514068
@@ -37451,7 +37564,7 @@ UZ.15.1514124	Dŭstlik Tumani	Dustlik Tumani	1514124
 UZ.06.1514190	Chust Tumani	Chust Tumani	1514190
 UZ.14.1514214	Chinoz Tumani	Chinoz Tumani	1514214
 UZ.13.1514229	Chilonzor Tumani	Chilonzor Tumani	1514229
-UZ.03.1514299	Buwayda Tumani	Buwayda Tumani	1514299
+UZ.03.1514299	Buvayda Tumani	Buvayda Tumani	1514299
 UZ.14.1514327	Bŭka Tumani	Buka Tumani	1514327
 UZ.01.1514336	Bŭz Tumani	Buz Tumani	1514336
 UZ.14.1514338	Bŭstonliq Tumani	Bustonliq Tumani	1514338
@@ -37459,7 +37572,7 @@ UZ.09.1514386	Beruniy Tumani	Beruniy Tumani	1514386
 UZ.14.1514399	Bekobod Tumani	Bekobod Tumani	1514399
 UZ.16.1514430	Boyowut Tumani	Boyowut Tumani	1514430
 UZ.01.1514451	Baliqchi Tumani	Baliqchi Tumani	1514451
-UZ.03.1514482	Baghdod Tumani	Baghdod Tumani	1514482
+UZ.03.1514482	Bag’dod Tumani	Bag'dod Tumani	1514482
 UZ.05.1514485	Boghot Tumani	Boghot Tumani	1514485
 UZ.15.1514555	Arnasoy Tumani	Arnasoy Tumani	1514555
 UZ.01.1514584	Andijon Tumani	Andijon Tumani	1514584
@@ -37468,7 +37581,7 @@ UZ.01.1514606	Oltinkŭl Tumani	Oltinkul Tumani	1514606
 UZ.03.1514616	Oltiariq Tumani	Oltiariq Tumani	1514616
 UZ.13.1514665	Akmal Ikromow Tumani	Akmal Ikromow Tumani	1514665
 UZ.14.1514667	Oqqŭrghon Tumani	Oqqurghon Tumani	1514667
-UZ.03.1514681	Okhunboboyew Tumani	Okhunboboyew Tumani	1514681
+UZ.03.1514681	Oxunboboyev Tumani	Oxunboboyev Tumani	1514681
 UZ.14.1514687	Ohangaron Tumani	Ohangaron Tumani	1514687
 UZ.16.1514705	Oqoltin Tumani	Oqoltin Tumani	1514705
 UZ.13.1536760	Bektemir Tumani	Bektemir Tumani	1536760
@@ -38645,7 +38758,8 @@ VN.65.9534763	Huyện Cù Lao Dung	Huyen Cu Lao Dung	9534763
 VN.77.9643191	Huyện Phú Tân	Huyen Phu Tan	9643191
 VN.20.9653579	Quan Phu Nhuan	Quan Phu Nhuan	9653579
 VN.32.10400586	Moc Chau District	Moc Chau District	10400586
-WS.00.4035421	Aleipata Itupa i Lalo	Aleipata Itupa i Lalo	4035421
+VN.89.10816510	Huyện Nậm Nhùn	Huyen Nam Nhun	10816510
+WS.03.4035421	Aleipata Itupa i Lalo	Aleipata Itupa i Lalo	4035421
 WS.03.7668017	Aleipata Itupa i Luga	Aleipata Itupa i Luga	7668017
 WS.03.7668018	Lepa	Lepa	7668018
 WS.10.7669205	Faleata West	Faleata West	7669205
@@ -38658,6 +38772,7 @@ WS.01.7669212	Aana Alofi III	Aana Alofi III	7669212
 WS.02.7669213	Aiga i le Tai	Aiga i le Tai	7669213
 WS.10.7669216	Faleata East	Faleata East	7669216
 WS.10.7669218	Vaimauga West	Vaimauga West	7669218
+WS.10.10629989	Vaimauga East	Vaimauga East	10629989
 XK.10097358.28	Vushtrri	Vushtrri	784096
 XK.10097357.27	Komuna e Vitisë	Komuna e Vitise	784371
 XK.10096138.03	Komuna e Ferizajt	Komuna e Ferizajt	784758
@@ -39121,7 +39236,7 @@ ZM.01.913321	Kaoma District	Kaoma District	913321
 ZM.08.914956	Kalulushi District	Kalulushi District	914956
 ZM.07.915082	Kalomo District	Kalomo District	915082
 ZM.01.915468	Kalabo District	Kalabo District	915468
-ZM.02.916077	Kabwe Rural District	Kabwe Rural District	916077
+ZM.02.916077	Kapiri Mposhi	Kapiri Mposhi	916077
 ZM.02.916082	Kabwe District	Kabwe District	916082
 ZM.06.916244	Kabompo District	Kabompo District	916244
 ZM.05.916666	Isoka District	Isoka District	916666
@@ -39146,17 +39261,54 @@ ZM.02.8714549	Chibombo District	Chibombo District	8714549
 ZM.07.8714550	Itezhi-Tezhi District	Itezhi-Tezhi District	8714550
 ZM.08.9072524	Mpongwe District	Mpongwe District	9072524
 ZM.07.9072525	Sinazongwe District	Sinazongwe District	9072525
+ZM.05.10800890	Chilubi	Chilubi	10800890
+ZM.04.10800891	Chienge	Chienge	10800891
+ZM.04.10800892	Milenge	Milenge	10800892
+ZM.03.10800895	Mambwe	Mambwe	10800895
+ZM.08.10801768	Lufwanyama	Lufwanyama	10801768
+ZM.06.10801775	Ikelenge	Ikelenge	10801775
+ZM.06.10801797	Chavuma	Chavuma	10801797
+ZM.06.10801798	Mufumbwe	Mufumbwe	10801798
+ZM.01.10801800	Shangombo	Shangombo	10801800
+ZM.06.10814730	Manyinga District	Manyinga District	10814730
+ZM.01.10814741	Mitete District	Mitete District	10814741
+ZM.01.10815319	Sikongo District	Sikongo District	10815319
+ZM.01.10815320	Limulunga District	Limulunga District	10815320
+ZM.01.10815321	Nkeyema District	Nkeyema District	10815321
+ZM.01.10815322	Luampa District	Luampa District	10815322
+ZM.01.10815323	Nalolo District	Nalolo District	10815323
+ZM.01.10815324	Sioma District	Sioma District	10815324
+ZM.01.10815325	Mulobezi District	Mulobezi District	10815325
+ZM.01.10815326	Mwandi District	Mwandi District	10815326
+ZM.07.10815849	Zimba District	Zimba District	10815849
+ZM.07.10815850	Pemba District	Pemba District	10815850
+ZM.07.10815851	Chikankata District	Chikankata District	10815851
+ZM.09.10815852	Chirundu District	Chirundu District	10815852
+ZM.09.10815853	Shibuyunji District	Shibuyunji District	10815853
+ZM.09.10815854	Chilanga District	Chilanga District	10815854
+ZM.09.10815855	Rufunsa District	Rufunsa District	10815855
+ZM.02.10815856	Ngabwe District	Ngabwe District	10815856
+ZM.02.10815857	Chisamba District	Chisamba District	10815857
+ZM.02.10815858	Luano District	Luano District	10815858
+ZM.02.10815859	Chitambo District	Chitambo District	10815859
+ZM.03.10815860	Sinda District	Sinda District	10815860
+ZM.03.10815861	Vubwi District	Vubwi District	10815861
+ZM.04.10815862	Mwansabombwe District	Mwansabombwe District	10815862
+ZM.04.10815863	Chipili District	Chipili District	10815863
+ZM.04.10815864	Chembe District	Chembe District	10815864
+ZM.04.10815865	Lunga District	Lunga District	10815865
+ZM.05.10815866	Nsama District	Nsama District	10815866
 ZW.02.878548	Zvishavane District	Zvishavane District	878548
-ZW.04.879178	Wedza District	Wedza District	879178
+ZW.04.879178	Hwedza District	Hwedza District	879178
 ZW.07.879611	Umzingwane District	Umzingwane District	879611
 ZW.02.881163	Shurugwi District	Shurugwi District	881163
 ZW.03.881344	Shamva District	Shamva District	881344
-ZW.04.881519	Seki District	Seki District	881519
+ZW.04.881519	Seke District	Seke District	881519
 ZW.03.882083	Rushinga District	Rushinga District	882083
 ZW.01.883480	Nyanga District	Nyanga District	883480
-ZW.06.883763	Nyamandhlovu District	Nyamandhlovu District	883763
+ZW.06.883763	Tsholotsho District	Tsholotsho District	883763
 ZW.06.884216	Nkayi District	Nkayi District	884216
-ZW.08.884594	Ndanga District	Ndanga District	884594
+ZW.08.884594	Zaka	Zaka	884594
 ZW.08.884756	Mwenezi District	Mwenezi District	884756
 ZW.04.884926	Mutoko District	Mutoko District	884926
 ZW.01.884977	Mutasa District	Mutasa District	884977
@@ -39165,7 +39317,7 @@ ZW.04.885172	Murehwa District	Murehwa District	885172
 ZW.04.885457	Mudzi District	Mudzi District	885457
 ZW.02.886328	Mberengwa District	Mberengwa District	886328
 ZW.03.886383	Mazowe District	Mazowe District	886383
-ZW.07.886636	Matobo District	Matobo District	886636
+ZW.07.886636	Matobo	Matobo	886636
 ZW.08.886762	Masvingo District	Masvingo District	886762
 ZW.04.886989	Marondera District	Marondera District	886989
 ZW.01.887718	Makoni District	Makoni District	887718
@@ -39184,17 +39336,17 @@ ZW.08.890589	Gutu District	Gutu District	890589
 ZW.03.890599	Guruve District	Guruve District	890599
 ZW.04.890848	Goromonzi District	Goromonzi District	890848
 ZW.02.890981	Gokwe North District	Gokwe North District	890981
-ZW.03.892597	Darwin District	Darwin District	892597
+ZW.03.892597	Mount Darwin	Mount Darwin	892597
 ZW.08.893171	Chivi District	Chivi District	893171
 ZW.02.893405	Chirumanzu District	Chirumanzu District	893405
 ZW.08.893482	Chiredzi District	Chiredzi District	893482
 ZW.01.893548	Chipinge District	Chipinge District	893548
 ZW.01.893811	Chimanimani District	Chimanimani District	893811
 ZW.05.894238	Chegutu District	Chegutu District	894238
-ZW.04.894293	Charter District	Charter District	894293
+ZW.04.894293	Chikomba District	Chikomba District	894293
 ZW.03.894459	Centenary District	Centenary District	894459
 ZW.09.894700	Bulawayo District	Bulawayo District	894700
-ZW.07.894702	Bulilimamangwe District	Bulilimamangwe District	894702
+ZW.07.894702	Mangwe District	Mangwe District	894702
 ZW.01.894711	Buhera District	Buhera District	894711
 ZW.06.894741	Bubi District	Bubi District	894741
 ZW.06.895055	Binga District	Binga District	895055
@@ -39203,3 +39355,7 @@ ZW.08.895080	Bikita District	Bikita District	895080
 ZW.07.895268	Beitbridge District	Beitbridge District	895268
 ZW.02.8260609	Gokwe South District	Gokwe South District	8260609
 ZW.08.10172877	Zaka District	Zaka District	10172877
+ZW.07.10800403	Bulilima District	Bulilima District	10800403
+ZW.05.10800410	Zvimba District	Zvimba District	10800410
+ZW.04.10800411	Uzumba-Maramba-Pfungwe District	Uzumba-Maramba-Pfungwe District	10800411
+ZW.06.10800412	Umguza District	Umguza District	10800412
