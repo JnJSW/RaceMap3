@@ -101,7 +101,10 @@ This code may only be used under the BSD style license found at http://polymer.g
               'county': counties[countyId] ? counties[countyId] : '',
               'lat': line[4] ? line[4] : '',
               'lng': line[5] ? line[5] : '',
+              'population': line[14] ? line[14] : '',
+              'elevMeters': line[15] ? line[15] : '',
               'featType': this._FEATURE_MAP[line[6]] ? this._FEATURE_MAP[line[6]] : 0,
+              'modDate': line[18] ? line[18] : '',
               'aSearch': line[2] ? this._getAnagramString(line[2]) : '__NOKEY',
               'nSearch': line[2] ? this._normalizeSearchString(line[2]) : '__NOKEY'
             };

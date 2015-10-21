@@ -86,23 +86,22 @@ This code may only be used under the BSD style license found at http://polymer.g
         <iron-icon icon="maps:place" item-icon></iron-icon>
         <span>[[place.lat]]</span>,&nbsp;<span>{{place.lng]]</span>
       </paper-icon-item>
+      
+      <paper-icon-item hidden$="{{!place.population}}">
+        <iron-icon icon="social:people" item-icon></iron-icon>
+        <span>[[place.population]]</span>&nbsp;people
+      </paper-icon-item>
 
-<!--
-      <paper-icon-item>
-        <iron-icon icon="communication:phone" item-icon></iron-icon>
-        <span>{{marker.formatted_phone_number}}</span>
+      <paper-icon-item hidden$="{{!place.elevMeters}}">
+        <iron-icon icon="image:landscape" item-icon></iron-icon>
+        <span>[[place.elevMeters]]</span>&nbsp;meters
       </paper-icon-item>
-      <paper-icon-item class="layout horizontal start"
-          hidden$="{{!marker.opening_hours.weekday_text.length}}">
-        <iron-icon icon="device:access-time" item-icon></iron-icon>
-        <div class="layout vertical">
-          <template is="dom-repeat"
-                    items="{{marker.opening_hours.weekday_text}}" as="day">
-            <div>{{day}}</div>
-          </template>
-        </div>
+
+      <paper-icon-item hidden$="{{!place.modDate.length}}">
+        <iron-icon icon="icons:event" item-icon></iron-icon>
+        <span>[[place.modDate]]</span>
       </paper-icon-item>
--->
+
 
 
 </paper-dialog>
