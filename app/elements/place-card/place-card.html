@@ -18,7 +18,7 @@ This code may only be used under the BSD style license found at http://polymer.g
         left: 0;
         right: 0;
         max-width: 100%;
-        width: 600px;
+        width: 500px;
         margin: 0 auto;
         overflow: initial !important; /* override paper-dialog */
         background: var(--text-primary-color);
@@ -48,9 +48,9 @@ This code may only be used under the BSD style license found at http://polymer.g
       #map {
         position: absolute;
         right: 10px;
-        top: 10px;
-        width: 150px;
-        height: 150px;
+        bottom: 10px;
+        width: 200px;
+        height: 200px;
         margin: 10px;
       }
       
@@ -74,13 +74,20 @@ This code may only be used under the BSD style license found at http://polymer.g
       <header id="card-title">
         <h2><span>[[place.name}}</span>,&nbsp;<span>[[place.state]]</span></h2>
         <h3>[[place.county}}</h3>
-        <div class="away"><span>[[_getDistanceFromHere(myLocation, place)]]</span>&nbsp;miles</div>
+        <div class="away">
+          <span><span>[[_getDistanceFromHere(myLocation, place)]]</span>&nbsp;miles</span>
+          <span><a href="[[_getGoogleNavUrl(place)]]"><iron-image style="width:30px; height:30px;" sizing="cover"
+                      src="http://www.androidcentral.com/sites/androidcentral.com/themes/android_visor/images/badges/google-maps-icon-2015.png"></iron-image></a></span>
+          <span><a href="[[_getNokiaHereUrl(place)]]"><iron-image style="width:30px; height:30px;" sizing="cover"
+                      src="http://company.nokia.com/sites/default/files/gallery/images/here_logo_800x800.jpg"></iron-image></a></span>
+          <span><a href="[[_getWazeUrl(place)]]"><iron-image style="width:30px; height:30px;" sizing="cover"
+                      src="http://img.talkandroid.com/uploads/2014/02/waze_app_icon.png"></iron-image></a></span>
+          </div>
       </header>
       
-      <google-map id="map" latitude="[[place.lat]]" longitude="[[place.lng]]" zoom=12 mapType="hybrid"></google-map>
+      <google-map id="map" latitude="[[place.lat]]" longitude="[[place.lng]]" zoom=11 disable-default-ui></google-map>
 
-
-      <paper-fab icon="maps:directions-car" on-tap="_showDirections"></paper-fab>
+      <paper-fab icon="icons:add" on-tap="_showDirections"></paper-fab>
       
       <paper-icon-item>
         <iron-icon icon="maps:place" item-icon></iron-icon>
@@ -119,6 +126,10 @@ This code may only be used under the BSD style license found at http://polymer.g
   
         place: { type: Object },
         
+        appOptions: {
+          type: Object
+        },
+        
         _distance: {
           type: Number,
           computed: '_getDistanceFromHere(myLocation, place)'
@@ -128,7 +139,7 @@ This code may only be used under the BSD style license found at http://polymer.g
           type: Boolean,
           value: true,
           observer: '_onDismissOnClickOutsideChanged'
-        }
+        },
         
       },
     
@@ -169,10 +180,51 @@ This code may only be used under the BSD style license found at http://polymer.g
         this.fire('show-directions');
       },
       
-      _computeDurationStr: function(duration) {
-        return duration ? duration + ' away' : 'Unknown distance from you';
+      _getGoogleNavUrl: function()
+      {
+         if ((typeof google === 'undefined') || (!this.myLocation) || (!this.place)) {
+          return;
+        }
+       
+        var url = 'https://maps.google.com/maps?saddr=Current+Location&daddr=' + (new google.maps.LatLng(this.place.lat, this.place.lng)).toUrlValue();
+  
+        if (this.appOptions.avoidHighways) {
+          url = url + '&dirflg=h';
+        }
+        else {
+          url = url + '&dirflg=d';
+          
+        }
+        console.log(url);
+        return url;
       },
       
+      _getNokiaHereUrl: function()
+      {
+        if ((typeof google === 'undefined') || (!this.myLocation) || (!this.place)) {
+          return;
+        }
+        
+        var url = 'https://www.here.com/directions/drive/' + (new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng)).toUrlValue() + '/' + (new google.maps.LatLng(this.place.lat, this.place.lng)).toUrlValue();
+        if (this.appOptions.avoidHighways) {
+          url = url + '?avoid=motorway';
+        }
+        console.log(url);
+        return url;
+      },
+      
+      _getWazeUrl: function()
+      {
+        if ((typeof google === 'undefined') || (!this.myLocation) || (!this.place)) {
+          return;
+        }
+        
+        var url = 'waze://?ll=' + (new google.maps.LatLng(this.place.lat, this.place.lng)).toUrlValue() + '&navigate=yes';
+        //TODO: add logtic to avoid highways
+        console.log(url);
+        return url;
+      },
+    
       _onDismissOnClickOutsideChanged: function() {
         this.$.dialog.noCancelOnOutsideClick = this.dismissOnOutsideClick;
       },

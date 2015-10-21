@@ -43,7 +43,6 @@ This code may only be used under the BSD style license found at http://polymer.g
 
     <google-map map="{{map}}" latitude="33" longitude="-83" fit-to-markers disable-default-ui>
   
-      <google-map-marker latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" icon="images/mylocation.png"></google-map-marker>
       <template id="markerlist" is="dom-repeat" items="{{searchResults}}" as="marker">
         <google-map-marker latitude="[[marker.lat]]"
                            longitude="[[marker.lng]]"
@@ -63,7 +62,7 @@ This code may only be used under the BSD style license found at http://polymer.g
 
     <array-selector id="markerselector" items="{{searchResults}}" selected="{{selectedMarker}}"></array-selector>
   
-    <place-card id="placeCard" place="[[selectedMarker]]" on-show-directions="_addWaypoint" dismiss-on-outside-click="[[_dismissCardOnOutsideClick]]" my-location="[[myLocation]]"></place-card>
+    <place-card id="placeCard" place="[[selectedMarker]]" on-show-directions="_addWaypoint" dismiss-on-outside-click="[[_dismissCardOnOutsideClick]]" my-location="[[myLocation]]" app-options="[[appOptions]]"></place-card>
 
 
   </template>
