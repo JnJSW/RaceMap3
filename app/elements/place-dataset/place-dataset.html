@@ -136,7 +136,7 @@ This code may only be used under the BSD style license found at http://polymer.g
       _findLocations: function() {
         if (!this._places) {return;} //exit if the maplocations have not been defined
         
-        if (this.searchString.length < 3) {return;}
+        if (this.searchString.length < 3) {return [];}
         
         this._setSearching(true);
         
