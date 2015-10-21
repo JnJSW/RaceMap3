@@ -41,9 +41,9 @@ This code may only be used under the BSD style license found at http://polymer.g
       <search-panel my-location="[[myLocation]]" app-options="[[appOptions]]" search-results="{{searchResults}}"></search-panel>
     </div>
 
-    <google-map map="{{map}}" latitude="33" longitude="-83"
-                zoom="12" disable-default-ui>
+    <google-map map="{{map}}" latitude="33" longitude="-83" fit-to-markers disable-default-ui>
   
+      <google-map-marker latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" icon="images/mylocation.png"></google-map-marker>
       <template id="markerlist" is="dom-repeat" items="{{searchResults}}" as="marker">
         <google-map-marker latitude="[[marker.lat]]"
                            longitude="[[marker.lng]]"
@@ -54,7 +54,9 @@ This code may only be used under the BSD style license found at http://polymer.g
   
     </google-map>
 
-
+    <array-selector id="markerselector" items="{{searchResults}}" selected="{{selectedMarker}}"></array-selector>
+  
+    <place-card id="placeCard" place="[[selectedMarker]]" on-show-directions="_showDirections" dismiss-on-outside-click="[[_dismissCardOnOutsideClick]]"></place-card>
 
 
   </template>
@@ -66,13 +68,26 @@ This code may only be used under the BSD style license found at http://polymer.g
       is: 'main-panel',
 
       properties: {
-        appOptions: {
-          type: Object
-        },
-        searchResults: {
-          type: Array
-        }
+        appOptions: { type: Object },
+        
+        searchResults: { type: Array },
+        
+        _marketClicked: { type: Boolean},
+        
+        _dismissCardOnOutsideClick: { type: Boolean},
+        
+      },
+
+      _onMarkerClick: function(e, detail) {
+        this._markerClicked = true;
+        this._dismissOnOutsideClick = true;
+//        mapDirections.map = null; // remove displayed directions when marker is clicked.
+      
+        var marker = this.$.markerlist.itemForElement(e.target);
+        this.$.markerselector.select(marker);
+        this.$.placeCard.open();
       }
+
     });
   })();
   </script>

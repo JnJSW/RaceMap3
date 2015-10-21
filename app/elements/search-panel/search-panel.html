@@ -74,10 +74,10 @@ This code may only be used under the BSD style license found at http://polymer.g
           type: String
         },
       },
-      _onInputChange: function(e, detail) {
+      _onInputChange: function(e) {
         this._searchTerm = e.target.value;
       },
-      _clearInput: function(e, detail) {
+      _clearInput: function() {
         this.$.input.value = null;
       },
 

@@ -77,7 +77,7 @@ This code may only be used under the BSD style license found at http://polymer.g
       
       _loadPlaces: function (counties) {
 
-        var tmpPlaces = []
+        var tmpPlaces = [];
 
         Papa.parse('resources/Georgia.txt',
         {
@@ -134,9 +134,6 @@ This code may only be used under the BSD style license found at http://polymer.g
         
         var normalizedSearch = this._normalizeSearchString(this.searchString);
         var anagramSearch = this._getAnagramString(this.searchString);
-  
-        console.log(anagramSearch);
-        console.log(normalizedSearch);
   
         var results = this._placesToSearch.filter(
           function (place) {

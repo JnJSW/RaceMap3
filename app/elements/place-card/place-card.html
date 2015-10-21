@@ -10,63 +10,102 @@ This code may only be used under the BSD style license found at http://polymer.g
   <template>
     <style>
       :host {
-        display: block;
+        display: block:
       }
-      
-      paper-card {
-        width: 90%;
-        margin: 5px;
-        border: 5px;
-        font: 13px;
-      }
-      
-      .icons {
-        width: 24px;
-        height: 24px;
-      }
-      
-      .card-data {
-        display: inline-block;
-        min-height: 32px;
-        line-height: 32px;
-        vertical-align: middle;
-        font-weight: 400;
-        font-size 16px;
-      }
-  
-      .card-location {
-        display:  inline-block;
-        width: 30px;
-        vertical-align: middle;
-      }
-      
-      .card-nav {
-        display: inline-block;
-        width: 60px;
+      paper-dialog {
         position: absolute;
-        right: 0px;
-        line-height: 32px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        width: 600px;
+        margin: 0 auto;
+        overflow: initial !important; /* override paper-dialog */
+        background: var(--text-primary-color);
       }
+      paper-dialog paper-fab {
+        margin: 0;
+        position: absolute;
+        right: 16px;
+        top: calc(-56px / 2);
+/*        --paper-fab-background: var(--paper-green-500);
+        --paper-fab-keyboard-focus-background: var(--paper-green-700);*/
+      }
+      #card-title {
+        margin-left: calc(56px); /* icon width*/
+      }
+      
+      #card-title h2 {
+        @apply(--paper-font-headline);
+        margin-bottom: 8px;
+      }
+      
+      #card-title h3 {
+        @apply(--paper-font-subhead);
+        margin-bottom: 8px;
+      }
+      
+      #map {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+      }
+      
+      iron-icon[item-icon] {
+        opacity: var(--dark-secondary-opacity);
+      }
+      
+      .away {
+        padding: 8px 0;
+        color: var(--paper-light-blue-700);
+        border-top: 1px solid var(--paper-grey-300);
+        border-bottom: 1px solid var(--paper-grey-300);
+        margin-top: 20px;
+}
 
     </style>
 
-    <paper-card>
-      <div class="card content">
-        <div class="card-location">
-          <iron-image class="icons" src="[[markerUrl]]" sizing="contain"></iron-image>
-        </div>
-
-        <div class="card-data">[[place.name]]</div>
-
-        <div class="card-nav">
-          <span>
-            <iron-icon icon="trending-flat" class="icons" style$="[[_rotateStyle(myLocation, place)]]"  ></iron-icon>
-            <span>[[_getDistanceFromHere(myLocation, place)]]</span>
-          </span>
-        </div>
+      <paper-dialog id="dialog"
+          entry-animation="slide-up-and-fade-animation"
+          exit-animation="slide-down-and-fade-animation" on-click="_eatClick">
+      <header id="card-title">
+        <h2><span>[[place.name}}</span>,&nbsp;<span>[[place.state]]</span></h2>
+        <h3>[[place.county}}</h3>
+        <div class="away">[[_getDistanceFromHere(myLocation, place)]]</div>
+      </header>
       
-      </div>
-    </paper-card>
+      <google-map id="map" latitude="[[place.lat]]" longitude="[[place.lng]]" zoom=12 mapType="hybrid"></google-map>
+
+
+      <paper-fab icon="maps:directions-car" on-tap="_showDirections"></paper-fab>
+      
+      <paper-icon-item>
+        <iron-icon icon="maps:place" item-icon></iron-icon>
+        <span>[[place.lat]]</span>,&nbsp;<span>{{place.lng]]</span>
+      </paper-icon-item>
+
+<!--
+      <paper-icon-item>
+        <iron-icon icon="communication:phone" item-icon></iron-icon>
+        <span>{{marker.formatted_phone_number}}</span>
+      </paper-icon-item>
+      <paper-icon-item class="layout horizontal start"
+          hidden$="{{!marker.opening_hours.weekday_text.length}}">
+        <iron-icon icon="device:access-time" item-icon></iron-icon>
+        <div class="layout vertical">
+          <template is="dom-repeat"
+                    items="{{marker.opening_hours.weekday_text}}" as="day">
+            <div>{{day}}</div>
+          </template>
+        </div>
+      </paper-icon-item>
+-->
+
+
+</paper-dialog>
 
   </template>
   <script>
@@ -78,22 +117,69 @@ This code may only be used under the BSD style license found at http://polymer.g
   
       properties: {
         myLocation: { type: Object },
+  
         place: { type: Object },
-        markerUrl: { type: String },
+        
+        _distance: {
+          type: Number,
+          computed: '_getDistanceFromHere(myLocation, place)'
+        },
+  
+        dismissOnOutsideClick: {
+          type: Boolean,
+          value: true,
+          observer: '_onDismissOnClickOutsideChanged'
+        }
+        
       },
     
       _getDistanceFromHere: function() {
-        return Math.round(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng), new google.maps.LatLng(this.place.lat, this.place.lng)) * 0.000621371);
+        console.log (typeof google);
+        if (typeof google !== 'undefined') {
+          console.log('calculating distance');
+          return Math.round(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng), new google.maps.LatLng(this.place.lat, this.place.lng)) * 0.000621371);
+        }
       },
       
-      _getBearingFromHere: function() {
-        return google.maps.geometry.spherical.computeHeading(new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng), new google.maps.LatLng(this.place.lat, this.place.lng));
-      },
-
-      _rotateStyle: function() {
-        return 'transform:rotate(' + ((this._getBearingFromHere() + 270)%360).toFixed(0) +'deg);';
-      },
+      open: function() {
+        this.$.dialog.animationConfig = {
+          entry: {
+            name: 'transform-animation',
+            node: this.$.dialog,
+            transformFrom: 'translateY(calc(100% + 56px/2))',
+            transformTo: 'translateY(0)'
+          },
+          exit: {
+            name: 'transform-animation',
+            node: this.$.dialog,
+            transformFrom: 'translateY(0)',
+            transformTo: 'translateY(calc(100% + 56px/2))'
+          }
+        };
   
+        this.$.dialog.open();
+      },
+      
+      close: function() {
+        this.$.dialog.close();
+      },
+      
+      _showDirections: function() {
+        this.fire('show-directions');
+      },
+      
+      _computeDurationStr: function(duration) {
+        return duration ? duration + ' away' : 'Unknown distance from you';
+      },
+      
+      _onDismissOnClickOutsideChanged: function() {
+        this.$.dialog.noCancelOnOutsideClick = this.dismissOnOutsideClick;
+      },
+      
+      _eatClick: function(e) {
+        e.stopPropagation();
+      }
+
     });
   })();
   </script>
