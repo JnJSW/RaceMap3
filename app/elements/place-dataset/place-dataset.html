@@ -23,6 +23,12 @@ This code may only be used under the BSD style license found at http://polymer.g
           readOnly: true,
           computed: '_findLocations(searchString, _placesToSearch)'
         },
+        searching: {
+          type: Boolean,
+          notify: true,
+          value: false,
+          readOnly: true,
+        },
         appOptions: {
           type: Array
         },
@@ -79,7 +85,7 @@ This code may only be used under the BSD style license found at http://polymer.g
 
         var tmpPlaces = [];
 
-        Papa.parse('resources/Georgia.txt',
+        Papa.parse('resources/FL_GA_SC.txt',
         {
           header: false,
           dynamicTyping: true,
@@ -132,6 +138,8 @@ This code may only be used under the BSD style license found at http://polymer.g
         
         if (this.searchString.length < 3) {return;}
         
+        this._setSearching(true);
+        
         var normalizedSearch = this._normalizeSearchString(this.searchString);
         var anagramSearch = this._getAnagramString(this.searchString);
   
@@ -141,6 +149,8 @@ This code may only be used under the BSD style license found at http://polymer.g
           },
           this
         );
+
+        this._setSearching(false);
         
         return results;
       },

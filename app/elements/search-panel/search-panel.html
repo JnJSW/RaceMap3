@@ -37,12 +37,12 @@ This code may only be used under the BSD style license found at http://polymer.g
       <paper-icon-button icon="search"></paper-icon-button>
       <input id="input" type="text" placeholder="Search places" on-input="_onInputChange">
       <paper-icon-button icon="clear" on-tap="_clearInput"></paper-icon-button>
-      <template is="dom-if" if="[[loading]]">
+      <template is="dom-if" if="[[_searching]]">
         <paper-progress indeterminate></paper-progress>
       </template>
     </paper-card>
 
-    <place-dataset search-string="[[_searchTerm]]" search-results="{{searchResults}}" app-options="[[appOptions]]"></place-dataset>
+    <place-dataset search-string="[[_searchTerm]]" search-results="{{searchResults}}" app-options="[[appOptions]]" searching="{{_searching}}"></place-dataset>
 
 <!--    <div class="layout vertical flex">
         <template is="dom-repeat" items="[[searchResults]]">
@@ -68,7 +68,7 @@ This code may only be used under the BSD style license found at http://polymer.g
         },
         searchResults: {
           type: Object,
-          notify: true
+          notify: true,
         },
         _searchTerm: {
           type: String
@@ -77,10 +77,11 @@ This code may only be used under the BSD style license found at http://polymer.g
       _onInputChange: function(e) {
         this._searchTerm = e.target.value;
       },
+      
       _clearInput: function() {
         this.$.input.value = null;
       },
-
+      
       _markerUrl: function(index) {
         return 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + (index+1) + '|00FF00|000000';
       },

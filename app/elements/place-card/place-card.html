@@ -74,7 +74,7 @@ This code may only be used under the BSD style license found at http://polymer.g
       <header id="card-title">
         <h2><span>[[place.name}}</span>,&nbsp;<span>[[place.state]]</span></h2>
         <h3>[[place.county}}</h3>
-        <div class="away">[[_getDistanceFromHere(myLocation, place)]]</div>
+        <div class="away"><span>[[_getDistanceFromHere(myLocation, place)]]</span>&nbsp;miles</div>
       </header>
       
       <google-map id="map" latitude="[[place.lat]]" longitude="[[place.lng]]" zoom=12 mapType="hybrid"></google-map>
@@ -134,8 +134,12 @@ This code may only be used under the BSD style license found at http://polymer.g
       },
     
       _getDistanceFromHere: function() {
-        console.log (typeof google);
-        if (typeof google !== 'undefined') {
+
+        console.log ('GetDistance From Here' + (typeof google));
+        if ((typeof google === 'undefined') || (!this.myLocation) || (!this.place)) {
+          return
+        }
+        else {
           console.log('calculating distance');
           return Math.round(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng), new google.maps.LatLng(this.place.lat, this.place.lng)) * 0.000621371);
         }

@@ -51,12 +51,13 @@ This code may only be used under the BSD style license found at http://polymer.g
                            animation="DROP">
         </google-map-marker>
       </template>
-  
     </google-map>
+    
+    <google-map-directions start-address="[[myLocation]]" end-address="st marys ga" map="{{map}}" travel-mode="DRIVING" waypoints="[[_waypoints]]"></google-map-directions>
 
     <array-selector id="markerselector" items="{{searchResults}}" selected="{{selectedMarker}}"></array-selector>
   
-    <place-card id="placeCard" place="[[selectedMarker]]" on-show-directions="_showDirections" dismiss-on-outside-click="[[_dismissCardOnOutsideClick]]"></place-card>
+    <place-card id="placeCard" place="[[selectedMarker]]" on-show-directions="_addWaypoint" dismiss-on-outside-click="[[_dismissCardOnOutsideClick]]" my-location="[[myLocation]]"></place-card>
 
 
   </template>
@@ -72,6 +73,11 @@ This code may only be used under the BSD style license found at http://polymer.g
         
         searchResults: { type: Array },
         
+        _waypoints: {
+          type: Array,
+          value: function() { return []; }
+        },
+        
         _marketClicked: { type: Boolean},
         
         _dismissCardOnOutsideClick: { type: Boolean},
@@ -86,6 +92,19 @@ This code may only be used under the BSD style license found at http://polymer.g
         var marker = this.$.markerlist.itemForElement(e.target);
         this.$.markerselector.select(marker);
         this.$.placeCard.open();
+      },
+      
+      _addWaypoint: function(e, detail) {
+        var place = this.$.placeCard.place;
+        var tmp = this._waypoints.slice(0);
+        tmp.push( {  //directions doesn't observe slices
+          location: new google.maps.LatLng(place.lat, place.lng),
+          stopover: true
+        });
+        this._waypoints = tmp;
+        this.async(function() {
+          this.$.placeCard.close();
+        }, 800);
       }
 
     });
