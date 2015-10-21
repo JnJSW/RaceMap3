@@ -9,26 +9,47 @@ This code may only be used under the BSD style license found at http://polymer.g
 <dom-module id="search-panel">
   <template>
     <style>
-      :host {
-        display: block;
-      }
+    :host {
+      display: inline-block;
+    }
+    paper-icon-button {
+      opacity: var(--dark-secondary-opacity);
+    }
+    input {
+      position: relative;
+      z-index: 1;
+      outline: none;
+      border: none;
+      @apply(--paper-font-title);
+    }
+    paper-progress {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      z-index: 1;
+      height: 2px;
+      --paper-progress-container-color: #fff;
+    }
     </style>
 
-    <div>
-      <paper-input label="Search Term" value="{{_searchTerm}}"></paper-input>
-      <paper-icon-button class="clear-button" icon="clear" on-click="_handleClear"></paper-icon-button>
-    </div>
-    
-    <place-dataset search-string="[[_searchTerm]]" search-results="{{_searchResults}}" app-options="[[appOptions]]"></place-dataset>
+    <paper-card class="layout horizontal">
+      <paper-icon-button icon="search"></paper-icon-button>
+      <input id="input" type="text" placeholder="Search places" on-input="_onInputChange">
+      <paper-icon-button icon="clear" on-tap="_clearInput"></paper-icon-button>
+      <template is="dom-if" if="[[loading]]">
+        <paper-progress indeterminate></paper-progress>
+      </template>
+    </paper-card>
 
-    <div class="layout vertical flex">
-      <!--<iron-list items="[[_searchResults]]">-->
-        <template is="dom-repeat" items="[[_searchResults]]">
+    <place-dataset search-string="[[_searchTerm]]" search-results="{{searchResults}}" app-options="[[appOptions]]"></place-dataset>
+
+<!--    <div class="layout vertical flex">
+        <template is="dom-repeat" items="[[searchResults]]">
           <place-card my-location="[[myLocation]]" place="[[item]]" marker-url="[[_markerUrl(index)]]"></place-card>
         </template>
-      <!--</iron-list>-->
     </div>
-    
+-->
 
   </template>
   <script>
@@ -44,13 +65,22 @@ This code may only be used under the BSD style license found at http://polymer.g
         },
         appOptions: {
           type: Object
-        }
-/*        foo: {
-          type: String,
-          value: 'search-panel',
+        },
+        searchResults: {
+          type: Object,
           notify: true
-        }*/
+        },
+        _searchTerm: {
+          type: String
+        },
       },
+      _onInputChange: function(e, detail) {
+        this._searchTerm = e.target.value;
+      },
+      _clearInput: function(e, detail) {
+        this.$.input.value = null;
+      },
+
       _markerUrl: function(index) {
         return 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + (index+1) + '|00FF00|000000';
       },
