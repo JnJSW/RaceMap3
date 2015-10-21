@@ -1,5 +1,5 @@
 {
-  "firebase": "racingmap",
+  "firebase": "dtt",
   "public": "dist",
   "ignore": [
     "firebase.json",
