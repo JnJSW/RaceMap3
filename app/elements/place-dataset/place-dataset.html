@@ -4,6 +4,7 @@ Copyright (c) 2015 John Schweikert. All rights reserved.
 This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
 -->
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<script src="../../bower_components/PapaParse/papaparse.min.js"></script>
 
 <dom-module id="place-dataset">
   <script>
@@ -111,13 +112,13 @@ This code may only be used under the BSD style license found at http://polymer.g
             //this._fbRef.child('placesdb').set(places);
             console.log('location parsing completed');
             this._places = tmpPlaces;
+            this.fire('places-loaded');
           }.bind(this)
         
         });
       },
 
       _buildPlacesToSearch: function (){
-
         var placeTypeMask =
           (this.appOptions.searchCities ? 1 : 0) +
           (this.appOptions.searchPlaces ? 4 : 0) +

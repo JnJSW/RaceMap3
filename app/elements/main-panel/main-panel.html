@@ -53,7 +53,13 @@ This code may only be used under the BSD style license found at http://polymer.g
       </template>
     </google-map>
     
-    <google-map-directions start-address="[[myLocation]]" end-address="st marys ga" map="{{map}}" travel-mode="DRIVING" waypoints="[[_waypoints]]"></google-map-directions>
+    <google-map-directions start-address="[[myLocation]]"
+                          end-address="st marys ga"
+                          map="{{map}}"
+                          travel-mode="DRIVING"
+                          waypoints="[[_waypoints]]"
+                          optimize-waypoints="[[appOptions.optimizeWaypoints]]"
+                          avoid-highways="[[appOptions.avoidHighways]]"></google-map-directions>
 
     <array-selector id="markerselector" items="{{searchResults}}" selected="{{selectedMarker}}"></array-selector>
   

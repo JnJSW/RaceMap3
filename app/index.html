@@ -43,11 +43,11 @@ This code may only be used under the BSD style license found at http://polymer.g
   <!-- endbuild-->
 
   <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
-  <script src="bower_components/webcomponentsjs/webcomponents-lite.js" ></script>
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <!-- endbuild -->
-
+  
   <!-- will be replaced with elements/elements.vulcanized.html -->
-  <link rel="import" href="elements/elements.html" >
+  <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
 
   <!-- For shared styles, shared-styles.html import in elements.html -->
@@ -55,8 +55,9 @@ This code may only be used under the BSD style license found at http://polymer.g
 
 </head>
 
-<body unresolved class="fullbleed layout vertical">
+<body class="fullbleed layout vertical">
   <span id="browser-sync-binding"></span>
+  <div id="loading"></div>
   <template is="dom-bind" id="app">
 
     <paper-drawer-panel id="paperDrawerPanel">

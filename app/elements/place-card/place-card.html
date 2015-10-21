@@ -139,7 +139,6 @@ This code may only be used under the BSD style license found at http://polymer.g
           return;
         }
         else {
-          console.log('calculating distance');
           return Math.round(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng), new google.maps.LatLng(this.place.lat, this.place.lng)) * 0.000621371);
         }
       },

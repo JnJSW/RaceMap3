@@ -12,3 +12,33 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 }
+
+body.loaded #loading {
+  opacity: 0;
+}
+
+#loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 600ms ease-in-out;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23 23' width='150' height='150'><path fill='#fff' d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/></svg>") no-repeat 50% calc(50% - 100px);
+  background-size: 200px;
+  background-color: #C2185B;
+}
+
+#loading::after {
+  content: 'Get your motor running';
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  margin-top: 100px;
+}
+
