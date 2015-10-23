@@ -31,25 +31,37 @@ This code may only be used under the BSD style license found at http://polymer.g
       height: 2px;
       --paper-progress-container-color: #fff;
     }
+    paper-icon-item {
+      border-top: 1px solid #e6e6e6;
+    }
+    
     </style>
-
-    <paper-card class="layout horizontal">
-      <paper-icon-button icon="search"></paper-icon-button>
-      <input id="input" type="text" placeholder="Search places" on-input="_onInputChange">
-      <paper-icon-button icon="clear" on-tap="_clearInput"></paper-icon-button>
-      <template is="dom-if" if="[[_searching]]">
-        <paper-progress indeterminate></paper-progress>
-      </template>
-    </paper-card>
-
-    <place-dataset search-string="[[_searchTerm]]" search-results="{{searchResults}}" app-options="[[appOptions]]" searching="{{_searching}}"></place-dataset>
-
-<!--    <div class="layout vertical flex">
-        <template is="dom-repeat" items="[[searchResults]]">
-          <place-card my-location="[[myLocation]]" place="[[item]]" marker-url="[[_markerUrl(index)]]"></place-card>
-        </template>
+    <div class="layout vertical">
+      <paper-card class="layout vertical">
+        <div class="layout horizontal">
+          <paper-icon-button icon="search"></paper-icon-button>
+          <input id="input" type="text" placeholder="Search places" on-input="_onInputChange">
+          <paper-icon-button icon="clear" on-tap="_clearInput"></paper-icon-button>
+          <template is="dom-if" if="[[_searching]]">
+            <paper-progress indeterminate></paper-progress>
+          </template>
+        </div>
+        <!--<template id="placeList" is="dom-repeat" items="[[searchResults]]" as="place">-->
+        <iron-list id="placeList" items="[[searchResults]]" as="place" selected-item="{{selectedItem}}" selection-enabled ><template>
+          <paper-icon-item on-tap="_placeClicked">
+            <iron-image src="[[place.markerUrl]]" style="width=24px;height=24px;" item-icon></iron-image>
+            <!--<iron-image src="[[_markerUrl(index)]]" style="width=24px;height=24px;" sizing="contain"></iron-image>-->
+            <!--<iron-icon icon="maps:place" item-icon></iron-icon>-->
+            <span class="flex"><span>[[place.name]]</span>,&nbsp;<span>[[place.state]]</span></span>
+            <span><span>[[_getDistance(myLocation, place)]]</span>&nbsp;m</span>
+          </paper-icon-item>
+        </template></iron-list>
+        <!--</template>-->
+      </paper-card>
     </div>
--->
+
+    <place-dataset search-string="[[_searchTerm]]" search-results="{{_preModifiedResults}}" app-options="[[appOptions]]" searching="{{_searching}}"></place-dataset>
+
 
   </template>
   <script>
@@ -69,9 +81,13 @@ This code may only be used under the BSD style license found at http://polymer.g
         searchResults: {
           type: Object,
           notify: true,
+          computed: '_getSearchResults(_preModifiedResults)'
         },
         _searchTerm: {
           type: String
+        },
+        _preModifiedResults: {
+          type: Object,
         },
       },
       _onInputChange: function(e) {
@@ -83,9 +99,45 @@ This code may only be used under the BSD style license found at http://polymer.g
         this._searchTerm = '';
       },
       
-      _markerUrl: function(index) {
-        return 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + (index+1) + '|00FF00|000000';
+      _getDistance: function(from, to) {
+        if (typeof google === 'undefined') {
+          return;
+        }
+        else {
+          return Math.round(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(from.lat, from.lng), new google.maps.LatLng(to.lat, to.lng)) * 0.000621371);
+        }
       },
+      
+
+      _placeClicked: function(e) {
+        console.log(e);
+        var place = e.model.place;
+        console.log ('clicked place ' + place.name);
+        this.fire('place-clicked', place);
+        this._clearInput();
+      },
+      
+      _getSearchResults: function() {
+        
+        var tmpResults = this._preModifiedResults.slice(0);
+        
+        //add the distance from mylocation to each item in the array
+        tmpResults.forEach(function(value, index, array){
+          array[index].distance = this._getDistance(this.myLocation, value);
+        }, this);
+
+        //sort by the distance
+        tmpResults.sort(function(loc1, loc2) {
+          return loc1.distance-loc2.distance;
+        });
+
+        tmpResults.forEach(function(value, index, array){
+          array[index].markerUrl = 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + (index+1) + '|004225|FFFFFF';
+        }, this);
+                
+        return tmpResults;
+
+      }
 
       
     });
