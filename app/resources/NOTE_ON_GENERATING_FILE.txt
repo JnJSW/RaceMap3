@@ -1,1 +1,0 @@
-Note:  awk --field-separator="\t" '$11~/^(GA|FL|SC)$/' US.txt > GA_FL_SC.txt
