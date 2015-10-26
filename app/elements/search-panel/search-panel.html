@@ -39,13 +39,14 @@ This code may only be used under the BSD style license found at http://polymer.g
     <div class="layout vertical">
       <paper-card class="layout vertical">
         <div class="layout horizontal">
-          <paper-icon-button icon="search"></paper-icon-button>
+          <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
           <input id="input" type="text" placeholder="Search places" on-input="_onInputChange">
           <paper-icon-button icon="clear" on-tap="_clearInput"></paper-icon-button>
           <template is="dom-if" if="[[_searching]]">
             <paper-progress indeterminate></paper-progress>
           </template>
         </div>
+        
         <!--<template id="placeList" is="dom-repeat" items="[[searchResults]]" as="place">-->
         <iron-list id="placeList" items="[[searchResults]]" as="place" selected-item="{{selectedItem}}" selection-enabled ><template>
           <paper-icon-item on-tap="_placeClicked">
