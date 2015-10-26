@@ -195,7 +195,6 @@ This code may only be used under the BSD style license found at http://polymer.g
           url = url + '&dirflg=d';
           
         }
-        console.log(url);
         return url;
       },
       
@@ -209,7 +208,6 @@ This code may only be used under the BSD style license found at http://polymer.g
         if (this.appOptions.avoidHighways) {
           url = url + '?avoid=motorway';
         }
-        console.log(url);
         return url;
       },
       
@@ -221,7 +219,6 @@ This code may only be used under the BSD style license found at http://polymer.g
         
         var url = 'waze://?ll=' + (new google.maps.LatLng(this.place.lat, this.place.lng)).toUrlValue() + '&navigate=yes';
         //TODO: add logtic to avoid highways
-        console.log(url);
         return url;
       },
     
