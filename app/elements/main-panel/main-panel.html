@@ -13,20 +13,21 @@ This code may only be used under the BSD style license found at http://polymer.g
         display: block;
       }
       
-      #search {
+      #search-route {
         position: absolute;
         z-index: 1;
         margin-top: 16px;
         margin-left: 16px;
-        width: 100%;
-        height: 50%;
-        pointer-events: none;
+        margin-bottom: 16px;
+        width: 350px;
+        height: calc(100% - 32px);
+//        pointer-events: none;
       }
     
-      search-panel {
+/*      search-panel {
         pointer-events: all;
       }
-      
+*/
       google-map {
         position: absolute;
         height: 100%;
@@ -39,11 +40,13 @@ This code may only be used under the BSD style license found at http://polymer.g
     <my-location my-location="{{myLocation}}"></my-location>
 
     <!-- Search Panel -->
-    <div id="search" class="layout vertical start">
-      <search-panel my-location="[[myLocation]]" app-options="[[appOptions]]" search-results="{{searchResults}}" on-place-clicked="_onSearchResultClick"></search-panel>
+    <div id="search-route" class="layout vertical">
+      <search-panel my-location="[[myLocation]]" app-options="{{appOptions}}" search-results="{{searchResults}}" on-place-clicked="_onSearchResultClick" class="flex"></search-panel>
+      <div class="flex"></div>
+      <route-panel id="routepanel" my-location="[[myLocation]]" app-options="{{appOptions}}" map="{{_map}}"></route-panel>
     </div>
 
-    <google-map map="{{map}}" latitude="33" longitude="-83" fit-to-markers disable-default-ui>
+    <google-map map="{{_map}}" latitude="33" longitude="-83" fit-to-markers>
   
       <template id="markerlist" is="dom-repeat" items="{{searchResults}}" as="place">
         <google-map-marker latitude="[[place.lat]]"
@@ -55,17 +58,8 @@ This code may only be used under the BSD style license found at http://polymer.g
       </template>
     </google-map>
     
-    <google-map-directions start-address="[[myLocation]]"
-                          end-address="st marys ga"
-                          map="{{map}}"
-                          travel-mode="DRIVING"
-                          waypoints="[[_waypoints]]"
-                          optimize-waypoints="[[appOptions.optimizeWaypoints]]"
-                          avoid-highways="[[appOptions.avoidHighways]]"></google-map-directions>
-
-    <!--<array-selector id="markerselector" items="{{searchResults}}" selected="{{selectedMarker}}"></array-selector>-->
-  
     <place-card id="placeCard" place="[[selectedPlace]]" on-show-directions="_addWaypoint" dismiss-on-outside-click="[[_dismissCardOnOutsideClick]]" my-location="[[myLocation]]" app-options="[[appOptions]]"></place-card>
+
 
 
   </template>
@@ -81,11 +75,6 @@ This code may only be used under the BSD style license found at http://polymer.g
         
         searchResults: { type: Array },
         
-        _waypoints: {
-          type: Array,
-          value: function() { return []; }
-        },
-        
         _markerClicked: { type: Boolean},
         
         _dismissCardOnOutsideClick: { type: Boolean},
@@ -93,37 +82,17 @@ This code may only be used under the BSD style license found at http://polymer.g
       },
 
       _onMarkerClick: function(e) {
-        this._markerClicked = true;
-        this._dismissOnOutsideClick = true;
-
         var place = this.$.markerlist.itemForElement(e.target);
-        this.selectedPlace = place;
-        this.$.placeCard.open();
+        this.$.routepanel.addWaypoint(place);
       },
       
       _onSearchResultClick: function(e) {
-        this._markerClicked = true;
-        this._dismissOnOutsideClick = true;
-
         var place = e.detail;
-        console.log(place);
-
-        this.selectedPlace = place;
-        this.$.placeCard.open();
-      },
-      
-      _addWaypoint: function() {
-        var place = this.$.placeCard.place;
-        var tmp = this._waypoints.slice(0);
-        tmp.push( {  //directions doesn't observe slices
-          location: new google.maps.LatLng(place.lat, place.lng),
-          stopover: true
-        });
-        this._waypoints = tmp;
-        this.async(function() {
+        this.$.routepanel.addWaypoint(place);
+/*        this.async(function() {
           this.$.placeCard.close();
         }, 800);
-      }
+*/      }
 
     });
   })();
