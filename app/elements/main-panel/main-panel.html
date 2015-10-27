@@ -71,7 +71,10 @@ This code may only be used under the BSD style license found at http://polymer.g
       is: 'main-panel',
 
       properties: {
-        appOptions: { type: Object },
+        appOptions: {
+          type: Object,
+          notify: true
+        },
         
         searchResults: { type: Array },
         
