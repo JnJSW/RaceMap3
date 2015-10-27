@@ -1,0 +1,10 @@
+{
+  "options": {
+    "avoidHighways":true,
+    "finalDestination":"105 Osborne St, St Marys, GA 31558",
+    "optimizeWaypoints":true,
+    "searchCities":true,
+    "searchFeatures":false,
+    "searchPlaces":false
+  }
+}
