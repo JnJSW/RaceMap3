@@ -32,8 +32,9 @@ This code may only be used under the BSD style license found at http://polymer.g
 
       <paper-icon-item>
         <iron-icon icon="maps:local-bar" style="width=24px;height=24px;" item-icon></iron-icon>
-        <span class="flex">[[appOptions.finalDestination]]</span>
-        <!--<span class="flex"><paper-input value="[[appOptions.finalDestination]]"></paper-input></span>-->
+        <!--<span class="flex">[[appOptions.finalDestination]]</span>-->
+        <paper-textarea no-label-float value="{{appOptions.finalDestination}}" class="flex"></paper-textarea> <!--Note space not currently working.  https://github.com/PolymerElements/paper-item/issues/28-->
+        <!--<span class="flex"><paper-input value="{{appOptions.finalDestination}}" no-label-float></paper-input></span>-->
       </paper-icon-item>
 
       <paper-checkbox checked={{appOptions.avoidHighways}}>Avoid Highways</paper-checkbox>
@@ -107,8 +108,9 @@ This code may only be used under the BSD style license found at http://polymer.g
       },
       
       _handleDirectionsResponse: function(e) {
-        console.log("handleDirections Response " + e);
-        console.log(e);
+        console.log('handleDirections Response ' + e);
+        console.log(e.detail.response.routes);
+//        this._waypointOrder = e.detail.response.routes['waypoint_order'];
       }
       
       
