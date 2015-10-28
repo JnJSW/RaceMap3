@@ -12,44 +12,68 @@ This code may only be used under the BSD style license found at http://polymer.g
       :host {
         display: block;
       }
+      paper-icon-button {
+        opacity: var(--dark-secondary-opacity);
+      }
+      paper-icon-item {
+        border-top: 1px solid var(--divider-color);
+      }
+      /*.options {
+        background: var(--dark-primary-color);
+        color: var(--text-primary-color);
+      }*/
     </style>
     <paper-card class="layout vertical">
 
       <paper-icon-item>
         <iron-icon icon="maps:my-location" style="width=24px;height=24px;" item-icon></iron-icon>
-        <span class="flex">My Location</span>
+        <paper-item-body two-line>
+          <div>My Location</div>
+          <div secondary><span>[[myLocation.lat]]</span>,&nbsp;<span>[[myLocation.lng]]</span></div>
+        </paper-item-body>
       </paper-icon-item>
     
       <!--<iron-list id="waypointList" items="[[_waypointPlaces]]" selection-enabled ><template>-->
-      <template is="dom-repeat" items="[[_waypointPlaces]]">
+      <template is="dom-repeat" items="[[_sortedWaypointPlaces]]" as="place">
         <paper-icon-item>
-          <iron-image src="[[item.markerUrl]]" style="width=24px;height=24px;" item-icon></iron-image>
-          <span class="flex"><span>[[item.name]]</span>,&nbsp;<span>[[item.state]]</span></span>
-          <span><span>[[_getDistance(index)]]</span>&nbsp;m</span>
+          <iron-image src="[[_getMarkerUrl(index)]]" style="width=24px;height=24px;" item-icon></iron-image>
+          <span class="flex"><span>[[place.name]]</span>,&nbsp;<span>[[place.state]]</span></span>
+          <span><span>[[_getDistanceByIndex(index, _sortedWaypointPlaces)]]</span>&nbsp;m</span>
         </paper-icon-item>
       </template>
       <!--</template></iron-list>-->
 
       <paper-icon-item>
         <iron-icon icon="maps:local-bar" style="width=24px;height=24px;" item-icon></iron-icon>
-        <!--<span class="flex">[[appOptions.finalDestination]]</span>-->
         <paper-textarea no-label-float value="{{appOptions.finalDestination}}" class="flex"></paper-textarea> <!--Note space not currently working.  https://github.com/PolymerElements/paper-item/issues/28-->
-        <!--<span class="flex"><paper-input value="{{appOptions.finalDestination}}" no-label-float></paper-input></span>-->
       </paper-icon-item>
 
-      <paper-checkbox checked={{appOptions.avoidHighways}}>Avoid Highways</paper-checkbox>
-      <paper-checkbox checked={{appOptions.optimizeWaypoints}}>Optimize Waypoints</paper-checkbox>
-
-      <google-map-directions start-address="[[myLocation]]"
-                            end-address="[[appOptions.finalDestination]]"
-                            map="{{map}}"
-                            travel-mode="DRIVING"
-                            waypoints="[[_waypointLatLngs]]"
-                            optimize-waypoints="[[appOptions.optimizeWaypoints]]"
-                            avoid-highways="[[appOptions.avoidHighways]]"
-                            on-google-map-response="_handleDirectionsResponse"></google-map-directions>
+      <paper-item class="options">
+        <paper-checkbox checked={{appOptions.avoidHighways}}>Avoid Highways</paper-checkbox>
+        <paper-checkbox checked={{appOptions.optimizeWaypoints}}>Optimize Waypoints</paper-checkbox>
+      </paper-item>
 
     </paper-card>
+
+    <paper-toast id="tooManyWaypoints" duration="6000" text="Cannot add more than 8 waypoints"></paper-toast>
+    
+    <google-map-directions start-address="[[myLocation]]"
+                          end-address="[[appOptions.finalDestination]]"
+                          map="{{map}}"
+                          travel-mode="DRIVING"
+                          waypoints="[[_waypointLatLngs]]"
+                          optimize-waypoints="[[appOptions.optimizeWaypoints]]"
+                          avoid-highways="[[appOptions.avoidHighways]]"
+                          renderer-options='{"suppressMarkers":"true"}'
+                          on-google-map-response="_handleDirectionsResponse">
+    </google-map-directions>
+
+    <!--Map Markers-->
+    <google-map-marker latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" map="[[map]]" icon="/images/ic_my_location_black_24px.svg"></google-map-marker>
+    <template is="dom-repeat" items="[[_sortedWaypointPlaces]]" as="place">
+      <google-map-marker latitude="[[place.lat]]" longitude="[[place.lng]]" map="[[map]]" icon="[[_getMarkerUrl(index)]]"></google-map-marker>
+    </template>
+
   </template>
   <script>
   (function() {
@@ -73,17 +97,24 @@ This code may only be used under the BSD style license found at http://polymer.g
           type: Array,
           value: []
         },
+        _sortedWaypointPlaces: {
+          type: Array,
+          value: []
+        },
         _waypointLatLngs: {
           type: Array,
           computed: '_getWaypointLatLngs(_waypointPlaces, _waypointPlaces.*)'
         },
-        _waypointOrder: {
-          type: Array
-        }
       },
 
       addWaypoint: function(place) {
-        this.push('_waypointPlaces', place);
+        if (this._waypointPlaces.length < 8) {
+          this.push('_waypointPlaces', place);
+          this.push('_sortedWaypointPlaces', place);
+        }
+        else {
+          this.$.tooManyWaypoints.show();
+        }
       },
       
       _getWaypointLatLngs: function() {
@@ -97,23 +128,41 @@ This code may only be used under the BSD style license found at http://polymer.g
         return latLngs;
       },
 
-      _getDistance: function(index) {
+      _getDistanceByIndex: function(index) {
         if (typeof google === 'undefined') {
           return;
         }
         else {
-          var from = (index === 0) ? this.myLocation : this._waypointPlaces[index-1];
-          var to = this._waypointPlaces[index];
-          return Math.round(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(from.lat, from.lng), new google.maps.LatLng(to.lat, to.lng)) * 0.000621371);
+          var from;
+          if (index === 0) {
+            from = this.myLocation;
+          }
+          else {
+            from = this._sortedWaypointPlaces[index-1];
+          }
+          var to = this._sortedWaypointPlaces[index];
+          return this._getDistanceBetweenPlaces(from, to);
         }
       },
       
-      _handleDirectionsResponse: function(e) {
-        console.log('handleDirections Response ' + e);
-        console.log(e.detail.response.routes);
-//        this._waypointOrder = e.detail.response.routes['waypoint_order'];
-      }
+      _getDistanceBetweenPlaces: function(from, to) {
+        return Math.round(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(from.lat, from.lng), new google.maps.LatLng(to.lat, to.lng)) * 0.000621371);
+      },
       
+      _handleDirectionsResponse: function(e) {
+        /*jshint camelcase: false */
+
+        var tmpArr = [];
+        e.detail.response.routes[0].waypoint_order.forEach(function(index) {
+          tmpArr.push(this._waypointPlaces[index]);
+        }, this);
+        this._sortedWaypointPlaces = tmpArr;
+      },
+      
+      _getMarkerUrl: function(index) {
+        var label = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[index % 26];
+        return 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + label + '|004225|FFFFFF';
+      }
       
     });
   })();

@@ -15,6 +15,9 @@ This code may only be used under the BSD style license found at http://polymer.g
     paper-icon-button {
       opacity: var(--dark-secondary-opacity);
     }
+    paper-icon-item {
+      border-top: 1px solid var(--divider-color);
+    }
     input {
       position: relative;
       z-index: 1;
@@ -30,9 +33,6 @@ This code may only be used under the BSD style license found at http://polymer.g
       z-index: 1;
       height: 2px;
       --paper-progress-container-color: #fff;
-    }
-    paper-icon-item {
-      border-top: 1px solid #e6e6e6;
     }
     
     </style>
@@ -133,7 +133,7 @@ This code may only be used under the BSD style license found at http://polymer.g
         });
 
         tmpResults.forEach(function(value, index, array){
-          array[index].markerUrl = 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + (index+1) + '|004225|FFFFFF';
+          array[index].markerUrl = 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + (index+1) + '|00CB72|000000';
         }, this);
                 
         return tmpResults;
