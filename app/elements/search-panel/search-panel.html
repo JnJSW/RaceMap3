@@ -12,9 +12,6 @@ This code may only be used under the BSD style license found at http://polymer.g
     :host {
       display: inline-block;
     }
-    paper-icon-button {
-      opacity: var(--dark-secondary-opacity);
-    }
     paper-icon-item {
       border-top: 1px solid var(--divider-color);
     }
@@ -40,7 +37,7 @@ This code may only be used under the BSD style license found at http://polymer.g
       <paper-card class="layout vertical">
         <div class="layout horizontal">
           <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
-          <input id="input" type="text" placeholder="Search places" on-input="_onInputChange">
+          <input id="input" type="text" placeholder="Search places" on-input="_onInputChange" class="flex">
           <paper-icon-button icon="clear" on-tap="_clearInput"></paper-icon-button>
           <template is="dom-if" if="[[_searching]]">
             <paper-progress indeterminate></paper-progress>
