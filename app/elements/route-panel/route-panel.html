@@ -73,6 +73,7 @@ This code may only be used under the BSD style license found at http://polymer.g
     <template is="dom-repeat" items="[[_sortedWaypointPlaces]]" as="place">
       <google-map-marker latitude="[[place.lat]]" longitude="[[place.lng]]" map="[[map]]" icon="[[_getMarkerUrl(index)]]"></google-map-marker>
     </template>
+    <google-map-marker latitude="[[_finalLat]]" longitude="[[_finalLng]]" map="[[map]]" icon="/images/ic_local_bar_black_24px.svg"></google-map-marker>
 
   </template>
   <script>
@@ -105,6 +106,12 @@ This code may only be used under the BSD style license found at http://polymer.g
           type: Array,
           computed: '_getWaypointLatLngs(_waypointPlaces, _waypointPlaces.*)'
         },
+        _finalLat: {
+          type: Number
+        },
+        _finalLng: {
+          type: Number
+        }
       },
 
       addWaypoint: function(place) {
@@ -152,13 +159,22 @@ This code may only be used under the BSD style license found at http://polymer.g
       _handleDirectionsResponse: function(e) {
         /*jshint camelcase: false */
 
+        var route = e.detail.response.routes[0];
+
+        // Sort the optmized waypoints
         var tmpArr = [];
-        e.detail.response.routes[0].waypoint_order.forEach(function(index) {
+        route.waypoint_order.forEach(function(index) {
           tmpArr.push(this._waypointPlaces[index]);
         }, this);
         this._sortedWaypointPlaces = tmpArr;
+
+        //Find the lat-lng of the final address
+        var finalLatLng = route.legs[route.legs.length - 1].end_location;
+        this._finalLat = finalLatLng.lat();
+        this._finalLng = finalLatLng.lng();
+
       },
-      
+
       _getMarkerUrl: function(index) {
         var label = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[index % 26];
         return 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + label + '|004225|FFFFFF';
