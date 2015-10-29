@@ -13,6 +13,12 @@ This code may only be used under the BSD style license found at http://polymer.g
         display: block;
       }
       
+      google-map {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+      
       #search-route {
         position: absolute;
         z-index: 1;
@@ -33,12 +39,6 @@ This code may only be used under the BSD style license found at http://polymer.g
         pointer-events: all;
       }
 
-      google-map {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-      }
-      
       #zoom-fab {
         position: absolute;
         z-index: 1;
@@ -46,10 +46,17 @@ This code may only be used under the BSD style license found at http://polymer.g
         right: 16px;
       }
 
+      tracking-panel {
+        position: absolute;
+        z-index: 1;
+        bottom: 8px;
+        right: 8px;
+      }
+      
       
     </style>
 
-    <my-location my-location="{{myLocation}}" my-route="{{myRoute}}"></my-location>
+    <my-location my-location="{{myLocation}}" my-route="{{myRoute}}" miles-traveled="{{milesTraveled}}"></my-location>
 
     <google-map id="googMap" map="{{_map}}" latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" fit-to-markers>
   
@@ -78,6 +85,9 @@ This code may only be used under the BSD style license found at http://polymer.g
       <div class="flex"></div>
       <route-panel id="routepanel" my-location="[[myLocation]]" app-options="{{appOptions}}" map="{{_map}}"></route-panel>
     </div>
+
+    <!-- Search Panel -->
+    <tracking-panel my-location="{{myLocation}}" my-route="{{myRoute}}" miles-traveled="[[milesTraveled]]"></tracking-panel>
 
     <place-card id="placeCard" place="[[selectedPlace]]" on-show-directions="_addWaypoint" dismiss-on-outside-click="[[_dismissCardOnOutsideClick]]" my-location="[[myLocation]]" app-options="[[appOptions]]"></place-card>
 

@@ -32,8 +32,10 @@ This code may only be used under the BSD style license found at http://polymer.g
           value: []
         },
         
-        _milesTraveled: {
+        milesTraveled: {
           type: Number,
+          readOnly: true,
+          notify: true,
           value: 0
         }
         
@@ -55,10 +57,11 @@ This code may only be used under the BSD style license found at http://polymer.g
 
         if (typeof priorLatLng !== 'undefined') {
           var milesFromPrior = google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(priorLatLng.lat, priorLatLng.lng),
-                                                                                     new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng))
-                                                                                     * 0.000621371;
-          this._milesTraveled = this._milesTraveled + milesFromPrior;
+                                                                                     new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng)) * 0.000621371;
+          this._setMilesTraveled(this.milesTraveled + milesFromPrior);
         }
+        
+        console.log(JSON.stringify(this.myLocation));
         
         this.push('myRoute', this.myLocation);
       },
