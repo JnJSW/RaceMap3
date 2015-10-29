@@ -16,39 +16,45 @@ This code may only be used under the BSD style license found at http://polymer.g
       #search-route {
         position: absolute;
         z-index: 1;
-        margin-top: 16px;
-        margin-left: 16px;
-        margin-bottom: 16px;
-        width: 350px;
-        height: calc(100% - 32px);
-//        pointer-events: none;
+        margin-top: 8px;
+        margin-left: 8px;
+        margin-bottom: 8px;
+        max-width: 350px;
+        height: calc(100% - 16px);
+        width: calc(100% - 16px);
+        pointer-events: none;
       }
     
-/*      search-panel {
+      search-panel {
         pointer-events: all;
       }
-*/
+
+      route-panel {
+        pointer-events: all;
+      }
+
       google-map {
         position: absolute;
         height: 100%;
         width: 100%;
       }
+      
+      #zoom-fab {
+        position: absolute;
+        z-index: 1;
+        top: 16px;
+        right: 16px;
+      }
 
       
     </style>
 
-    <my-location my-location="{{myLocation}}"></my-location>
+    <my-location my-location="{{myLocation}}" my-route="{{myRoute}}"></my-location>
 
-    <!-- Search Panel -->
-    <div id="search-route" class="layout vertical">
-      <search-panel my-location="[[myLocation]]" app-options="{{appOptions}}" search-results="{{searchResults}}" on-place-clicked="_onSearchResultClick" class="flex"></search-panel>
-      <div class="flex"></div>
-      <route-panel id="routepanel" my-location="[[myLocation]]" app-options="{{appOptions}}" map="{{_map}}"></route-panel>
-    </div>
-
-    <google-map map="{{_map}}" latitude="33" longitude="-83" fit-to-markers>
+    <google-map id="googMap" map="{{_map}}" latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" fit-to-markers>
   
-      <template id="markerlist" is="dom-repeat" items="{{searchResults}}" as="place">
+      <!-- Markers for Search Results -->
+      <template id="searchmarkers" is="dom-repeat" items="{{searchResults}}" as="place">
         <google-map-marker latitude="[[place.lat]]"
                            longitude="[[place.lng]]"
                            icon="[[place.markerUrl]]"
@@ -56,10 +62,26 @@ This code may only be used under the BSD style license found at http://polymer.g
                            animation="DROP">
         </google-map-marker>
       </template>
+
+      <!-- Route already Traveled -->
+      <google-map-poly>
+        <template id="drivenpoints" is="dom-repeat" items="{{myRoute}}" as="point">
+          <google-map-point latitude="[[point.lat]]" longitude="[[point.lng]]"></google-map-point>
+        </template>
+      </google-map-poly>
+
     </google-map>
     
+    <!-- Search Panel -->
+    <div id="search-route" class="layout vertical">
+      <search-panel my-location="[[myLocation]]" app-options="{{appOptions}}" search-results="{{searchResults}}" on-place-clicked="_onSearchResultClick" class="flex"></search-panel>
+      <div class="flex"></div>
+      <route-panel id="routepanel" my-location="[[myLocation]]" app-options="{{appOptions}}" map="{{_map}}"></route-panel>
+    </div>
+
     <place-card id="placeCard" place="[[selectedPlace]]" on-show-directions="_addWaypoint" dismiss-on-outside-click="[[_dismissCardOnOutsideClick]]" my-location="[[myLocation]]" app-options="[[appOptions]]"></place-card>
 
+    <paper-fab id="zoom-fab" icon="[[_getZoomIcon(_isZoom)]]" on-tap="_onMapZoom"></paper-fab>
 
 
   </template>
@@ -82,10 +104,15 @@ This code may only be used under the BSD style license found at http://polymer.g
         
         _dismissCardOnOutsideClick: { type: Boolean},
         
+        _isZoom: {
+          type: Boolean,
+          value: false
+        }
+        
       },
 
       _onMarkerClick: function(e) {
-        var place = this.$.markerlist.itemForElement(e.target);
+        var place = this.$.searchmarkers.itemForElement(e.target);
         this.$.routepanel.addWaypoint(place);
       },
       
@@ -95,7 +122,32 @@ This code may only be used under the BSD style license found at http://polymer.g
 /*        this.async(function() {
           this.$.placeCard.close();
         }, 800);
-*/      }
+*/
+      },
+
+      _onMapZoom: function() {
+        this.$.googMap.latitude=this.myLocation.lat;
+        this.$.googMap.longitude=this.myLocation.lng;
+        if (!this._isZoom) {
+          this.$.googMap.fitToMarkers = false;
+          this.$.googMap.zoom = 14;
+        }
+        else {
+          this.$.googMap.fitToMarkers = true;
+        }
+        this._isZoom = !this._isZoom;
+        console.log ('fit to markers ' + this.$.googMap.fitToMarkers);
+        console.log ('markers length' + this.$.googMap.markers.length);
+      },
+      
+      _getZoomIcon: function() {
+        if(this._isZoom) {
+          return 'icons:zoom-out';
+        }
+        else {
+          return 'icons:zoom-in';
+        }
+      }
 
     });
   })();
