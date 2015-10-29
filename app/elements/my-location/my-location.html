@@ -8,7 +8,7 @@ This code may only be used under the BSD style license found at http://polymer.g
 
 <dom-module id="my-location">
   <template>
-    <google-maps-api on-api-load="_mapApiLoaded" libraries="places,geometry"></google-maps-api>
+    <google-maps-api on-api-load="_mapApiLoaded"></google-maps-api>
   </template>
   <script>
   (function() {
@@ -32,14 +32,7 @@ This code may only be used under the BSD style license found at http://polymer.g
           value: []
         },
         
-        milesTraveled: {
-          type: Number,
-          computed: '_formatMilesTraveled(_miles)',
-          readOnly: true,
-          notify: true
-        },
-        
-        _miles: {
+        _milesTraveled: {
           type: Number,
           value: 0
         }
@@ -61,12 +54,13 @@ This code may only be used under the BSD style license found at http://polymer.g
         });
 
         if (typeof priorLatLng !== 'undefined') {
-          var milesFromPrior = google.maps.geometry.spherical.computeDistanceBetween(priorLatLng, this.myLocation) * 0.000621371;
-          this._miles = this._miles + milesFromPrior;
+          var milesFromPrior = google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(priorLatLng.lat, priorLatLng.lng),
+                                                                                     new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng))
+                                                                                     * 0.000621371;
+          this._milesTraveled = this._milesTraveled + milesFromPrior;
         }
         
         this.push('myRoute', this.myLocation);
-        console.log('myLocation ' + JSON.stringify(this.myLocation));
       },
       
       _mapApiLoaded: function() {
@@ -77,11 +71,6 @@ This code may only be used under the BSD style license found at http://polymer.g
         }
       },
       
-      _formatMilesTraveled: function (_miles) {
-        return _miles.toFixed(1);
-      }
-
-
     });
   })();
   </script>
