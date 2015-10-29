@@ -59,7 +59,7 @@ This code may only be used under the BSD style license found at http://polymer.g
 
     <my-location my-location="{{myLocation}}" my-route="{{myRoute}}" miles-traveled="{{milesTraveled}}"></my-location>
 
-    <google-map id="googMap" map="{{_map}}" latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" fit-to-markers>
+    <google-map id="googMap" map="{{_map}}" latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" api-key="AIzaSyDg83X4mRng7I2Q1QSJHDtQNpr04tz17PY" fit-to-markers>
   
       <!-- Markers for Search Results -->
       <template id="searchmarkers" is="dom-repeat" items="{{searchResults}}" as="place">

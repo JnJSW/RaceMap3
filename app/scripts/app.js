@@ -30,14 +30,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
   };
 
-
+  
+  //the automatic drawer panel doesn't seem to work.  Likely due to all the levels of shady-dom
   document.addEventListener('toggle-options-panel', function() {
-    console.log('event received');
     document.querySelector('#paperDrawerPanel').togglePanel();
   });
-
-
-
 
   // Listen for template bound event to know when bindings
   // have resolved and content has been stamped to the page
