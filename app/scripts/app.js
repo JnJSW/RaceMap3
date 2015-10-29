@@ -31,6 +31,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   };
 
 
+  document.addEventListener('toggle-options-panel', function() {
+    console.log('event received');
+    document.querySelector('#paperDrawerPanel').togglePanel();
+  });
+
+
+
+
   // Listen for template bound event to know when bindings
   // have resolved and content has been stamped to the page
   app.addEventListener('dom-change', function() {

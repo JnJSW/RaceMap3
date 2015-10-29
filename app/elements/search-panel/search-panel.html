@@ -36,7 +36,7 @@ This code may only be used under the BSD style license found at http://polymer.g
     <div class="layout vertical">
       <paper-card class="layout vertical">
         <div class="layout horizontal">
-          <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+          <paper-icon-button icon="menu" on-tap="_handleMenuButtonClick" paper-drawer-toggle></paper-icon-button>
           <input id="input" type="text" placeholder="Search places" on-input="_onInputChange" class="flex">
           <paper-icon-button icon="clear" on-tap="_clearInput"></paper-icon-button>
           <template is="dom-if" if="[[_searching]]">
@@ -135,6 +135,10 @@ This code may only be used under the BSD style license found at http://polymer.g
                 
         return tmpResults;
 
+      },
+      
+      _handleMenuButtonClick: function() {
+        this.fire('toggle-options-panel');
       }
 
       
