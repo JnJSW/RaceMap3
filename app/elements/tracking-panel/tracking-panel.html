@@ -1,0 +1,83 @@
+<!--
+@license
+Copyright (c) 2015 John Schweikert. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+-->
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="tracking-panel">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <paper-card class="layout vertical">
+
+      <!--Lat Lng-->
+      <paper-icon-item>
+        <iron-icon icon="maps:my-location" style="width=24px;height=24px;" item-icon></iron-icon>
+        <paper-item-body>
+          <div><span>[[_formatNum(myLocation.lat,3)]]</span>,&nbsp;<span>[[_formatNum(myLocation.lng,3)]]</span></div>
+        </paper-item-body>
+      </paper-icon-item>
+
+      <!--Heading-->
+      <paper-icon-item hidden$="[[!myLocation.heading]]">
+        <iron-image src="/images/compass.svg" style="width=24px;height=24px;" item-icon></iron-image>
+        <paper-item-body>
+          <div><span>[[myLocation.heading]]</span>&deg;</div>
+        </paper-item-body>
+      </paper-icon-item>
+
+      <!--Altitude-->
+      <paper-icon-item hidden$="[[!myLocation.altitude]]">
+        <iron-icon icon="maps:terrain" style="width=24px;height=24px;" item-icon></iron-icon>
+        <paper-item-body>
+          <div><span>[[myLocation.altitude]]</span>&nbsp;m</div>
+        </paper-item-body>
+      </paper-icon-item>
+
+      <!--Speed-->
+      <paper-icon-item hidden$="[[!myLocation.speed]]">
+        <iron-image src="/images/speedometer.svg" style="width=24px;height=24px;" item-icon></iron-image>
+        <paper-item-body>
+          <div><span>[[myLocation.speed]]</span>&nbsp;mph</div>
+        </paper-item-body>
+      </paper-icon-item>
+
+      <!--Distance-->
+      <paper-icon-item hidden$="[[!milesTraveled]]">
+        <iron-image src="/images/math-compass.svg" style="width=24px;height=24px;" item-icon></iron-image>
+        <paper-item-body>
+          <div><span>[[_formatNum(milesTraveled,1)]]</span>&nbsp;miles</div>
+        </paper-item-body>
+      </paper-icon-item>
+
+    </paper-card>
+
+  </template>
+  <script>
+  (function() {
+    'use strict';
+
+    Polymer({
+      is: 'tracking-panel',
+
+      properties: {
+        myLocation: {
+          type: Object,
+        },
+        milesTraveled: {
+          type: Number
+        },
+      },
+      
+      _formatNum: function(number, digits) {
+        return number.toFixed(digits);
+      }
+    });
+  })();
+  </script>
+</dom-module>
