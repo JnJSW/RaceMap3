@@ -47,11 +47,6 @@ This code may only be used under the BSD style license found at http://polymer.g
         <paper-textarea no-label-float value="{{appOptions.finalDestination}}" class="flex"></paper-textarea> <!--Note space not currently working.  https://github.com/PolymerElements/paper-item/issues/28-->
       </paper-icon-item>
 
-      <paper-item class="options">
-        <paper-checkbox checked={{appOptions.avoidHighways}}>Avoid Highways</paper-checkbox>
-        <paper-checkbox checked={{appOptions.optimizeWaypoints}}>Optimize Waypoints</paper-checkbox>
-      </paper-item>
-
     </paper-card>
 
     <paper-toast id="tooManyWaypoints" duration="6000" text="Cannot add more than 8 waypoints"></paper-toast>
