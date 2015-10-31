@@ -45,7 +45,7 @@ This code may only be used under the BSD style license found at http://polymer.g
         </div>
         
         <!--<template id="placeList" is="dom-repeat" items="[[searchResults]]" as="place">-->
-        <iron-list id="placeList" items="[[searchResults]]" as="place" selected-item="{{selectedItem}}" selection-enabled ><template>
+        <iron-list id="placeList" items="[[_searchResults]]" as="place" selected-item="{{selectedItem}}" selection-enabled ><template>
           <paper-icon-item on-tap="_placeClicked">
             <iron-image src="[[place.markerUrl]]" style="width=24px;height=24px;" item-icon></iron-image>
             <!--<iron-image src="[[_markerUrl(index)]]" style="width=24px;height=24px;" sizing="contain"></iron-image>-->
@@ -57,6 +57,17 @@ This code may only be used under the BSD style license found at http://polymer.g
         <!--</template>-->
       </paper-card>
     </div>
+
+    <!-- Markers for Search Results -->
+    <template id="searchmarkers" is="dom-repeat" items="[[_searchResults]]" as="place">
+      <google-map-marker map="{{map}}"
+                         latitude="[[place.lat]]"
+                         longitude="[[place.lng]]"
+                         icon="[[place.markerUrl]]"
+                         click-events on-google-map-marker-click="_onMarkerClick"
+                         animation="DROP">
+      </google-map-marker>
+    </template>
 
     <place-dataset search-string="[[_searchTerm]]" search-results="{{_preModifiedResults}}" app-options="[[appOptions]]" searching="{{_searching}}"></place-dataset>
 
@@ -76,7 +87,16 @@ This code may only be used under the BSD style license found at http://polymer.g
         appOptions: {
           type: Object
         },
-        searchResults: {
+        map: {
+          type: Object
+        },
+        mapBounds: {
+          type: Object,
+          notify: true,
+          readOnly: true,
+          computed: '_getMapBounds(_searchResults)'
+        },
+        _searchResults: {
           type: Object,
           notify: true,
           computed: '_getSearchResults(_preModifiedResults)'
@@ -105,7 +125,6 @@ This code may only be used under the BSD style license found at http://polymer.g
           return Math.round(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(from.lat, from.lng), new google.maps.LatLng(to.lat, to.lng)) * 0.000621371);
         }
       },
-      
 
       _placeClicked: function(e) {
         console.log(e);
@@ -116,7 +135,6 @@ This code may only be used under the BSD style license found at http://polymer.g
       },
       
       _getSearchResults: function() {
-        
         var tmpResults = this._preModifiedResults.slice(0);
         
         //add the distance from mylocation to each item in the array
@@ -134,13 +152,22 @@ This code may only be used under the BSD style license found at http://polymer.g
         }, this);
                 
         return tmpResults;
-
       },
       
       _handleMenuButtonClick: function() {
         this.fire('toggle-options-panel');
+      },
+      
+      _getMapBounds: function() {
+        var latLngBounds;
+        if (this.map &&  this._searchResults.length > 0) {
+          latLngBounds = new google.maps.LatLngBounds();
+          this._searchResults.forEach(function(result){
+            latLngBounds.extend(new google.maps.LatLng(result.lat, result.lng));
+          });
+        }
+        return latLngBounds;
       }
-
       
     });
   })();

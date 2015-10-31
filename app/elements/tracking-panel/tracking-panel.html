@@ -19,7 +19,7 @@ This code may only be used under the BSD style license found at http://polymer.g
       <paper-icon-item>
         <iron-icon icon="maps:my-location" style="width=24px;height=24px;" item-icon></iron-icon>
         <paper-item-body>
-          <div><span>[[_formatNum(myLocation.lat,3)]]</span>,&nbsp;<span>[[_formatNum(myLocation.lng,3)]]</span></div>
+          <div><span>[[_formatNum(myLocation.lat,2)]]</span>,&nbsp;<span>[[_formatNum(myLocation.lng,2)]]</span></div>
         </paper-item-body>
       </paper-icon-item>
 
@@ -27,7 +27,7 @@ This code may only be used under the BSD style license found at http://polymer.g
       <paper-icon-item hidden$="[[!myLocation.heading]]">
         <iron-image src="/images/compass.svg" style="width=24px;height=24px;" item-icon></iron-image>
         <paper-item-body>
-          <div><span>[[myLocation.heading]]</span>&deg;</div>
+          <div><span>[[_formatNum(myLocation.heading,0)]]</span>&deg;</div>
         </paper-item-body>
       </paper-icon-item>
 
@@ -35,7 +35,7 @@ This code may only be used under the BSD style license found at http://polymer.g
       <paper-icon-item hidden$="[[!myLocation.altitude]]">
         <iron-icon icon="maps:terrain" style="width=24px;height=24px;" item-icon></iron-icon>
         <paper-item-body>
-          <div><span>[[myLocation.altitude]]</span>&nbsp;m</div>
+          <div><span>[[_formatNum(myLocation.altitude,0)]]</span>&nbsp;ft.</div>
         </paper-item-body>
       </paper-icon-item>
 
@@ -43,19 +43,26 @@ This code may only be used under the BSD style license found at http://polymer.g
       <paper-icon-item hidden$="[[!myLocation.speed]]">
         <iron-image src="/images/speedometer.svg" style="width=24px;height=24px;" item-icon></iron-image>
         <paper-item-body>
-          <div><span>[[myLocation.speed]]</span>&nbsp;mph</div>
+          <div><span>[[_formatNum(myLocation.speed,0)]]</span>&nbsp;mph</div>
         </paper-item-body>
       </paper-icon-item>
 
       <!--Distance-->
-      <paper-icon-item hidden$="[[!milesTraveled]]">
+      <paper-icon-item hidden$="[[!_milesTraveled]]">
         <iron-image src="/images/math-compass.svg" style="width=24px;height=24px;" item-icon></iron-image>
         <paper-item-body>
-          <div><span>[[_formatNum(milesTraveled,1)]]</span>&nbsp;miles</div>
+          <div><span>[[_formatNum(_milesTraveled,1)]]</span>&nbsp;miles</div>
         </paper-item-body>
       </paper-icon-item>
 
     </paper-card>
+
+      <!-- Route already Traveled -->
+      <google-map-poly id="routetraveled" map="{{map}}">
+        <template id="drivenpoints" is="dom-repeat" items="{{_myRoute}}" as="point">
+          <google-map-point latitude="[[point.lat]]" longitude="[[point.lng]]"></google-map-point>
+        </template>
+      </google-map-poly>
 
   </template>
   <script>
@@ -68,15 +75,66 @@ This code may only be used under the BSD style license found at http://polymer.g
       properties: {
         myLocation: {
           type: Object,
+          observer: '_addLocationToRoute'
         },
-        milesTraveled: {
-          type: Number
+        
+        map: {
+          type: Object
         },
+        
+        mapBounds: {
+          type: Object,
+          notify: true,
+        },
+        
+        _myRoute: {
+          type: Array,
+          readOnly: true,
+          value: []
+        },
+        
+        _milesTraveled: {
+          type: Number,
+          value: 0
+        }
+        
+        
       },
       
       _formatNum: function(number, digits) {
-        return number.toFixed(digits);
+        if (number) {
+          return number.toFixed(digits);
+        }
+        return '';
+      },
+      
+
+      _addLocationToRoute: function()
+      {
+        console.log('_addLocationToRoute');
+        if (this._myRoute.length > 0) {
+          var priorLatLng = this._myRoute[this._myRoute.length-1];
+          var milesFromPrior = google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(priorLatLng.lat, priorLatLng.lng),
+                                                                                     new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng)) * 0.000621371; //miles
+          this._milesTraveled = this._milesTraveled + milesFromPrior;
+        }
+        
+        this.push('_myRoute', this.myLocation);
+
+        //extend the map bounds
+        if (!this.mapBounds) {
+          this.mapBounds = new google.maps.LatLngBounds();
+        }
+        this.mapBounds.extend(new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng));
+      },
+      
+      _getMapBounds: function() {
+        
+        if (this.$.routetraveled && this.$.routetraveled.poly) {
+          return this.$.routetraveled.poly.getBounds();
+        }
       }
+      
     });
   })();
   </script>

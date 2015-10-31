@@ -57,38 +57,20 @@ This code may only be used under the BSD style license found at http://polymer.g
       
     </style>
 
-    <my-location my-location="{{myLocation}}" my-route="{{myRoute}}" miles-traveled="{{milesTraveled}}"></my-location>
+    <my-location my-location="{{myLocation}}"></my-location>
 
-    <google-map id="googMap" map="{{_map}}" latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" api-key="AIzaSyDg83X4mRng7I2Q1QSJHDtQNpr04tz17PY" fit-to-markers>
-  
-      <!-- Markers for Search Results -->
-      <template id="searchmarkers" is="dom-repeat" items="{{searchResults}}" as="place">
-        <google-map-marker latitude="[[place.lat]]"
-                           longitude="[[place.lng]]"
-                           icon="[[place.markerUrl]]"
-                           click-events on-google-map-marker-click="_onMarkerClick"
-                           animation="DROP">
-        </google-map-marker>
-      </template>
-
-      <!-- Route already Traveled -->
-      <google-map-poly>
-        <template id="drivenpoints" is="dom-repeat" items="{{myRoute}}" as="point">
-          <google-map-point latitude="[[point.lat]]" longitude="[[point.lng]]"></google-map-point>
-        </template>
-      </google-map-poly>
-
+    <google-map id="googMap" map="{{_map}}" latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" api-key="AIzaSyDg83X4mRng7I2Q1QSJHDtQNpr04tz17PY">
     </google-map>
     
     <!-- Search Panel -->
     <div id="search-route" class="layout vertical">
-      <search-panel my-location="[[myLocation]]" app-options="{{appOptions}}" search-results="{{searchResults}}" on-place-clicked="_onSearchResultClick" class="flex"></search-panel>
+      <search-panel my-location="[[myLocation]]" app-options="[[appOptions]]" map="{{_map}}" map-bounds="{{_searchResultBounds}}" on-place-clicked="_onSearchResultClick" class="flex"></search-panel>
       <div class="flex"></div>
-      <route-panel id="routepanel" my-location="[[myLocation]]" app-options="{{appOptions}}" map="{{_map}}"></route-panel>
+      <route-panel id="routepanel" my-location="[[myLocation]]" app-options="{{appOptions}}" map="{{_map}}" map-bounds="{{_routeBounds}}"></route-panel>
     </div>
 
-    <!-- Search Panel -->
-    <tracking-panel my-location="{{myLocation}}" my-route="{{myRoute}}" miles-traveled="[[milesTraveled]]"></tracking-panel>
+    <!-- Tracking Panel -->
+    <tracking-panel my-location="{{myLocation}}" map="{{_map}}" map-bounds="{{_trackerBounds}}"></tracking-panel>
 
     <place-card id="placeCard" place="[[selectedPlace]]" on-show-directions="_addWaypoint" dismiss-on-outside-click="[[_dismissCardOnOutsideClick]]" my-location="[[myLocation]]" app-options="[[appOptions]]"></place-card>
 
@@ -109,7 +91,14 @@ This code may only be used under the BSD style license found at http://polymer.g
           notify: true
         },
         
-        searchResults: { type: Array },
+        myLocation: {
+          type: Object,
+          observer: '_fitMapBounds'
+        },
+        
+        _map: {
+          type: Object
+        },
         
         _markerClicked: { type: Boolean},
         
@@ -117,10 +106,27 @@ This code may only be used under the BSD style license found at http://polymer.g
         
         _isZoom: {
           type: Boolean,
-          value: false
+          value: false,
+          observer: '_fitMapBounds'
+        },
+        
+        _searchResultBounds: {
+          type: Object,
+          observer: '_fitMapBounds'
+        },
+
+        _routeBounds: {
+          type: Object,
+          observer: '_fitMapBounds'
+        },
+        
+        _trackerBounds: {
+          type: Object,
+          observer: '_fitMapBounds'
         }
         
       },
+      
 
       _onMarkerClick: function(e) {
         var place = this.$.searchmarkers.itemForElement(e.target);
@@ -135,20 +141,39 @@ This code may only be used under the BSD style license found at http://polymer.g
         }, 800);
 */
       },
+      
+      _fitMapBounds: function() {
+        if (this._map) {
+          if (this._isZoom) {
+            this.$.googMap.latitude=this.myLocation.lat;
+            this.$.googMap.longitude=this.myLocation.lng;
+            this.$.googMap.zoom = 14;
+          }
+          else {
+            //not zoomed
+            var latLngBounds = new google.maps.LatLngBounds();
+            latLngBounds.extend(new google.maps.LatLng(this.myLocation.lat, this.myLocation.lng));
+            
+            if (this._searchResultBounds) {
+              latLngBounds.union(this._searchResultBounds);
+            }
+          
+            if (this._routeBounds) {
+              latLngBounds.union(this._routeBounds);
+            }
+            
+            if (this._trackerBounds) {
+              latLngBounds.union(this._trackerBounds);
+            }
+            
+            this._map.fitBounds(latLngBounds);
+            this._map.setCenter(latLngBounds.getCenter());
+          }
+        }
+      },
 
       _onMapZoom: function() {
-        this.$.googMap.latitude=this.myLocation.lat;
-        this.$.googMap.longitude=this.myLocation.lng;
-        if (!this._isZoom) {
-          this.$.googMap.fitToMarkers = false;
-          this.$.googMap.zoom = 14;
-        }
-        else {
-          this.$.googMap.fitToMarkers = true;
-        }
         this._isZoom = !this._isZoom;
-        console.log ('fit to markers ' + this.$.googMap.fitToMarkers);
-        console.log ('markers length' + this.$.googMap.markers.length);
       },
       
       _getZoomIcon: function() {

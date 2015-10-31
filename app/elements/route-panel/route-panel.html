@@ -63,7 +63,7 @@ This code may only be used under the BSD style license found at http://polymer.g
                           waypoints="[[_waypointLatLngs]]"
                           optimize-waypoints="[[appOptions.optimizeWaypoints]]"
                           avoid-highways="[[appOptions.avoidHighways]]"
-                          renderer-options='{"suppressMarkers":"true"}'
+                          renderer-options='{"suppressMarkers":"true","preserveViewport":"true"}'
                           on-google-map-response="_handleDirectionsResponse"
                           api-key="AIzaSyDg83X4mRng7I2Q1QSJHDtQNpr04tz17PY">
     </google-map-directions>
@@ -93,6 +93,11 @@ This code may only be used under the BSD style license found at http://polymer.g
         },
         map: {
           type: Object
+        },
+        mapBounds: {
+          type: Object,
+          notify: true,
+          readOnly: true
         },
         _waypointPlaces: {
           type: Array,
@@ -173,13 +178,14 @@ This code may only be used under the BSD style license found at http://polymer.g
         this._finalLat = finalLatLng.lat();
         this._finalLng = finalLatLng.lng();
 
+        this._setMapBounds(route.bounds);
       },
 
       _getMarkerUrl: function(index) {
         var label = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[index % 26];
         return 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + label + '|004225|FFFFFF';
-      }
-      
+      },
+
     });
   })();
   </script>
