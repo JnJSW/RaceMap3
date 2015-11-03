@@ -12,40 +12,56 @@ This code may only be used under the BSD style license found at http://polymer.g
       :host {
         display: block;
       }
+      #content {
+        margin-top: 8px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+      }
+      paper-icon-item {
+        border-top: 1px solid var(--divider-color);
+      }
+      .iron-icon {
+        height: "24px";
+        width: "24px";
+      }
     </style>
 
     <firebase-document location="https://dtt.firebaseio.com/options" data="{{appOptions}}"></firebase-document>
-    <div>
-      <h2>Final Destination</h2>
-      <div class="line">
-        <paper-input label="Final Destination" value="{{appOptions.finalDestination}}"></paper-input>
-      </div>
-      
-      
-      <h2>Search Options</h2>
-      <div class="line">
-        <paper-toggle-button checked={{appOptions.searchCities}}></paper-toggle-button>
-        <span>Cities and Municipalites</span>
-      </div>
-      <div class="line">
-        <paper-toggle-button checked={{appOptions.searchFeatures}}></paper-toggle-button>
-        <span>Geographic Features</span>
-      </div>
-      <div class="line">
-        <paper-toggle-button checked={{appOptions.searchPlaces}}></paper-toggle-button>
-        <span>Places of Interest</span>
-      </div>
+    <div class="content">
+      <paper-item>
+        <div>Search Options</div>
+      </paper-item>
+      <paper-icon-item>
+        <iron-icon icon="social:location-city"  item-icon></iron-icon>
+        <div class="flex">Municipalities</div>
+        <paper-checkbox checked={{appOptions.searchCities}}></paper-checkbox>
+      </paper-icon-item>
+      <paper-icon-item>
+        <iron-icon icon="maps:terrain"  item-icon></iron-icon>
+        <div class="flex">Geo. Features</div>
+        <paper-checkbox checked={{appOptions.searchFeatures}}></paper-checkbox>
+      </paper-icon-item>
+      <paper-icon-item>
+        <iron-icon icon="maps:place"  item-icon></iron-icon>
+        <div class="flex">Places of Interest</div>
+        <paper-checkbox checked={{appOptions.searchPlaces}}></paper-checkbox>
+      </paper-icon-item>
     </div>
     <div>
-      <h2>Route Options</h2>
-      <div class="line">
-        <paper-toggle-button checked={{appOptions.avoidHighways}}></paper-toggle-button>
-        <span>Avoid Highways</span>
-      </div>
-      <div class="line">
-        <paper-toggle-button checked={{appOptions.optimizeWaypoints}}></paper-toggle-button>
-        <span>Optimize Waypoints</span>
-      </div>
+      <paper-item>
+        <div>Route Options</div>
+      </paper-item>
+      <paper-icon-item>
+        <iron-icon icon="maps:directions-car"  item-icon></iron-icon>
+        <div class="flex">Avoid Highways</div>
+        <paper-checkbox checked={{appOptions.avoidHighways}}></paper-checkbox>
+      </paper-icon-item>
+      <paper-icon-item>
+        <iron-icon icon="communication:swap-calls"  item-icon></iron-icon>
+        <div class="flex">Optimize Waypoints</div>
+        <paper-checkbox checked={{appOptions.optimizeWaypoints}}></paper-checkbox>
+      </paper-icon-item>
     </div>
 
   </template>
