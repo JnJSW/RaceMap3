@@ -64,7 +64,7 @@ This code may only be used under the BSD style license found at http://polymer.g
     </google-map-directions>
 
     <!--Map Markers-->
-    <google-map-marker latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" map="[[map]]" icon="/images/ic_my_location_black_24px.svg"></google-map-marker>
+    <google-map-marker id="myLocationMarker" latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" map="[[map]]" icon="/images/ic_navigation_black_24px.svg"></google-map-marker>
     <template is="dom-repeat" items="[[_sortedWaypointPlaces]]" as="place">
       <google-map-marker latitude="[[place.lat]]" longitude="[[place.lng]]" map="[[map]]" icon="[[_getMarkerUrl(index)]]"></google-map-marker>
     </template>
@@ -113,6 +113,8 @@ This code may only be used under the BSD style license found at http://polymer.g
           type: Number
         }
       },
+      
+      observers: ['_rotateMyLocation(myLocation, myLocation.bearing)'],
 
       addWaypoint: function(place) {
         if (this._waypointPlaces.length < 8) {
@@ -180,6 +182,17 @@ This code may only be used under the BSD style license found at http://polymer.g
         var label = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[index % 26];
         return 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + label + '|004225|FFFFFF';
       },
+      
+      _rotateMyLocation: function() {
+        var rotateDeg;
+        if (this.myLocation.bearing) {
+          rotateDeg = this.myLocation.bearing;
+        }
+        else {
+          rotateDeg = 0;
+        }
+        this.transform('rotateX(' + rotateDeg + ')', this.$.myLocationMarker);
+      }
 
     });
   })();
