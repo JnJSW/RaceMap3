@@ -7,7 +7,6 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
-
 (function(document) {
   'use strict';
 
@@ -15,7 +14,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   // and give it some initial binding values
   // Learn more about auto-binding templates at http://goo.gl/Dx1u2g
   //var app = document.querySelector('#app');
-
 
   document.addEventListener('places-loaded', function() {
     document.body.classList.add('loaded');
@@ -30,7 +28,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
   };
 
-  
   //the automatic drawer panel doesn't seem to work.  Likely due to all the levels of shady-dom
   document.addEventListener('toggle-options-panel', function() {
     document.querySelector('#paperDrawerPanel').togglePanel();
