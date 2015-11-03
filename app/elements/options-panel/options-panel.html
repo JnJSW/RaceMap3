@@ -63,6 +63,28 @@ This code may only be used under the BSD style license found at http://polymer.g
         <paper-checkbox checked={{appOptions.optimizeWaypoints}}></paper-checkbox>
       </paper-icon-item>
     </div>
+    <div>
+      <paper-item>
+        <div>Map Zoom</div>
+      </paper-item>
+      <paper-radio-group selected="{{appOptions.mapZoom}}">
+        <paper-icon-item>
+          <iron-icon icon=""  item-icon></iron-icon>
+          <div class="flex">Overview</div>
+          <paper-radio-button name="overview"></paper-radio-button>
+        </paper-icon-item>
+        <paper-icon-item>
+          <iron-icon icon="maps:layers"  item-icon></iron-icon>
+          <div class="flex">Planning</div>
+          <paper-radio-button name="planning"></paper-radio-button>
+        </paper-icon-item>
+        <paper-icon-item>
+          <iron-icon icon="maps:directions"  item-icon></iron-icon>
+          <div class="flex">Turn-by-Turn</div>
+          <paper-radio-button name="tbt"></paper-radio-button>
+        </paper-icon-item>
+      </paper-radio-group>
+    </div>
 
   </template>
   <script>
