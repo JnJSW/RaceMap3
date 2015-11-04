@@ -64,11 +64,16 @@ This code may only be used under the BSD style license found at http://polymer.g
     </google-map-directions>
 
     <!--Map Markers-->
-    <google-map-marker id="myLocationMarker" latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" map="[[map]]" icon="/images/ic_navigation_black_24px.svg"></google-map-marker>
+    <!--My Location-->
+    <google-map-marker id="myLocationMarker" latitude="[[myLocation.lat]]" longitude="[[myLocation.lng]]" map="[[map]]" icon="[[_myLocationIcon]]"></google-map-marker>
+
+    <!--Waypoints-->
     <template is="dom-repeat" items="[[_sortedWaypointPlaces]]" as="place">
       <google-map-marker latitude="[[place.lat]]" longitude="[[place.lng]]" map="[[map]]" icon="[[_getMarkerUrl(index)]]"></google-map-marker>
     </template>
-    <google-map-marker latitude="[[_finalLat]]" longitude="[[_finalLng]]" map="[[map]]" icon="/images/ic_local_bar_black_24px.svg"></google-map-marker>
+
+    <!--Final Destinqtion-->
+    <google-map-marker latitude="[[_finalLat]]" longitude="[[_finalLng]]" map="[[map]]" icon="[[_destinationIcon]]"></google-map-marker>
 
   </template>
   <script>
@@ -111,11 +116,17 @@ This code may only be used under the BSD style license found at http://polymer.g
         },
         _finalLng: {
           type: Number
+        },
+        _myLocationIcon: {
+          type: String,
+          computed: '_getMyLocationIcon(myLocation)'
+        },
+        _destinationIcon: {
+          type: String,
+          computed: '_getDestinationIcon(myLocation)'
         }
       },
       
-      observers: ['_rotateMyLocation(myLocation, myLocation.bearing)'],
-
       addWaypoint: function(place) {
         if (this._waypointPlaces.length < 8) {
           this.push('_waypointPlaces', place);
@@ -183,16 +194,41 @@ This code may only be used under the BSD style license found at http://polymer.g
         return 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=' + label + '|004225|FFFFFF';
       },
       
-      _rotateMyLocation: function() {
-        var rotateDeg;
+      _getMyLocationIcon: function() {
+        var rotation;
+        var path;
         if (this.myLocation.bearing) {
-          rotateDeg = this.myLocation.bearing;
+          console.log('bearing = ' + this.myLocation.bearing);
+          rotation = this.myLocation.bearing;
+          path = 'M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z'; //navigation icon;
         }
         else {
-          rotateDeg = 0;
+          rotation = 0;
+          path = 'M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z'; //myLocation
         }
-        this.transform('rotateX(' + rotateDeg + ')', this.$.myLocationMarker);
-      }
+
+        var icon = {
+          path: path,
+          size: new google.maps.Size(24,24),
+          anchor: new google.maps.Point(12,12),
+          strokeWeight: 0,
+          fillColor: '#004225',
+          fillOpacity: 1,
+          rotation: rotation
+        };
+        return icon;
+      },
+
+      _getDestinationIcon: function() {
+        return  {
+          path: 'M11 13v6H6v2h12v-2h-5v-6l8-8V3H3v2l8 8zM7.5 7l-2-2h13l-2 2h-9z', //local bar
+          size: new google.maps.Size(24,24),
+          anchor: new google.maps.Point(12,12),
+          strokeWeight: 0,
+          fillColor: '#004225',
+          fillOpacity: 1,
+        };
+      },
 
     });
   })();
